@@ -643,12 +643,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -910,12 +910,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -1177,12 +1177,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -1444,12 +1444,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -1711,12 +1711,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -1978,12 +1978,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -2245,17 +2245,22 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
               Value: 30.0
+            - Name: InputBoxStyle
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Default"
           - Name: Jace16_meter
             Type: ComboBox
             Children:
@@ -2512,12 +2517,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -2596,7 +2601,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 709.0
+              Value: 707.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
@@ -2779,12 +2784,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -4599,7 +4604,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: -39.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -4778,7 +4783,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 210.0
+              Value: 192.0
           - Name: Generate05
             Type: Button
             Children:
@@ -9463,12 +9468,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -9730,12 +9735,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -9997,12 +10002,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -10264,12 +10269,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -10531,12 +10536,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -10798,12 +10803,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -11065,12 +11070,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -11332,12 +11337,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -11599,12 +11604,12 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "DataListStyle1"
+              Value: "Default"
             - Name: ScrollBarStyle
               Type: BaseDataVariableType
               DataType: String
               ModellingRule: Optional
-              Value: "ScrollBarStyle1"
+              Value: "Default"
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -12030,7 +12035,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -12491,7 +12496,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -13220,7 +13225,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: -39.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -13399,7 +13404,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 210.0
+              Value: 192.0
           - Name: Generate05
             Type: Button
             Children:
@@ -13417,7 +13422,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -13878,7 +13883,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -14339,7 +14344,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -14800,7 +14805,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -15261,7 +15266,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -15722,7 +15727,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -16183,7 +16188,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -16644,7 +16649,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 1.0
+              Value: 10.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -17553,7 +17558,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":34,"TextId":"Monthly Consumption Report"}
-- Name: ThirdReport
+- Name: ConsumptionReport
   Id: g=f75505a58599f5374de8b854f1401693
   Supertype: BaseScreen
   ReferenceType: HasComponent
@@ -17873,12 +17878,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -40.0
+            Value: 5.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 166.0
+            Value: 160.0
           - Name: Visible
             Type: BaseDataVariableType
             DataType: Boolean
@@ -17977,29 +17982,34 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 20.0
+            Value: 40.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: BackgroundColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ffffff"
         - Name: Generate
           Type: Button
           Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/Tata_EMS_Solution_Updated/Model/ComparisionInstance/GBUTTON"
+            Value: {"NamespaceIndex":34,"TextId":"Generate"}
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 979.0
+            Value: 800.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 1.0
+            Value: 5.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -18019,7 +18029,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Cooper Black"
+            Value: "Lucida Fax"
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
@@ -18372,7 +18382,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
+          Value: 1.0
         - Name: TextHorizontalAlignment
           Type: BaseVariableType
           DataType: TextHorizontalAlignment
@@ -18713,7 +18723,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
+          Value: 99.0
         - Name: BorderThickness
           Type: BaseDataVariableType
           DataType: Size
@@ -18728,7 +18738,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
+          Value: 33.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -18756,12 +18766,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 19.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -59.0
+            Value: 9.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -18795,7 +18805,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 15.0
+            Value: 18.0
           - Name: FontFamily
             Type: BaseDataVariableType
             DataType: Font
@@ -18823,12 +18833,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -40.0
+            Value: 50.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 166.0
+            Value: 149.0
           - Name: Visible
             Type: BaseDataVariableType
             DataType: Boolean
@@ -18927,29 +18937,34 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 20.0
+            Value: 25.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 41.0
+          - Name: BackgroundColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ffffff"
         - Name: Generate
           Type: Button
           Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/Tata_EMS_Solution_Updated/Model/ComparisionInstance/GBUTTON"
+            Value: {"NamespaceIndex":34,"TextId":"Generate"}
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 1019.0
+            Value: 1007.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 1.0
+            Value: 8.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -18969,7 +18984,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Cooper Black"
+            Value: ""
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
@@ -19170,6 +19185,16 @@ Children:
                 Type: PropertyType
                 DataType: UInt16
                 Value: 0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
         - Name: DateAndTime1
           Type: DateTimePicker
           Children:
@@ -19192,12 +19217,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 117.0
+            Value: 136.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -60.0
+            Value: 8.0
           - Name: InputFormat
             Type: BaseDataVariableType
             DataType: DateTimePickerInputFormatEnum
@@ -19285,12 +19310,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -765.0
+            Value: 90.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 12.0
+            Value: 60.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -19357,7 +19382,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -19445,12 +19470,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -19664,7 +19689,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -19741,12 +19766,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20180,7 +20205,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -20257,12 +20282,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20472,7 +20497,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -20549,12 +20574,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20764,7 +20789,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -20841,12 +20866,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21152,7 +21177,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -21229,12 +21254,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21456,7 +21481,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -21533,12 +21558,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21680,7 +21705,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -21757,12 +21782,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -61.0
+            Value: 450.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 9.0
+            Value: 59.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21900,7 +21925,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -21988,12 +22013,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 616.0
+            Value: 820.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 9.0
+            Value: 57.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -22031,7 +22056,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 2
+            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
@@ -22049,12 +22074,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 330.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -29.0
+            Value: 9.0
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -22088,7 +22113,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 15.0
+            Value: 18.0
           - Name: FontFamily
             Type: BaseDataVariableType
             DataType: Font
@@ -22116,12 +22141,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 117.0
+            Value: 447.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -28.0
+            Value: 10.0
       - Name: Label1
         Type: Label
         Children:
@@ -22149,7 +22174,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
+          Value: -5.0
         - Name: TextHorizontalAlignment
           Type: BaseVariableType
           DataType: TextHorizontalAlignment
@@ -22234,7 +22259,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 100.0
+          Value: 140.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -22266,12 +22291,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 19.0
+          Value: 21.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 98.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22286,7 +22311,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 25.0
+          Value: 18.0
         - Name: FontWeight
           Type: BaseDataVariableType
           DataType: FontWeightEnum
@@ -22296,7 +22321,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
+          Value: "Lucida Fax"
       - Name: Parameter
         Type: Label
         Children:
@@ -22308,12 +22333,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 684.0
+          Value: 703.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 59.0
+          Value: 97.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22328,7 +22353,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 25.0
+          Value: 18.0
         - Name: FontWeight
           Type: BaseDataVariableType
           DataType: FontWeightEnum
@@ -22338,7 +22363,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
+          Value: "Lucida Fax"
       - Name: Meter1
         Type: Label
         Children:
@@ -22350,12 +22375,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 344.0
+          Value: 373.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 62.0
+          Value: 97.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22370,7 +22395,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 25.0
+          Value: 18.0
         - Name: FontWeight
           Type: BaseDataVariableType
           DataType: FontWeightEnum
@@ -22380,7 +22405,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
+          Value: "Lucida Fax"
   - Name: CategoryName
     Type: BaseDataVariableType
     DataType: LocalizedText
