@@ -35,7 +35,7 @@ Children:
   - Name: Table
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"253d14c8681620db7c856f8352e586a3","Namespace":34}
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType

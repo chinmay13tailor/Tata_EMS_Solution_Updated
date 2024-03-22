@@ -226,7 +226,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         if (button == true)
         {
 
-            if (count <= 210)
+            if (count <= 211)
 
             {
                 DateTime currentTime = DateTime.Now;
@@ -312,14 +312,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
-                // var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
-                // var columnCount1 = header1 != null ? header1.Length : 0;
-                // if (rowCount1 > 0 && columnCount1 > 0)
-                //  {
-                //     var column1 = Convert.ToString(resultSet1[0, 0]);
-                //     meter = column1;
+                 var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
+                 var columnCount1 = header1 != null ? header1.Length : 0;
+                 if (rowCount1 > 0 && columnCount1 > 0)
+                  {
+                     var column1 = Convert.ToString(resultSet1[0, 0]);
+                    meter = column1;
 
-                //  }
+                  }
 
 
                 var rowCount2 = resultSet2 != null ? resultSet2.GetLength(0) : 0;
@@ -546,7 +546,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
             }
             else
             {
-                count = 1;
+                count = 0;
             }
 
 
