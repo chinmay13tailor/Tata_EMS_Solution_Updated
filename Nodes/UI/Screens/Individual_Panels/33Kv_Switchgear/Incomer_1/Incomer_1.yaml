@@ -1554,6 +1554,21 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 275.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 890.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 900.0
 - Name: Voltage_Panel203
   Id: g=9bcae33e2dd13f11e3933013b2a08226
   Supertype: Voltage_Panel
@@ -2605,8 +2620,18 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 890.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 48.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 740.0

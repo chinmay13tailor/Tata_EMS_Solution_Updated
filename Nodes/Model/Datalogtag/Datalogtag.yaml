@@ -36,7 +36,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Incomer1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -57,7 +57,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Incomer2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[23]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -78,7 +78,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[43]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -99,7 +99,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[63]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -120,7 +120,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[83]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -141,7 +141,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[103]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -162,7 +162,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[123]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -183,7 +183,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[143]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -204,7 +204,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[163]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -225,7 +225,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[183]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -246,7 +246,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[203]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -267,7 +267,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[223]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -288,7 +288,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[243]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -309,7 +309,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[263]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -330,7 +330,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[283]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -351,7 +351,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[303]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -372,7 +372,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_2/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[323]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -393,7 +393,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_1/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[343]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -414,7 +414,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EB_Incomer/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[363]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -435,7 +435,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/DG_Incomer/Consumption"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[383]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -457,7 +457,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -476,7 +476,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Incomer1/Active_Power_Total"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[0]@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -497,7 +497,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Incomer2/Active_Power_Total"
+            Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[20]@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -518,7 +518,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -539,7 +539,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -560,7 +560,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -581,7 +581,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -602,7 +602,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -623,7 +623,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -644,7 +644,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -665,7 +665,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/PaintShop_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -686,7 +686,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EngineShop_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -707,7 +707,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/BodyShop_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -728,7 +728,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/TCF_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -749,7 +749,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Stamping_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -770,7 +770,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Utility_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -791,7 +791,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/Spare_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -812,7 +812,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_2/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_2/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -833,7 +833,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_1/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/SPP_1/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -854,7 +854,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EB_Incomer/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/EB_Incomer/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -875,7 +875,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/DG_Incomer/Active_Power_Total"
+            Value: "../../../../../../Tags/RealTimePanelTags/33KVMeters/DG_Incomer/Active_Power_Total@Value"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -897,7 +897,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -1337,7 +1337,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -1777,7 +1777,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -2217,7 +2217,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -2657,7 +2657,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -3097,7 +3097,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -3537,7 +3537,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -3977,7 +3977,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -4417,7 +4417,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -4857,7 +4857,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -5297,7 +5297,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -5737,7 +5737,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -6177,7 +6177,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -6617,7 +6617,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -7057,7 +7057,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -7497,7 +7497,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -7937,7 +7937,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -8377,7 +8377,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:
@@ -8817,7 +8817,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:

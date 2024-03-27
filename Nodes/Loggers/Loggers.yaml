@@ -652,7 +652,7 @@ Children:
     - Name: Meter
       Type: VariableToLog
       DataType: BaseDataType
-      Value: {"Type":12,"Body":"../../../../Model/Datalogtag/Consumption"}
+      Value: {"Type":12,"Body":"../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]"}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -672,34 +672,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/Datalogtag/Meter"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Consumption
-      Type: VariableToLog
-      DataType: BaseDataType
-      Value: {"Type":6,"Body":0}
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Datalogtag/Consumption"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1275,7 +1247,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:0.5000000"
+    Value: "0:00:00:1.0000000"
 - Name: ConsumptionDistribution
   Type: DataLogger
   Children:

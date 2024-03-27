@@ -5191,6 +5191,11 @@ Children:
                       ReferenceType: HasParameter
                       ModellingRule: Optional
                       Value: false
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#010320"
             - Name: StationWise Details
               Type: Rectangle
               Children:
@@ -5201,53 +5206,164 @@ Children:
                   Type: Label
                 - Name: Label2
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 85.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle2
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 164.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle3
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 252.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle4
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 337.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle5
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 425.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle6
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 689.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle7
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 513.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle8
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 600.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle9
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 863.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle10
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 775.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: PolyLine1
                 Type: PolyLine
+                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 75.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle11
                 Type: Rectangle
                 Children:
@@ -5262,6 +5378,46 @@ Children:
                     Type: BaseDataVariableType
                     DataType: Boolean
                     Value: true
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -1.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 2.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 110.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
               - Name: Rectangle12
                 Type: Rectangle
                 Children:
@@ -5284,7 +5440,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLL_RY"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Voltage_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 166.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 107.0
               - Name: Rectangle13
                 Type: Rectangle
                 Children:
@@ -5307,7 +5473,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLL_YB"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Voltage_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle14
                 Type: Rectangle
                 Children:
@@ -5330,7 +5506,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLL_BR"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Voltage_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle15
                 Type: Rectangle
                 Children:
@@ -5353,7 +5539,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLL_Average"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Avg_Voltage_LL"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle16
                 Type: Rectangle
                 Children:
@@ -5376,7 +5572,22 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLN_B"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Voltage_BN"
+                  - Name: TextColor
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#000000"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle17
                 Type: Rectangle
                 Children:
@@ -5399,7 +5610,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLN_R"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Avg_Voltage_LN"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle18
                 Type: Rectangle
                 Children:
@@ -5422,7 +5643,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLN_Y"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Voltage_YN"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle19
                 Type: Rectangle
                 Children:
@@ -5445,7 +5676,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Current_R"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Phase_R_Current"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle20
                 Type: Rectangle
                 Children:
@@ -5468,37 +5709,107 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/VLN_Average"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Avg_Voltage_LN"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle21
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 952.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle22
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1213.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle23
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1389.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle24
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1040.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle25
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1299.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle26
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1126.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
               - Name: Rectangle27
                 Type: Rectangle
                 Children:
@@ -5521,7 +5832,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Current_Average"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Avg_Current"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle28
                 Type: Rectangle
                 Children:
@@ -5544,7 +5865,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/PowerFactor"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Avg_PF"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle29
                 Type: Rectangle
                 Children:
@@ -5567,7 +5898,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Current_Y"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Phase_Y_Current"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle30
                 Type: Rectangle
                 Children:
@@ -5590,7 +5931,17 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Current_B"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Phase_B_Current"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle31
                 Type: Rectangle
                 Children:
@@ -5614,6 +5965,16 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle32
                 Type: Rectangle
                 Children:
@@ -5637,6 +5998,16 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/33kv/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 102.0
               - Name: Rectangle33
                 Type: Rectangle
                 Children:
@@ -5652,6 +6023,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle34
                 Type: Rectangle
                 Children:
@@ -5667,6 +6048,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle35
                 Type: Rectangle
                 Children:
@@ -5682,6 +6073,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle36
                 Type: Rectangle
                 Children:
@@ -5697,6 +6098,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle37
                 Type: Rectangle
                 Children:
@@ -5707,6 +6118,26 @@ Children:
                     Type: BaseDataVariableType
                     DataType: LocalizedText
                     Value: {"LocaleId":"en-US","Text":"SPP"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 82.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 163.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
               - Name: Rectangle38
                 Type: Rectangle
                 Children:
@@ -5722,6 +6153,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle39
                 Type: Rectangle
                 Children:
@@ -5745,6 +6186,16 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle40
                 Type: Rectangle
                 Children:
@@ -5760,6 +6211,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle41
                 Type: Rectangle
                 Children:
@@ -5775,6 +6236,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle42
                 Type: Rectangle
                 Children:
@@ -5790,6 +6261,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle43
                 Type: Rectangle
                 Children:
@@ -5805,6 +6286,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle44
                 Type: Rectangle
                 Children:
@@ -5820,6 +6311,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle45
                 Type: Rectangle
                 Children:
@@ -5835,6 +6336,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle46
                 Type: Rectangle
                 Children:
@@ -5850,6 +6361,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle47
                 Type: Rectangle
                 Children:
@@ -5865,6 +6386,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle48
                 Type: Rectangle
                 Children:
@@ -5880,6 +6411,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/SPP/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 158.0
               - Name: Rectangle49
                 Type: Rectangle
                 Children:
@@ -5895,6 +6436,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle50
                 Type: Rectangle
                 Children:
@@ -5910,6 +6461,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle51
                 Type: Rectangle
                 Children:
@@ -5925,6 +6486,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle52
                 Type: Rectangle
                 Children:
@@ -5940,6 +6511,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle53
                 Type: Rectangle
                 Children:
@@ -5950,6 +6531,26 @@ Children:
                     Type: BaseDataVariableType
                     DataType: LocalizedText
                     Value: {"LocaleId":"en-US","Text":"Spare"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 81.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 210.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
               - Name: Rectangle54
                 Type: Rectangle
                 Children:
@@ -5965,6 +6566,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle55
                 Type: Rectangle
                 Children:
@@ -5980,6 +6591,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle56
                 Type: Rectangle
                 Children:
@@ -5995,6 +6616,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle57
                 Type: Rectangle
                 Children:
@@ -6010,6 +6641,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle58
                 Type: Rectangle
                 Children:
@@ -6025,6 +6666,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle59
                 Type: Rectangle
                 Children:
@@ -6040,6 +6691,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle60
                 Type: Rectangle
                 Children:
@@ -6055,6 +6716,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle61
                 Type: Rectangle
                 Children:
@@ -6070,6 +6741,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle62
                 Type: Rectangle
                 Children:
@@ -6085,6 +6766,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle63
                 Type: Rectangle
                 Children:
@@ -6100,6 +6791,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle64
                 Type: Rectangle
                 Children:
@@ -6115,6 +6816,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Spare/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 209.0
               - Name: Rectangle65
                 Type: Rectangle
                 Children:
@@ -6130,6 +6841,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle66
                 Type: Rectangle
                 Children:
@@ -6145,6 +6866,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle67
                 Type: Rectangle
                 Children:
@@ -6160,6 +6891,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle68
                 Type: Rectangle
                 Children:
@@ -6175,11 +6916,41 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle69
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 77.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 266.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
               - Name: Rectangle70
                 Type: Rectangle
                 Children:
@@ -6195,6 +6966,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle71
                 Type: Rectangle
                 Children:
@@ -6210,6 +6991,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle72
                 Type: Rectangle
                 Children:
@@ -6225,6 +7016,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle73
                 Type: Rectangle
                 Children:
@@ -6240,6 +7041,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle74
                 Type: Rectangle
                 Children:
@@ -6255,6 +7066,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle75
                 Type: Rectangle
                 Children:
@@ -6270,6 +7091,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle76
                 Type: Rectangle
                 Children:
@@ -6285,6 +7116,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle77
                 Type: Rectangle
                 Children:
@@ -6300,6 +7141,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle78
                 Type: Rectangle
                 Children:
@@ -6315,6 +7166,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle79
                 Type: Rectangle
                 Children:
@@ -6330,6 +7191,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle80
                 Type: Rectangle
                 Children:
@@ -6345,6 +7216,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Utility/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 260.0
               - Name: Rectangle81
                 Type: Rectangle
                 Children:
@@ -6360,6 +7241,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle82
                 Type: Rectangle
                 Children:
@@ -6375,6 +7266,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle83
                 Type: Rectangle
                 Children:
@@ -6390,6 +7291,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle84
                 Type: Rectangle
                 Children:
@@ -6405,11 +7316,62 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle85
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -2.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -2.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 75.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 319.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
               - Name: Rectangle86
                 Type: Rectangle
                 Children:
@@ -6425,6 +7387,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle87
                 Type: Rectangle
                 Children:
@@ -6440,6 +7412,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle88
                 Type: Rectangle
                 Children:
@@ -6455,6 +7437,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle89
                 Type: Rectangle
                 Children:
@@ -6470,6 +7462,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle90
                 Type: Rectangle
                 Children:
@@ -6485,6 +7487,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle91
                 Type: Rectangle
                 Children:
@@ -6500,6 +7512,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle92
                 Type: Rectangle
                 Children:
@@ -6515,6 +7537,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle93
                 Type: Rectangle
                 Children:
@@ -6530,6 +7562,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle94
                 Type: Rectangle
                 Children:
@@ -6545,6 +7587,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle95
                 Type: Rectangle
                 Children:
@@ -6560,6 +7612,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle96
                 Type: Rectangle
                 Children:
@@ -6575,6 +7637,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/Stamping/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 312.0
               - Name: Rectangle97
                 Type: Rectangle
                 Children:
@@ -6590,6 +7662,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle98
                 Type: Rectangle
                 Children:
@@ -6605,6 +7687,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle99
                 Type: Rectangle
                 Children:
@@ -6620,6 +7712,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle100
                 Type: Rectangle
                 Children:
@@ -6635,11 +7737,52 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle101
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 8.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 74.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 369.0
               - Name: Rectangle102
                 Type: Rectangle
                 Children:
@@ -6655,6 +7798,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle103
                 Type: Rectangle
                 Children:
@@ -6670,6 +7823,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle104
                 Type: Rectangle
                 Children:
@@ -6685,6 +7848,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle105
                 Type: Rectangle
                 Children:
@@ -6700,6 +7873,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle106
                 Type: Rectangle
                 Children:
@@ -6715,6 +7898,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle107
                 Type: Rectangle
                 Children:
@@ -6730,6 +7923,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle108
                 Type: Rectangle
                 Children:
@@ -6745,6 +7948,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle109
                 Type: Rectangle
                 Children:
@@ -6760,6 +7973,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle110
                 Type: Rectangle
                 Children:
@@ -6775,6 +7998,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle111
                 Type: Rectangle
                 Children:
@@ -6790,6 +8023,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle112
                 Type: Rectangle
                 Children:
@@ -6805,6 +8048,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/TCF/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 364.0
               - Name: Rectangle113
                 Type: Rectangle
                 Children:
@@ -6820,6 +8073,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle114
                 Type: Rectangle
                 Children:
@@ -6835,6 +8098,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle115
                 Type: Rectangle
                 Children:
@@ -6850,6 +8123,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle116
                 Type: Rectangle
                 Children:
@@ -6865,11 +8148,62 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle117
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 2.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -5.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 79.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 422.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 32.0
               - Name: Rectangle118
                 Type: Rectangle
                 Children:
@@ -6885,6 +8219,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle119
                 Type: Rectangle
                 Children:
@@ -6900,6 +8244,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle120
                 Type: Rectangle
                 Children:
@@ -6915,6 +8269,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle121
                 Type: Rectangle
                 Children:
@@ -6930,6 +8294,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle122
                 Type: Rectangle
                 Children:
@@ -6945,6 +8319,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle123
                 Type: Rectangle
                 Children:
@@ -6960,6 +8344,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle124
                 Type: Rectangle
                 Children:
@@ -6975,6 +8369,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle125
                 Type: Rectangle
                 Children:
@@ -6990,6 +8394,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle126
                 Type: Rectangle
                 Children:
@@ -7005,6 +8419,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle127
                 Type: Rectangle
                 Children:
@@ -7020,6 +8444,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle128
                 Type: Rectangle
                 Children:
@@ -7035,6 +8469,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/BodyShop/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 416.0
               - Name: Rectangle129
                 Type: Rectangle
                 Children:
@@ -7050,6 +8494,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle130
                 Type: Rectangle
                 Children:
@@ -7065,6 +8519,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle131
                 Type: Rectangle
                 Children:
@@ -7080,6 +8544,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle132
                 Type: Rectangle
                 Children:
@@ -7095,6 +8569,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle133
                 Type: Rectangle
                 Children:
@@ -7105,6 +8589,46 @@ Children:
                     Type: BaseDataVariableType
                     DataType: LocalizedText
                     Value: {"LocaleId":"en-US","Text":"Engine Shop"}
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 4.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -2.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 476.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
               - Name: Rectangle134
                 Type: Rectangle
                 Children:
@@ -7120,6 +8644,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle135
                 Type: Rectangle
                 Children:
@@ -7135,6 +8669,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle136
                 Type: Rectangle
                 Children:
@@ -7150,6 +8694,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle137
                 Type: Rectangle
                 Children:
@@ -7165,6 +8719,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle138
                 Type: Rectangle
                 Children:
@@ -7180,6 +8744,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle139
                 Type: Rectangle
                 Children:
@@ -7195,6 +8769,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle140
                 Type: Rectangle
                 Children:
@@ -7210,6 +8794,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle141
                 Type: Rectangle
                 Children:
@@ -7225,6 +8819,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle142
                 Type: Rectangle
                 Children:
@@ -7240,6 +8844,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle143
                 Type: Rectangle
                 Children:
@@ -7255,6 +8869,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle144
                 Type: Rectangle
                 Children:
@@ -7270,6 +8894,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/EngineShop/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 468.0
               - Name: Rectangle145
                 Type: Rectangle
                 Children:
@@ -7285,6 +8919,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle146
                 Type: Rectangle
                 Children:
@@ -7300,6 +8944,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle147
                 Type: Rectangle
                 Children:
@@ -7315,6 +8969,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle148
                 Type: Rectangle
                 Children:
@@ -7330,11 +8994,62 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle149
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 3.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: -4.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 79.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 529.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
               - Name: Rectangle150
                 Type: Rectangle
                 Children:
@@ -7350,6 +9065,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle151
                 Type: Rectangle
                 Children:
@@ -7365,6 +9090,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle152
                 Type: Rectangle
                 Children:
@@ -7380,6 +9115,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle153
                 Type: Rectangle
                 Children:
@@ -7395,6 +9140,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle154
                 Type: Rectangle
                 Children:
@@ -7410,6 +9165,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle155
                 Type: Rectangle
                 Children:
@@ -7425,6 +9190,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle156
                 Type: Rectangle
                 Children:
@@ -7440,6 +9215,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle157
                 Type: Rectangle
                 Children:
@@ -7455,6 +9240,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle158
                 Type: Rectangle
                 Children:
@@ -7470,6 +9265,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle159
                 Type: Rectangle
                 Children:
@@ -7485,6 +9290,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle160
                 Type: Rectangle
                 Children:
@@ -7500,6 +9315,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/JaseWise/PaintShop/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 519.0
               - Name: Rectangle161
                 Type: Rectangle
                 Children:
@@ -7515,6 +9340,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle162
                 Type: Rectangle
                 Children:
@@ -7530,6 +9365,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle163
                 Type: Rectangle
                 Children:
@@ -7545,6 +9390,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle164
                 Type: Rectangle
                 Children:
@@ -7560,11 +9415,47 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle165
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 11.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 77.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 571.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 34.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 73.0
               - Name: Rectangle166
                 Type: Rectangle
                 Children:
@@ -7580,6 +9471,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle167
                 Type: Rectangle
                 Children:
@@ -7595,6 +9496,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle168
                 Type: Rectangle
                 Children:
@@ -7610,6 +9521,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle169
                 Type: Rectangle
                 Children:
@@ -7625,6 +9546,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle170
                 Type: Rectangle
                 Children:
@@ -7640,6 +9571,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle171
                 Type: Rectangle
                 Children:
@@ -7655,6 +9596,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle172
                 Type: Rectangle
                 Children:
@@ -7670,6 +9621,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle173
                 Type: Rectangle
                 Children:
@@ -7685,6 +9646,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle174
                 Type: Rectangle
                 Children:
@@ -7700,6 +9671,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle175
                 Type: Rectangle
                 Children:
@@ -7715,6 +9696,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle176
                 Type: Rectangle
                 Children:
@@ -7730,6 +9721,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/EB_Incomer/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 568.0
               - Name: Rectangle177
                 Type: Rectangle
                 Children:
@@ -7745,6 +9746,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/PowerFactor"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1218.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle178
                 Type: Rectangle
                 Children:
@@ -7760,6 +9771,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLL_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 430.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle179
                 Type: Rectangle
                 Children:
@@ -7775,6 +9796,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Consumption"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1394.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle180
                 Type: Rectangle
                 Children:
@@ -7790,11 +9821,62 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLN_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 605.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle181
                 Type: Rectangle
                 Children:
                 - Name: Label1
                   Type: Label
+                  Children:
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 3.0
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                  - Name: BottomMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 0.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 620.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 70.0
               - Name: Rectangle182
                 Type: Rectangle
                 Children:
@@ -7810,6 +9892,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLL_BR"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 342.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle183
                 Type: Rectangle
                 Children:
@@ -7825,6 +9917,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLL_RY"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 169.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle184
                 Type: Rectangle
                 Children:
@@ -7840,6 +9942,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLL_YB"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 257.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle185
                 Type: Rectangle
                 Children:
@@ -7855,6 +9967,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLN_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 694.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle186
                 Type: Rectangle
                 Children:
@@ -7870,6 +9992,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLN_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 518.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle187
                 Type: Rectangle
                 Children:
@@ -7885,6 +10017,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Current_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1131.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle188
                 Type: Rectangle
                 Children:
@@ -7900,6 +10042,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Current_R"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 868.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle189
                 Type: Rectangle
                 Children:
@@ -7915,6 +10067,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/VLN_Average"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 780.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle190
                 Type: Rectangle
                 Children:
@@ -7930,6 +10092,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Current_Y"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 957.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle191
                 Type: Rectangle
                 Children:
@@ -7945,6 +10117,16 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Current_B"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1045.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
               - Name: Rectangle192
                 Type: Rectangle
                 Children:
@@ -7960,6 +10142,21 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/DG_Incomer/Frequency"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1304.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 619.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 769.0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment

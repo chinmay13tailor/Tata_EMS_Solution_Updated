@@ -45075,7 +45075,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 1107.0
+              Value: 1110.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
@@ -45866,7 +45866,3 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"ConsumptionDistribution"}
-- Name: Anomaly_Alalysis_Dashboard
-  Id: g=65d6de5309a3047a8daec23a489676ea
-  Supertype: Screen
-  ReferenceType: HasComponent

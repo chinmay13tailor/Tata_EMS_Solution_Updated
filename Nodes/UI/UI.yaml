@@ -54,7 +54,7 @@ Children:
   - Name: Protocol
     Type: BaseDataVariableType
     DataType: Protocol
-    Value: 0
+    Value: 1
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
@@ -62,7 +62,7 @@ Children:
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16
-    Value: 8443
+    Value: 0
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -169,10 +169,6 @@ Children:
         DataType: String
         AccessLevel: Read
         Value: ""
-  - Name: MaxNumberOfConnections
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 0
   - Name: Session
     Type: NodePointer
     DataType: NodeId

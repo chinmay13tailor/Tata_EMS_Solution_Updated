@@ -950,3 +950,4 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+- File: AllTag/AllTag.yaml

@@ -52,7 +52,7 @@ public class RuntimeNetLogic3 : BaseNetLogic
         datefromVariable = owner.DatefromVariable;
         datetoVariable = owner.DatetoVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 5000, LogicObject);
         periodicTask.Start();
     }
 

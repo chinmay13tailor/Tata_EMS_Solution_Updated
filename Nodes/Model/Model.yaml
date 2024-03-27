@@ -2410,25 +2410,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
-- Name: hourlydata
-  Type: BaseObjectType
-  Children:
-  - Name: Datetime
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
-  - Name: Consumption
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
-  - Name: Avgpf
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
-  - Name: Avgfrequency
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
 - Name: ComparisionDashboardInstance
   Type: ComparisionDashboard
   Children:
@@ -3114,6 +3095,54 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/Tata_EMS_Solution_Updated/Model/jacecounter"
+  - Name: MaxActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg
   Id: g=b1a334e5b6bf10afd6633ca1f21e1d91
   Supertype: BaseObjectType
@@ -3262,6 +3291,54 @@ Children:
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
+  - Name: MaxActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg1
   Type: HourlyDataAgg
   Children:
@@ -3397,6 +3474,54 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/Tata_EMS_Solution_Updated/Model/jacecounter"
+  - Name: MaxActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentPower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactivePower
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinActiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinApparentEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MinReactiveEnergy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: metercounter
   Type: BaseDataVariableType
   DataType: String
@@ -12911,7 +13036,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: ActivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
@@ -13036,7 +13161,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: ActivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
@@ -13143,3 +13268,443 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
+- Name: Chandan
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../../Model/ObjectInstance/Counter"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[23]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[43]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[63]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[83]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[103]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[123]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[143]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 8
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[163]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[183]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair10
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 10
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[203]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair11
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 11
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[223]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair12
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 12
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[243]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair13
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 13
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[263]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair14
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 14
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[283]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair15
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 15
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[303]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair16
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 16
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[323]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair17
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 17
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[343]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair18
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 18
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[363]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+      - Name: Pair19
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 19
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[383]"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2

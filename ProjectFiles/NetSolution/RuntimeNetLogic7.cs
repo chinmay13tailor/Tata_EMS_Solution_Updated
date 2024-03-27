@@ -226,7 +226,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         if (button == true)
         {
 
-            if (count <= 211)
+            if (count <= 18)
 
             {
                 DateTime currentTime = DateTime.Now;
@@ -336,7 +336,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 if (rowCount3 > 0 && columnCount3 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                    maxconsumption = column1;
+                    consumption = column1;
 
                 }
 
