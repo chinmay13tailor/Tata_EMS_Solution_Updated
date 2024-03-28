@@ -26031,7 +26031,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Duration
                   ModellingRule: Optional
-                  Value: "0:00:00:30.0000000"
+                  Value: "0:00:00:2.0000000"
                 - Name: ButtonStatus
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -26051,7 +26051,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Duration
                   ModellingRule: Optional
-                  Value: "0:00:00:10.0000000"
+                  Value: "0:00:00:0.1000000"
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -26136,101 +26136,6 @@ Children:
                           Type: BaseDataVariableType
                           DataType: Boolean
                           Value: false
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ns=3;ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: "/Objects/Commands/VariableCommands"
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: ns=3;Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "Set"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: VariableToModify
-                          Type: BaseDataVariableType
-                          DataType: VariablePointer
-                          Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "../../../../../../../../DataGrid1/Query@NodeId"
-                        - Name: Value
-                          Type: BaseDataVariableType
-                          DataType: String
-                          Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-                          Value: ""
-                          Children:
-                          - Name: StringFormatter1
-                            Type: StringFormatter
-                            Children:
-                            - Name: Format
-                              Type: BaseDataVariableType
-                              DataType: LocalizedText
-                              ReferenceType: HasParameter
-                              ModellingRule: Optional
-                              Value: {"LocaleId":"en-US","Text":"MERGE INTO \"Loggerforgraph\" AS Target USING ( SELECT DATEADD (HOUR ,  DATEDIFF (HOUR, 0, LocalTimestamp), 0) AS HourlyTime , MAX(Consumption) - MIN(Consumption) AS Consumption FROM  \"ConsumptionDistribution\"   GROUP BY DATEADD(HOUR, DATEDIFF(Date, 0, LocalTimestamp), 0)  ) AS Source  "}
-                        - Name: ArrayIndex
-                          Type: BaseDataVariableType
-                          DataType: UInt32
-                          Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-                          ValueRank: ScalarOrOneDimension
-                          Value: 0
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: FontFamily
                   Type: BaseDataVariableType
                   DataType: Font
@@ -26274,7 +26179,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 1346.0
+                  Value: 1166.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26284,7 +26189,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Duration
                   ModellingRule: Optional
-                  Value: "0:00:00:30.0000000"
+                  Value: "0:00:00:2.0000000"
                 - Name: ButtonStatus
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -26304,7 +26209,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Duration
                   ModellingRule: Optional
-                  Value: "0:00:00:10.0000000"
+                  Value: "0:00:00:0.1000000"
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -26389,101 +26294,6 @@ Children:
                           Type: BaseDataVariableType
                           DataType: Boolean
                           Value: true
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ns=3;ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: "/Objects/Commands/VariableCommands"
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: ns=3;Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "Set"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: VariableToModify
-                          Type: BaseDataVariableType
-                          DataType: VariablePointer
-                          Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "../../../../../../../../DataGrid1/Query@NodeId"
-                        - Name: Value
-                          Type: BaseDataVariableType
-                          DataType: String
-                          Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-                          Value: ""
-                          Children:
-                          - Name: StringFormatter1
-                            Type: StringFormatter
-                            Children:
-                            - Name: Format
-                              Type: BaseDataVariableType
-                              DataType: LocalizedText
-                              ReferenceType: HasParameter
-                              ModellingRule: Optional
-                              Value: {"LocaleId":"en-US","Text":"MERGE INTO \"Loggerforgraph\" AS Target USING ( SELECT DATEADD (HOUR ,  DATEDIFF (HOUR, 0, LocalTimestamp), 0) AS HourlyTime , MAX(Consumption) - MIN(Consumption) AS Consumption FROM  \"ConsumptionDistribution\"   GROUP BY DATEADD(HOUR, DATEDIFF(Date, 0, LocalTimestamp), 0)  ) AS Source  "}
-                        - Name: ArrayIndex
-                          Type: BaseDataVariableType
-                          DataType: UInt32
-                          Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-                          ValueRank: ScalarOrOneDimension
-                          Value: 0
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: FontFamily
                   Type: BaseDataVariableType
                   DataType: Font
@@ -29780,17 +29590,17 @@ Children:
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 1369.0
+                      Value: 1373.0
                     - Name: TopMargin
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 86.0
+                      Value: 50.0
                     - Name: MaxHoldTime
                       Type: BaseDataVariableType
                       DataType: Duration
                       ModellingRule: Optional
-                      Value: "0:00:00:30.0000000"
+                      Value: "0:00:00:3.0000000"
                     - Name: ButtonStatus
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -29810,7 +29620,7 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Duration
                       ModellingRule: Optional
-                      Value: "0:00:00:10.0000000"
+                      Value: "0:00:00:1.0000000"
                     - Name: Visible
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -29895,128 +29705,6 @@ Children:
                               Type: BaseDataVariableType
                               DataType: Boolean
                               Value: false
-                    - Name: MouseClickEventHandler1
-                      Type: EventHandler
-                      Children:
-                      - Name: ListenEventType
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                      - Name: MethodsToCall
-                        Type: BaseObjectType
-                        Children:
-                        - Name: MethodContainer1
-                          Type: BaseObjectType
-                          Children:
-                          - Name: ns=3;ObjectPointer
-                            Type: NodePointer
-                            DataType: NodeId
-                            Value: "/Objects/Commands/VariableCommands"
-                            Children:
-                            - Name: Kind
-                              Type: PropertyType
-                              DataType: NodeId
-                              Value: "/Types/ObjectTypes/BaseObjectType"
-                          - Name: ns=3;Method
-                            Type: BaseDataVariableType
-                            DataType: String
-                            Value: "Set"
-                          - Name: InputArguments
-                            Type: BaseObjectType
-                            Children:
-                            - Name: VariableToModify
-                              Type: BaseDataVariableType
-                              DataType: VariablePointer
-                              Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                              Value: {"IdType":0,"Id":0,"Namespace":-1}
-                              Children:
-                              - Name: DynamicLink
-                                Type: DynamicLink
-                                DataType: NodePath
-                                Value: "../../../../../../../../DataGrid1/Query@NodeId"
-                            - Name: Value
-                              Type: BaseDataVariableType
-                              DataType: String
-                              Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-                              Value: ""
-                              Children:
-                              - Name: StringFormatter1
-                                Type: StringFormatter
-                                Children:
-                                - Name: Format
-                                  Type: BaseDataVariableType
-                                  DataType: LocalizedText
-                                  ReferenceType: HasParameter
-                                  ModellingRule: Optional
-                                  Value: {"LocaleId":"en-US","Text":"SELECT *  FROM \"ConsumptionDistribution\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal}"}
-                                - Name: ns=3;Source0
-                                  Type: BaseDataVariableType
-                                  DataType: BaseDataType
-                                  ReferenceType: HasSource
-                                  Children:
-                                  - Name: DynamicLink
-                                    Type: DynamicLink
-                                    DataType: NodePath
-                                    Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Datefrom"
-                                - Name: ns=3;Source1
-                                  Type: BaseDataVariableType
-                                  DataType: BaseDataType
-                                  ReferenceType: HasSource
-                                  Children:
-                                  - Name: DynamicLink
-                                    Type: DynamicLink
-                                    DataType: NodePath
-                                    Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Dateto"
-                                - Name: ns=3;Source2
-                                  Type: BaseDataVariableType
-                                  DataType: BaseDataType
-                                  ReferenceType: HasSource
-                                  Children:
-                                  - Name: DynamicLink
-                                    Type: DynamicLink
-                                    DataType: NodePath
-                                    Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/JaceSelected"
-                            - Name: ArrayIndex
-                              Type: BaseDataVariableType
-                              DataType: UInt32
-                              Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-                              ValueRank: ScalarOrOneDimension
-                              Value: 0
-                      - Name: EventArguments
-                        Type: MouseClickEvent
-                        Children:
-                        - Name: EventId
-                          Type: PropertyType
-                          DataType: ByteString
-                          Value: ""
-                        - Name: EventType
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        - Name: SourceNode
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        - Name: SourceName
-                          Type: PropertyType
-                          DataType: String
-                          Value: ""
-                        - Name: Time
-                          Type: PropertyType
-                          DataType: UtcTime
-                          Value: "1601-01-01T00:00:00.0000000"
-                        - Name: ReceiveTime
-                          Type: PropertyType
-                          DataType: UtcTime
-                          Value: "1601-01-01T00:00:00.0000000"
-                        - Name: Message
-                          Type: PropertyType
-                          DataType: LocalizedText
-                          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                        - Name: Severity
-                          Type: PropertyType
-                          DataType: UInt16
-                          Value: 0
                     - Name: FontFamily
                       Type: BaseDataVariableType
                       DataType: Font
@@ -30055,17 +29743,17 @@ Children:
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 1367.0
+                      Value: 1373.0
                     - Name: TopMargin
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 86.0
+                      Value: 90.0
                     - Name: MaxHoldTime
                       Type: BaseDataVariableType
                       DataType: Duration
                       ModellingRule: Optional
-                      Value: "0:00:00:30.0000000"
+                      Value: "0:00:00:2.0000000"
                     - Name: ButtonStatus
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -30085,7 +29773,7 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Duration
                       ModellingRule: Optional
-                      Value: "0:00:00:10.0000000"
+                      Value: "0:00:00:0.1000000"
                     - Name: Visible
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -31009,7 +30697,7 @@ Children:
                         - Name: DynamicLink
                           Type: DynamicLink
                           DataType: NodePath
-                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/HistoDashboardInstance/Maxconsumption"
+                          Value: "/Objects/Tata_EMS_Solution_Updated/Model/HistoDashboardInstance/Consumption"
                   - Name: LeftMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -31553,7 +31241,12 @@ Children:
                   - Name: Text
                     Type: BaseDataVariableType
                     DataType: LocalizedText
-                    Value: {"LocaleId":"en-US","Text":"60 Hz"}
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/HistoDashboardInstance/Avgfrequency"
                   - Name: LeftMargin
                     Type: BaseVariableType
                     DataType: Size

@@ -11871,6 +11871,9 @@ Children:
           DataType: SortOrderEnum
           ModellingRule: Optional
           Value: 1
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
       - Name: DataGrid2
         Type: DataGrid
         Children:
@@ -12831,6 +12834,9 @@ Children:
           DataType: SortOrderEnum
           ModellingRule: Optional
           Value: 1
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
       - Name: DataGrid1
         Type: DataGrid
         Children:
@@ -13756,6 +13762,9 @@ Children:
           DataType: Duration
           ModellingRule: Optional
           Value: "0:00:00:1.1000000"
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
       - Name: Label11
         Type: Label
         Children:
