@@ -70,7 +70,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         // minconsumptionVariable = owner.MinconsumptionVariable;
         minconsumptionVariable = owner.MinconsumptionVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
     }
 
@@ -223,12 +223,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
-        if (button == true && count <= 18)
+        if (button == true)
         {
 
-            
+            if (count <= 18)
+
+            {
                 DateTime currentTime = DateTime.Now;
-                string currentDate = currentTime.ToString("yyyy-MMM-dd");
+                string currentDate = currentTime.ToString("yyyy-MM-dd");
                 int currentHour = currentTime.Hour;
 
                 // Calculate start and end times for the current day
@@ -335,7 +337,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 if (rowCount3 > 0 && columnCount3 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                    maxconsumption = column1;
+                    consumption = column1;
 
                 }
 
@@ -542,14 +544,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
+            }
+            else
+            {
+                count = 0;
+            }
+
+
         }
-       else
-       {
-         count = 0;
-       }
-
-
-        
 
         //date = timeRange;
         dateVariable.Value = date;
