@@ -89,7 +89,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         */
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 10000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
         periodicTask.Start();
     }
 

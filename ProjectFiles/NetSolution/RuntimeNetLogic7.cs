@@ -71,7 +71,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         minconsumptionVariable = owner.MinconsumptionVariable;
         monthVariable = owner.MonthVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
         periodicTask.Start();
     }
 
