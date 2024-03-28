@@ -20,17 +20,11 @@ Children:
 - Class: Reference
   Target: g=59cdc7f0a3f061cfbf0d78df9da8d7a2
 - Class: Reference
-  Target: g=af89b706cc8437bf842003e0ce616902
-- Class: Reference
   Target: g=40defa757a700eca157fce2ef6f2a590
-- Class: Reference
-  Target: g=59cdc7f0a3f061cfbf0d78df9da8d7a2
 - Class: Reference
   Target: g=c334ccd96ac1f6c909706486395f75f5
 - Class: Reference
   Target: g=dd5b8c8334cd3d07ae4ca2f8a0ec1bba
-- Class: Reference
-  Target: g=40defa757a700eca157fce2ef6f2a590
 - Class: Reference
   Target: g=6976f1dd86694ef4601997c5cf5d467d
 - Name: TextBox2
