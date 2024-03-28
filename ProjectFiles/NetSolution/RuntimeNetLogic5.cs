@@ -89,7 +89,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         */
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 10000, LogicObject);
         periodicTask.Start();
     }
 
@@ -240,7 +240,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         if (button == true)
         {
 
-            if (count <= 1)
+            if (count <= 18)
 
             {
 
@@ -427,7 +427,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
                 var rowCount14 = resultSet14 != null ? resultSet14.GetLength(0) : 0;
                 var columnCount14 = header14 != null ? header14.Length : 0;
-                if (rowCount4 > 0 && columnCount14 > 0)
+                if (rowCount14 > 0 && columnCount14 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet14[0, 0]);
                     avgcurrent = column1;
