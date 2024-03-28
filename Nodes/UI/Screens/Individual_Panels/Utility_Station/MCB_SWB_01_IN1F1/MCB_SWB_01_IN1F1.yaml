@@ -102,6 +102,16 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_SWB_01_IN1F1/Active_Power_Total"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 60.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
       - Name: Rectangle4
         Type: Rectangle
         Children:

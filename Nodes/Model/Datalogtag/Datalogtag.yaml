@@ -9257,7 +9257,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../ObjectInstance/Counter"
+        Value: "../../../../ObjectInstance/Counter@Value"
     - Name: Pairs
       Type: BaseObjectType
       Children:

@@ -29,7 +29,7 @@ using System.Diagnostics.Metrics;
 #endregion
 public class RuntimeNetLogic5 : BaseNetLogic
 {
-    
+
 
     public override void Start()
     {
@@ -41,7 +41,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         meter1Variable = owner.Meter1Variable;
         jace1Variable = owner.Jace1Variable;
         countVariable = owner.CountVariable;
-       
+
         ////////////Tags////////////////////
         meterVariable = owner.MeterVariable;
         consumptionVariable = owner.ConsumptionVariable;
@@ -66,7 +66,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         voltagernVariable = owner.VoltageRNVariable;
         voltageynVariable = owner.VoltageYNVariable;
         voltagebnVariable = owner.VoltageBNVariable;
-        /*
+
         maxconsumptionVariable = owner.MaxconsumptionVariable;
         // minconsumptionVariable = owner.MinconsumptionVariable;
         /////////////////Power///////////////////////////
@@ -86,10 +86,10 @@ public class RuntimeNetLogic5 : BaseNetLogic
         maxreactiveenergyVariable = owner.MaxReactiveEnergyVariable;
         minreactiveenergyVariable = owner.MinReactiveEnergyVariable;
 
-        */
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 10000, LogicObject);
+
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
         periodicTask.Start();
     }
 
@@ -128,7 +128,24 @@ public class RuntimeNetLogic5 : BaseNetLogic
         float voltagern = voltagernVariable.Value;
         float voltageyn = voltageynVariable.Value;
         float voltagebn = voltagebnVariable.Value;
-       
+        float maxactivepower = maxconsumptionVariable.Value;
+        float minactivepower = minactivepowerVariable.Value;
+        float maxapparentpower = maxapparentpowerVariable.Value;
+        float minapparentpower = minapparentpowerVariable.Value;
+        float maxreactivepower = maxreactivepowerVariable.Value;
+        float minreactivepower = minreactivepowerVariable.Value;
+        float maxactiveenergy = maxactiveenergyVariable.Value;
+        float minactiveenergy = minactiveenergyVariable.Value;
+        float maxapparentenergy = maxapparentenergyVariable.Value;
+        float minapparentenergy = minapparentenergyVariable.Value;
+        float maxreactiveenergy = maxreactiveenergyVariable.Value;
+        float minreactiveenergy = minreactivepowerVariable.Value;
+
+
+
+
+
+
 
 
         bool button = buttonVariable.Value;
@@ -157,7 +174,14 @@ public class RuntimeNetLogic5 : BaseNetLogic
         var myStore22 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore23 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore24 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
-        
+        var myStore25 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore26 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore27 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore28 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore29 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore30 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+
+
 
 
 
@@ -225,8 +249,19 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
         object[,] resultSet24;
         string[] header24;
+        object[,] resultSet25;
+        string[] header25;
+        object[,] resultSet26;
+        string[] header26;
+        object[,] resultSet27;
+        string[] header27;
+        object[,] resultSet28;
+        string[] header28;
+        object[,] resultSet29;
+        string[] header29;
+        object[,] resultSet30;
+        string[] header30;
 
-       
 
 
 
@@ -237,29 +272,29 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
 
 
-        if (button == true)
+
+
+        if (button == true && count <= 18 )
         {
 
-            if (count <= 18)
-
-            {
-
+           
 
                 string currentHour = DateTime.Now.ToString("HH");
-                string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                string currentDate = DateTime.Now.ToString("yyyy-MMM-dd");
                 String jacee = jace1.ToString();
                 string meterr = meter1.ToString();
 
                 string query1 = $"DELETE FROM DailyConsumption WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Meter = '" + meterr + "'";
+
                 string query24 = $" SELECT    Jace FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
                 string query2 = $" SELECT     Meter FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query3 = $" SELECT     MAX(Active_Energy_Total), MIN(Active_Energy_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query4 = $" SELECT     MAX(Active_Power_Total), MIN(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query5 = $" SELECT     MAX(Apparent_Power_Total_Power_Total), MIN(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query6 = $" SELECT     MAX(Reactive_Power_Total_Power_Total), MIN(Reactive_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query7 = $" SELECT     MAX(Active_Energy_Total), MIN(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query8 = $" SELECT     MAX(Apparent_Energy_Total), MIN(Apparent_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query9 = $" SELECT     MAX(Reactive_Energy_Total), MIN(Reactive_Energy_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query3 = $" SELECT     MAX(Active_Energy_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query4 = $" SELECT     MAX(Active_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query5 = $" SELECT     MAX(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query6 = $" SELECT     MAX(Reactive_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query7 = $" SELECT     MAX(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query8 = $" SELECT     MAX(Apparent_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query9 = $" SELECT     MAX(Reactive_Energy_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
                 string query10 = $" SELECT    AVG(Avg_Pf) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
                 string query11 = $" SELECT    AVG(Phase_R_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
                 string query12 = $" SELECT    AVG(Phase_Y_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
@@ -274,8 +309,13 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 string query21 = $" SELECT    AVG(Voltage_RN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "'AND Meter = '" + meterr + "'";
                 string query22 = $" SELECT    AVG(Voltage_YN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
                 string query23 = $" SELECT    AVG(Voltage_BN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-               
 
+                string query25 = $" SELECT     MIN(Active_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query26 = $" SELECT     MIN(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query27 = $" SELECT     MIN(Reactive_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query28 = $" SELECT     MIN(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query29 = $" SELECT     MIN(Apparent_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query30 = $" SELECT     MIN(Reactive_Energy_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
 
 
                 myStore1.Query(query1, out header1, out resultSet1);
@@ -302,7 +342,14 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 myStore22.Query(query22, out header22, out resultSet22);
                 myStore23.Query(query23, out header23, out resultSet23);
                 myStore24.Query(query24, out header24, out resultSet24);
-              
+                myStore25.Query(query25, out header25, out resultSet25);
+                myStore26.Query(query26, out header26, out resultSet26);
+                myStore27.Query(query27, out header27, out resultSet27);
+                myStore28.Query(query28, out header28, out resultSet28);
+                myStore24.Query(query29, out header29, out resultSet29);
+                myStore24.Query(query30, out header30, out resultSet30);
+
+
 
 
 
@@ -330,8 +377,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount3 = header3 != null ? header3.Length : 0;
                 if (rowCount3 > 0 && columnCount3 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet3[0, 0]) - Convert.ToInt32(resultSet3[0, 1]);
-                    //var column1 = Convert.ToInt32(resultSet3[0, 1]);
+                    var column1 = Convert.ToInt32(resultSet3[0, 0]);
                     consumption = column1;
                 }
 
@@ -339,8 +385,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount4 = header4 != null ? header4.Length : 0;
                 if (rowCount4 > 0 && columnCount4 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet4[0, 0]) - Convert.ToInt32(resultSet4[0, 1]);
-                    activepowertotal = column1;
+                    var column1 = Convert.ToInt32(resultSet4[0, 0]);
+                    maxactivepower = column1;
 
                 }
 
@@ -348,8 +394,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount5 = header5 != null ? header5.Length : 0;
                 if (rowCount5 > 0 && columnCount5 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet5[0, 0]) - Convert.ToInt32(resultSet5[0, 1]);
-                    apparentpowertotal = column1;
+                    var column1 = Convert.ToInt32(resultSet5[0, 0]);
+                    maxapparentpower = column1;
 
                 }
 
@@ -357,8 +403,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount6 = header6 != null ? header6.Length : 0;
                 if (rowCount6 > 0 && columnCount6 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet6[0, 0]) - Convert.ToInt32(resultSet6[0, 1]);
-                    reactivepowertotal = column1;
+                    var column1 = Convert.ToInt32(resultSet6[0, 0]);
+                    maxreactivepower = column1;
 
                 }
 
@@ -366,8 +412,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount7 = header7 != null ? header7.Length : 0;
                 if (rowCount7 > 0 && columnCount7 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet7[0, 0]) - Convert.ToInt32(resultSet7[0, 1]);
-                    activeenergytotal = column1;
+                    var column1 = Convert.ToInt32(resultSet7[0, 0]);
+                    maxactiveenergy = column1;
 
                 }
 
@@ -375,8 +421,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount8 = header8 != null ? header8.Length : 0;
                 if (rowCount8 > 0 && columnCount8 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet8[0, 0]) - Convert.ToInt32(resultSet8[0, 1]);
-                    apparentenergytotal = column1;
+                    var column1 = Convert.ToInt32(resultSet8[0, 0]);
+                    maxapparentenergy = column1;
 
                 }
 
@@ -384,8 +430,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
                 var columnCount9 = header9 != null ? header9.Length : 0;
                 if (rowCount9 > 0 && columnCount9 > 0)
                 {
-                    var column1 = Convert.ToInt32(resultSet9[0, 0]) - Convert.ToInt32(resultSet9[0, 1]);
-                    reactiveenergytotal = column1;
+                    var column1 = Convert.ToInt32(resultSet9[0, 0]);
+                    maxreactiveenergy = column1;
 
                 }
 
@@ -514,53 +560,127 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
                 }
 
-                  var rowCount24 = resultSet24 != null ? resultSet24.GetLength(0) : 0;
-                   var columnCount24 = header24 != null ? header24.Length : 0;
-                   if (rowCount24 > 0 && columnCount24 > 0)
-                   {
-                       var column1 = Convert.ToString(resultSet24[0, 0]);
-                       jace = column1;
+                var rowCount24 = resultSet24 != null ? resultSet24.GetLength(0) : 0;
+                var columnCount24 = header24 != null ? header24.Length : 0;
+                if (rowCount24 > 0 && columnCount24 > 0)
+                {
+                    var column1 = Convert.ToString(resultSet24[0, 0]);
+                    jace = column1;
 
-                   }
-               
+                }
+
+                var rowCount25 = resultSet25 != null ? resultSet25.GetLength(0) : 0;
+                var columnCount25 = header25 != null ? header25.Length : 0;
+                if (rowCount25 > 0 && columnCount25 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet25[0, 0]);
+                    minactivepower = column1;
+
+                }
+
+                var rowCount26 = resultSet25 != null ? resultSet26.GetLength(0) : 0;
+                var columnCount26 = header26 != null ? header26.Length : 0;
+                if (rowCount26 > 0 && columnCount26 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet26[0, 0]);
+                    minapparentpower = column1;
+
+                }
+
+                var rowCount27 = resultSet27 != null ? resultSet27.GetLength(0) : 0;
+                var columnCount27 = header27 != null ? header27.Length : 0;
+                if (rowCount27 > 0 && columnCount27 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet27[0, 0]);
+                    minreactivepower = column1;
+
+                }
+
+                var rowCount28 = resultSet28 != null ? resultSet28.GetLength(0) : 0;
+                var columnCount28 = header28 != null ? header28.Length : 0;
+                if (rowCount28 > 0 && columnCount28 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet28[0, 0]);
+                    minactiveenergy = column1;
+
+                }
+
+                var rowCount29 = resultSet29 != null ? resultSet29.GetLength(0) : 0;
+                var columnCount29 = header29 != null ? header29.Length : 0;
+                if (rowCount29 > 0 && columnCount29 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet29[0, 0]);
+                   minapparentenergy = column1;
+
+                }
+
+                var rowCount30 = resultSet30 != null ? resultSet30.GetLength(0) : 0;
+                var columnCount30 = header30 != null ? header30.Length : 0;
+                if (rowCount30 > 0 && columnCount30 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet30[0, 0]);
+                    minreactiveenergy = column1;
+
+                }
+
+
+
+                float consumption1 = (maxactiveenergy - minactiveenergy);
+                float activepower1 = (maxactivepower - minactivepower);
+                float apparentpower1 = (maxapparentpower - minapparentpower);
+                float reactivepower1 = (maxreactivepower - minreactivepower);
+                float activeenergy1 = (maxactiveenergy - minactiveenergy);
+                float apparentenergy1 = (maxapparentenergy - minreactiveenergy);
+                float reactiveenergy1 = (maxactivepower - minreactivepower);
+
+                consumption = consumption1;
+                activepowertotal = activepower1;
+                apparentpowertotal = apparentpower1;
+                reactivepowertotal = reactivepower1;
+                activeenergytotal = activeenergy1;
+                apparentenergytotal = apparentenergy1;
+                reactiveenergytotal = reactiveenergy1;
+
 
                 count = count + 1;
 
-            }
-            else 
-            { 
-                     count = 0;
-            }
-
-           
 
         }
+        else
+        {
+          count = 0;
+        }
+
+
+
+
         
 
-         meterVariable.Value = meter;
-         countVariable.Value = count;
-         jaceVariable.Value = jace;
-         consumptionVariable.Value = consumption;
-         activepowertotalVariable.Value = activepowertotal;
-         apparentpowertotalVariable.Value = apparentpowertotal;
-         reactivepowertotalVariable.Value = reactivepowertotal;
-         activeenergytotalVariable.Value = activeenergytotal;
-         apparentenergytotalVariable.Value = apparentenergytotal;
-         reactiveenergytotalVariable.Value = reactiveenergytotal;
-         avgpfVariable.Value = avgpf;
-         phasercurrentVariable.Value = phasercurrent;
-         phaseycurrentVariable.Value = phaseycurrent;
-         phasebcurrentVariable.Value = phasebcurrent;
-         avgcurrentVariable.Value = avgcurrent;
-         avgvoltagellVariable.Value = avgvoltagell;
-         avgvoltagelnVariable.Value = avgvoltageln;
-         frequencyVariable.Value = frequency;
-         voltageryVariable.Value = voltagery;
-         voltageybVariable.Value = voltageyb;
-         voltagebrVariable.Value = voltagebr;
-         voltagernVariable.Value = voltagern;
-         voltageynVariable.Value = voltageyn;
-         voltagebnVariable.Value = voltagebn;
+
+        meterVariable.Value = meter;
+        countVariable.Value = count;
+        jaceVariable.Value = jace;
+        consumptionVariable.Value = consumption;
+        activepowertotalVariable.Value = activepowertotal;
+        apparentpowertotalVariable.Value = apparentpowertotal;
+        reactivepowertotalVariable.Value = reactivepowertotal;
+        activeenergytotalVariable.Value = activeenergytotal;
+        apparentenergytotalVariable.Value = apparentenergytotal;
+        reactiveenergytotalVariable.Value = reactiveenergytotal;
+        avgpfVariable.Value = avgpf;
+        phasercurrentVariable.Value = phasercurrent;
+        phaseycurrentVariable.Value = phaseycurrent;
+        phasebcurrentVariable.Value = phasebcurrent;
+        avgcurrentVariable.Value = avgcurrent;
+        avgvoltagellVariable.Value = avgvoltagell;
+        avgvoltagelnVariable.Value = avgvoltageln;
+        frequencyVariable.Value = frequency;
+        voltageryVariable.Value = voltagery;
+        voltageybVariable.Value = voltageyb;
+        voltagebrVariable.Value = voltagebr;
+        voltagernVariable.Value = voltagern;
+        voltageynVariable.Value = voltageyn;
+        voltagebnVariable.Value = voltagebn;
 
 
 
@@ -611,7 +731,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
     private IUAVariable minreactiveenergyVariable;
     private PeriodicTask periodicTask;
 
-}  
-    
+}
+
 
 
