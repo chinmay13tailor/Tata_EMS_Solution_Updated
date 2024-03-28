@@ -8324,6 +8324,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: metercounter_DailyDataAgg
   Type: BaseDataVariableType
   DataType: String
@@ -13121,6 +13125,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: DailyDataAgg1
   Type: DailyDataAgg
   Children:
@@ -13246,6 +13254,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: Chandan
   Type: BaseDataVariableType
   DataType: Float

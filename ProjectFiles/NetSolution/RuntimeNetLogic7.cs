@@ -69,8 +69,9 @@ public class RuntimeNetLogic7 : BaseNetLogic
         maxconsumptionVariable = owner.MaxconsumptionVariable;
         // minconsumptionVariable = owner.MinconsumptionVariable;
         minconsumptionVariable = owner.MinconsumptionVariable;
+        monthVariable = owner.MonthVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
     }
 
@@ -113,6 +114,8 @@ public class RuntimeNetLogic7 : BaseNetLogic
         int voltagebn = voltagebnVariable.Value;
         int minconsumption = minconsumptionVariable.Value;
         int maxconsumption = maxconsumptionVariable.Value;
+        string month = monthVariable.Value;
+
 
 
 
@@ -223,12 +226,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
-        if (button == true && count <= 18)
+        if (button == true)
         {
 
-            
+            if (count <= 18)
+
+            {
                 DateTime currentTime = DateTime.Now;
-                string currentDate = currentTime.ToString("yyyy-MMM-dd");
+                string currentDate = currentTime.ToString("yyyy-MM-dd");
                 int currentHour = currentTime.Hour;
 
                 // Calculate start and end times for the current day
@@ -249,34 +254,36 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 String jacee = jace1.ToString();
                 string meterr = meter1.ToString();
 
+                string st = startTime.ToString("yyyy-MMM-dd");
+                string et = endTime.ToString("yyyy-MMM-dd");
+                month = startTime.ToString("MM");
 
 
-
-                string query1 = $"DELETE FROM DailyConsumptionAgg WHERE LocalTimestamp {timeRange} AND Meter = '" + meterr + "'";
-                string query2 = $" SELECT Meter FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query3 = $" SELECT MAX(Consumption)  FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query4 = $" SELECT AVG(Active_Power_Total) FROM  DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query5 = $" SELECT AVG(Apparent_Power_Total) FROM DailyConsumption WHERE LocalTimestamp  {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query6 = $" SELECT AVG(Reactive_Power_Total)  FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query7 = $" SELECT AVG(Active_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query8 = $" SELECT AVG(Apparent_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query9 = $" SELECT AVG(Reactive_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query10 = $" SELECT AVG(Avg_PF) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query11 = $" SELECT AVG(Phase_R_Current) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query12 = $" SELECT AVG(Phase_Y_Current) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query13 = $" SELECT AVG(Phase_B_Current) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query14 = $" SELECT AVG(Avg_Current)FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query15 = $" SELECT AVG(Voltage_LL) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query16 = $" SELECT AVG(Voltage_LN) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query17 = $" SELECT AVG(Frequency) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query18 = $" SELECT AVG(Voltage_RY) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query19 = $" SELECT AVG(Voltage_YB)FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query20 = $" SELECT AVG(Voltage_BR) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query21 = $" SELECT AVG(Voltage_RN) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "'AND Meter = '" + meterr + "'";
-                string query22 = $" SELECT AVG(Voltage_YN) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query23 = $" SELECT AVG(Voltage_BN) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query24 = $" SELECT MIN(Consumption) FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
-                string query25 = $" SELECT Jace FROM DailyConsumption WHERE LocalTimestamp {timeRange} AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query1 = $"DELETE FROM DailyConsumptionAgg WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59' AND Meter = '" + meterr + "'";
+                string query2 = $" SELECT Meter FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query3 = $" SELECT MAX(Consumption)  FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query4 = $" SELECT AVG(Active_Power_Total) FROM  DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query5 = $" SELECT AVG(Apparent_Power_Total) FROM DailyConsumption WHERE LocalTimestamp   BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query6 = $" SELECT AVG(Reactive_Power_Total)  FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query7 = $" SELECT AVG(Active_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query8 = $" SELECT AVG(Apparent_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query9 = $" SELECT AVG(Reactive_Energy_Total) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query10 = $" SELECT AVG(Avg_PF) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query11 = $" SELECT AVG(Phase_R_Current) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query12 = $" SELECT AVG(Phase_Y_Current) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query13 = $" SELECT AVG(Phase_B_Current) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query14 = $" SELECT AVG(Avg_Current)FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query15 = $" SELECT AVG(Voltage_LL) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query16 = $" SELECT AVG(Voltage_LN) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query17 = $" SELECT AVG(Frequency) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query18 = $" SELECT AVG(Voltage_RY) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query19 = $" SELECT AVG(Voltage_YB)FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query20 = $" SELECT AVG(Voltage_BR) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query21 = $" SELECT AVG(Voltage_RN) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "'AND Meter = '" + meterr + "'";
+                string query22 = $" SELECT AVG(Voltage_YN) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query23 = $" SELECT AVG(Voltage_BN) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query24 = $" SELECT MIN(Consumption) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query25 = $" SELECT Jace FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
 
 
 
@@ -334,7 +341,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 if (rowCount3 > 0 && columnCount3 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                    maxconsumption = column1;
+                    consumption = column1;
 
                 }
 
@@ -541,14 +548,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
+            }
+            else
+            {
+                count = 0;
+            }
+
+
         }
-       else
-       {
-         count = 0;
-       }
-
-
-        
 
         //date = timeRange;
         dateVariable.Value = date;
@@ -575,6 +582,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         voltagernVariable.Value = voltagern;
         voltageynVariable.Value = voltageyn;
         voltagebnVariable.Value = voltagebn;
+        monthVariable.Value = month;
 
 
 
@@ -611,6 +619,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
     private IUAVariable voltagebnVariable;
     private IUAVariable maxconsumptionVariable;
     private IUAVariable minconsumptionVariable;
+    private IUAVariable monthVariable;
     private PeriodicTask periodicTask;
 
 }

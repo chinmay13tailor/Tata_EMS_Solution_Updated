@@ -32,3 +32,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "EB_IN1"
+- Name: INCOMER_1
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "INCOMER_1"
+- Name: INCOMER_2
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "INCOMER_2"

@@ -17,104 +17,6 @@ Children:
   Name: Selection_2_JaceSelection
   Id: g=dea2b29ad313b1f8ce5da412560da16b
   Supertype: Enumeration
-  EnumDefinition: 
-   {
-    "Name": "Selection_2_JaceSelection",
-    "DataType": {
-     "IdType": 2,
-     "Id": "dea2b29ad313b1f8ce5da412560da16b",
-     "Namespace": 34
-    },
-    "Fields": [{
-      "Name": "Value0",
-      "Value": 0,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "33KV"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "33KV"
-      }
-     },{
-      "Name": "Value1",
-      "Value": 1,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "UTILITY"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "UTILITY"
-      }
-     },{
-      "Name": "Value2",
-      "Value": 2,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "PUMP ROOM"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "PUMP ROOM"
-      }
-     },{
-      "Name": "Value3",
-      "Value": 3,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "PAINT SHOP"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "PAINT SHOP"
-      }
-     },{
-      "Name": "Value4",
-      "Value": 4,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "BODY SHOP"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "BODY SHOP"
-      }
-     },{
-      "Name": "Value5",
-      "Value": 5,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "TCF STATION"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "TCF STATION"
-      }
-     },{
-      "Name": "Value6",
-      "Value": 6,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "STAMPING"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "STAMPING"
-      }
-     },{
-      "Name": "Value7",
-      "Value": 7,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "ADMIN"
-      },
-      "Description": {
-       "LocaleId": "en-US",
-       "Text": "ADMIN"
-      }
-     }]
-   }
   Children:
   - Name: ns=0;EnumValues
     Type: BaseDataVariableType
@@ -142,11 +44,11 @@ Children:
       "Value": 0,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Incomer1"
+       "Text": "Incomer_1"
       },
       "Description": {
        "LocaleId": "en-US",
-       "Text": "Incomer1"
+       "Text": "Incomer_1"
       }
      },{
       "Name": "Value1",
