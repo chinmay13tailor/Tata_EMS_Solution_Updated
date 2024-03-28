@@ -26967,12 +26967,12 @@ Children:
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 933.0
+                      Value: 931.0
                     - Name: TopMargin
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 95.0
+                      Value: 90.0
                     - Name: InputBoxStyle
                       Type: BaseDataVariableType
                       DataType: String
@@ -29131,6 +29131,284 @@ Children:
                               Type: BaseDataVariableType
                               DataType: Boolean
                               Value: false
+                    - Class: Reference
+                      Target: ns=5;i=480
+                      Direction: Forward
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: -1.0
+                  - Name: Meterselection_First_Spp
+                    Type: ComboBox
+                    Children:
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Model
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Selection_1_MeterSelection_SPP"
+                      Children:
+                      - Name: ItemKind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SelectedValue
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Selection1_SPP"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: SelectedItem
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+                    - Name: UISelectedItem
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      AccessLevel: Read
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: UISelectedValue
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      AccessLevel: Read
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 190.0
+                    - Name: Item
+                      Type: Alias
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 1151.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 96.0
+                    - Name: InputBoxStyle
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: Optional
+                      Value: "Default"
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: false
+                      Children:
+                      - Name: KeyValueConverter1
+                        Type: ValueMapConverter
+                        Children:
+                        - Name: Source
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Comparision_Selection"
+                        - Name: Pairs
+                          Type: BaseObjectType
+                          Children:
+                          - Name: Pair
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 0
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair1
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 1
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: true
+                    - Name: DisplayValuePath
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Item}@DisplayName"
+                    - Name: SelectedValuePath
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Item}@Value"
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: KeyValueConverter1
+                        Type: ValueMapConverter
+                        Children:
+                        - Name: Source
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Selection_1_Jace"
+                        - Name: Pairs
+                          Type: BaseObjectType
+                          Children:
+                          - Name: Pair
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 0
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair1
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 1
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair2
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 2
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair3
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 3
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair4
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 4
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair5
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 5
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair6
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 6
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair7
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 7
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair8
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 8
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: false
+                          - Name: Pair9
+                            Type: ValueMapPair
+                            Children:
+                            - Name: Key
+                              Type: BaseDataVariableType
+                              DataType: UInt32
+                              Value: 9
+                            - Name: Value
+                              Type: BaseDataVariableType
+                              DataType: Boolean
+                              Value: true
                     - Class: Reference
                       Target: ns=5;i=480
                       Direction: Forward
