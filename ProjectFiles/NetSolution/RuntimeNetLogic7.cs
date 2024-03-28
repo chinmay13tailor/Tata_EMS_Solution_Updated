@@ -69,6 +69,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         maxconsumptionVariable = owner.MaxconsumptionVariable;
         // minconsumptionVariable = owner.MinconsumptionVariable;
         minconsumptionVariable = owner.MinconsumptionVariable;
+        monthVariable = owner.MonthVariable;
 
         periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
@@ -113,6 +114,8 @@ public class RuntimeNetLogic7 : BaseNetLogic
         int voltagebn = voltagebnVariable.Value;
         int minconsumption = minconsumptionVariable.Value;
         int maxconsumption = maxconsumptionVariable.Value;
+        string month = monthVariable.Value;
+
 
 
 
@@ -253,6 +256,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
                 string st = startTime.ToString("yyyy-MMM-dd");
                 string et = endTime.ToString("yyyy-MMM-dd");
+                month = startTime.ToString("MM");
 
 
                 string query1 = $"DELETE FROM DailyConsumptionAgg WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59' AND Meter = '" + meterr + "'";
@@ -578,6 +582,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         voltagernVariable.Value = voltagern;
         voltageynVariable.Value = voltageyn;
         voltagebnVariable.Value = voltagebn;
+        monthVariable.Value = month;
 
 
 
@@ -614,6 +619,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
     private IUAVariable voltagebnVariable;
     private IUAVariable maxconsumptionVariable;
     private IUAVariable minconsumptionVariable;
+    private IUAVariable monthVariable;
     private PeriodicTask periodicTask;
 
 }

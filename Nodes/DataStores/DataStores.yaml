@@ -629,6 +629,10 @@ Children:
           Type: StoreColumn
           DataType: String
           Value: "Jan 1, 1601, 12:00:00 AM"
+        - Name: Month
+          Type: StoreColumn
+          DataType: String
+          Value: ""
     - Name: HistoDashboard
       Type: ODBCStoreTable
       Children:
