@@ -19,6 +19,236 @@ Children:
   Name: J03Meter
   Id: g=af89b706cc8437bf842003e0ce616902
   Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "J03Meter",
+    "DataType": {
+     "IdType": 2,
+     "Id": "af89b706cc8437bf842003e0ce616902",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Incomer1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Incomer1"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_2"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN1_OG1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN1_OG1"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN1_OG2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN1_OG2"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN1_OG3"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN1_OG3"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN1_OG4"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN1_OG4"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN1_OG5"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN1_OG5"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN1_OG6"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN1_OG6"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN1_OG7"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN1_OG7"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN2_OG8"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN2_OG8"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN2_OG9"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN2_OG9"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN2_G10"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN2_G10"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN2_OG11"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN2_OG11"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN2_OG12"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN2_OG12"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN2_OG13"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN2_OG13"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN2_OG14"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN2_OG14"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN2_OG15"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "OG15_IN2_SPP_Shop"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN1_OG16"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN1_OG16"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "EB_IN1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "EB_IN1"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "DG_IN2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "DG_IN2"
+      }
+     }]
+   }
   Children:
   - Name: ns=0;EnumValues
     Type: BaseDataVariableType
@@ -26,7 +256,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_1"},"Description":{"LocaleId":"en-US","Text":"Incomer_1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_2"},"Description":{"LocaleId":"en-US","Text":"Incomer_2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"},"Description":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"},"Description":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"},"Description":{"LocaleId":"en-US","Text":"OG15_IN2_SPP_Shop"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"EB_IN1"},"Description":{"LocaleId":"en-US","Text":"EB_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"DG_IN2"},"Description":{"LocaleId":"en-US","Text":"DG_IN2"}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Incomer1"},"Description":{"LocaleId":"en-US","Text":"Incomer1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_2"},"Description":{"LocaleId":"en-US","Text":"Incomer_2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"},"Description":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"},"Description":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"},"Description":{"LocaleId":"en-US","Text":"OG15_IN2_SPP_Shop"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"EB_IN1"},"Description":{"LocaleId":"en-US","Text":"EB_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"DG_IN2"},"Description":{"LocaleId":"en-US","Text":"DG_IN2"}}}]
 - Class: DataType
   Name: J05Meter
   Id: g=59cdc7f0a3f061cfbf0d78df9da8d7a2
@@ -4748,3 +4978,155 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
+- Name: Month
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Second_Report_Links/Month_Selections"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "1"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "2"
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "3"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "4"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "5"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "6"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "7"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "8"
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 8
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "9"
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "10"
+      - Name: Pair10
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 10
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "11"
+      - Name: Pair11
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 11
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "12"

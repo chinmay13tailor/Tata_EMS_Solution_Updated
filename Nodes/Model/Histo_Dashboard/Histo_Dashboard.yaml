@@ -33,6 +33,104 @@ Children:
   Name: Selection_1_JaceSelection
   Id: g=a7fe4caa4606b59d2d1c0b417e4556f2
   Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Selection_1_JaceSelection",
+    "DataType": {
+     "IdType": 2,
+     "Id": "a7fe4caa4606b59d2d1c0b417e4556f2",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "33KV"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "33KV"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PUMP ROOM"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PUMP ROOM"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT SHOP"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT SHOP"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY SHOP"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY SHOP"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF STATION"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF STATION"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ADMIN"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ADMIN"
+      }
+     }]
+   }
   Children:
   - Name: ns=0;EnumValues
     Type: BaseDataVariableType
@@ -40,7 +138,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"},"Description":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY"},"Description":{"LocaleId":"en-US","Text":"UTILITY"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"PUMP ROOM"},"Description":{"LocaleId":"en-US","Text":"PUMP ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PAINT SHOP"},"Description":{"LocaleId":"en-US","Text":"PAINT SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"BODY SHOP"},"Description":{"LocaleId":"en-US","Text":"BODY SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF STATION"},"Description":{"LocaleId":"en-US","Text":"TCF STATION"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING"},"Description":{"LocaleId":"en-US","Text":"STAMPING"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ADMIN"},"Description":{"LocaleId":"en-US","Text":"ADMIN"}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"33KV"},"Description":{"LocaleId":"en-US","Text":"33KV"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY"},"Description":{"LocaleId":"en-US","Text":"UTILITY"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"PUMP ROOM"},"Description":{"LocaleId":"en-US","Text":"PUMP ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PAINT SHOP"},"Description":{"LocaleId":"en-US","Text":"PAINT SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"BODY SHOP"},"Description":{"LocaleId":"en-US","Text":"BODY SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF STATION"},"Description":{"LocaleId":"en-US","Text":"TCF STATION"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING"},"Description":{"LocaleId":"en-US","Text":"STAMPING"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ADMIN"},"Description":{"LocaleId":"en-US","Text":"ADMIN"}}}]
 - Class: DataType
   Name: Selection_1_MeterSelection_33kv
   Id: g=e257c6fa10688e32ea175ca85639d61f
@@ -58,11 +156,11 @@ Children:
       "Value": 0,
       "DisplayName": {
        "LocaleId": "en-US",
-       "Text": "Incomer_1"
+       "Text": "Incomer1"
       },
       "Description": {
        "LocaleId": "en-US",
-       "Text": "Incomer_1"
+       "Text": "Incomer1"
       }
      },{
       "Name": "Value1",
@@ -282,7 +380,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_1"},"Description":{"LocaleId":"en-US","Text":"Incomer_1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_2"},"Description":{"LocaleId":"en-US","Text":"Incomer_2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"},"Description":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"},"Description":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"EB_IN1"},"Description":{"LocaleId":"en-US","Text":"EB_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"DG_IN1"},"Description":{"LocaleId":"en-US","Text":"DG_IN1"}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Incomer1"},"Description":{"LocaleId":"en-US","Text":"Incomer1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_2"},"Description":{"LocaleId":"en-US","Text":"Incomer_2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"},"Description":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"},"Description":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"EB_IN1"},"Description":{"LocaleId":"en-US","Text":"EB_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"DG_IN1"},"Description":{"LocaleId":"en-US","Text":"DG_IN1"}}}]
 - Name: Comparision_Selection
   Type: BaseDataVariableType
   DataType: Int32
@@ -1136,7 +1234,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: String
-                  Value: "Incomer_1"
+                  Value: "Incomer1"
               - Name: Pair1
                 Type: ValueMapPair
                 Children:
@@ -3798,7 +3896,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "33KV SEGR ROOM"
+          Value: "33KV"
       - Name: Pair1
         Type: ValueMapPair
         Children:

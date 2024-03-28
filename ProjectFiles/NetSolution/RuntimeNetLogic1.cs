@@ -72,12 +72,12 @@ public class RuntimeNetLogic1 : BaseNetLogic
         var project = FTOptix.HMIProject.Project.Current;
         ///////////////////For Jace Selection////////////////////////////////////////////////////////////////////////////
         var myStore1 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//maxconsumption// Jace Selection
-        var myStore2 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//minconsumption// Jace Selection
+        //var myStore2 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//minconsumption// Jace Selection
         var myStore3 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//avgpf// Jace Selection
         var myStore4 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//avgfrequency// Jace Selection
         /////////////////For Meter Selection/////////////////////////////////////////////////////////////////////////////
         var myStore5 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//maxconsumption//meter selection
-        var myStore6 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//minconsumption//meter selection
+        //var myStore6 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//minconsumption//meter selection
         var myStore7 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//avgpf//meter selection
         var myStore8 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");//avgfrequency//meter selection
 
@@ -85,8 +85,8 @@ public class RuntimeNetLogic1 : BaseNetLogic
         ///////////////////For Jace Selection////////////////////////////////////////////////////////////////////////////
         object[,] resultSet1;
         string[] header1;
-        object[,] resultSet2;
-        string[] header2;
+        //object[,] resultSet2;
+        //string[] header2;
         object[,] resultSet3;
         string[] header3;
         object[,] resultSet4;
@@ -94,8 +94,8 @@ public class RuntimeNetLogic1 : BaseNetLogic
         /////////////////For Meter Selection/////////////////////////////////////////////////////////////////////////////
         object[,] resultSet5;
         string[] header5;
-        object[,] resultSet6;
-        string[] header6;
+       // object[,] resultSet6;
+        //string[] header6;
         object[,] resultSet7;
         string[] header7;
         object[,] resultSet8;
@@ -104,18 +104,18 @@ public class RuntimeNetLogic1 : BaseNetLogic
         //////////////////////////////////////////////////////////////////////////////////For Jace Selection////////////////////////////////////////////////////////////////////////////
         if (button == true)
         {
-            string new123 = datefrom.ToString("yyyy-MM-dd");
-            string new321 = dateto.ToString("yyyy-MM-dd");
+            string new123 = datefrom.ToString("yyyy-MMM-dd");
+            string new321 = dateto.ToString("yyyy-MMM-dd");
             string jace1 = jace.ToString();
 
-            string query1 = $"SELECT  MAX(Consumption) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '"+ jace1 + "' ";
-            string query2 = $"SELECT  MIN(Consumption) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
-            string query3 = $"SELECT  AVG(Pf) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
-            string query4 = $"SELECT  AVG(Frequency) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
+            string query1 = $"SELECT  SUM(Consumption) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '"+ jace1 + "' ";
+            //string query2 = $"SELECT  MIN(Consumption) FROM DailyConsumption WHERE  LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
+            string query3 = $"SELECT  AVG(Avg_PF) FROM DailyConsumption  WHERE  LocalTimestamp BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
+            string query4 = $"SELECT  AVG(Frequency) FROM DailyConsumption  WHERE  LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '" + jace1 + "' ";
 
 
             myStore1.Query(query1, out header1, out resultSet1);
-            myStore2.Query(query2, out header2, out resultSet2);
+           // myStore2.Query(query2, out header2, out resultSet2);
             myStore3.Query(query3, out header3, out resultSet3);
             myStore4.Query(query4, out header4, out resultSet4);
 
@@ -126,12 +126,12 @@ public class RuntimeNetLogic1 : BaseNetLogic
             if (rowCount1 > 0 && columnCount1 > 0)
             {
                 var column1 = Convert.ToInt32(resultSet1[0, 0]);
-                var Maxconsumption = column1;
-                maxconsumption = Maxconsumption;
+                var Consumption = column1;
+                consumption = Consumption;
             }
 
 
-
+           /*
             var rowCount2 = resultSet2 != null ? resultSet2.GetLength(0) : 0;
             var columnCount2 = header2 != null ? header2.Length : 0;
             if (rowCount2 > 0 && columnCount2 > 0)
@@ -140,7 +140,7 @@ public class RuntimeNetLogic1 : BaseNetLogic
                 var Minconsumption = column1;
                 minconsumption = Minconsumption;
             }
-
+           */
 
             var rowCount3 = resultSet3 != null ? resultSet3.GetLength(0) : 0;
             var columnCount3 = header3 != null ? header3.Length : 0;
@@ -164,9 +164,9 @@ public class RuntimeNetLogic1 : BaseNetLogic
 
            
 
-            float consumptionP = (maxconsumption - minconsumption);
+           // float consumptionP = (maxconsumption - minconsumption);
 
-            consumption = consumptionP;
+           // consumption = consumptionP;
 
 
             maxconsumptionVariable.Value = maxconsumption;
@@ -189,14 +189,14 @@ public class RuntimeNetLogic1 : BaseNetLogic
             string meter1 = meter.ToString();
             string jace1 = jace.ToString();
 
-            string query5 = $"SELECT  MAX(Consumption) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
-            string query6 = $"SELECT  MIN(Consumption) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
-            string query7 = $"SELECT  AVG(Pf) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
-            string query8 = $"SELECT  AVG(Frequency) FROM ConsumptionDistribution WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
+            string query5 = $"SELECT  SUM(Consumption) FROM DailyConsumption WHERE LocalTimestamp  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
+            //string query6 = $"SELECT  MIN(Consumption) FROM DailyConsumption  WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
+            string query7 = $"SELECT  AVG(Avg_PF) FROM DailyConsumption  WHERE  LocalTimestamp BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
+            string query8 = $"SELECT  AVG(Frequency) FROM DailyConsumption  WHERE  LocalTimestamp  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
 
 
             myStore5.Query(query5, out header5, out resultSet5);
-            myStore6.Query(query6, out header6, out resultSet6);
+            //myStore6.Query(query6, out header6, out resultSet6);
             myStore7.Query(query7, out header7, out resultSet7);
             myStore8.Query(query8, out header8, out resultSet8);
 
@@ -207,12 +207,12 @@ public class RuntimeNetLogic1 : BaseNetLogic
             if (rowCount5 > 0 && columnCount5 > 0)
             {
                 var column1 = Convert.ToInt32(resultSet5[0, 0]);
-                var Maxconsumption = column1;
-                maxconsumption = Maxconsumption;
+                var Consumption = column1;
+                consumption = Consumption;
             }
 
 
-
+            /*
             var rowCount6 = resultSet6 != null ? resultSet6.GetLength(0) : 0;
             var columnCount6 = header6 != null ? header6.Length : 0;
             if (rowCount6 > 0 && columnCount6 > 0)
@@ -221,7 +221,7 @@ public class RuntimeNetLogic1 : BaseNetLogic
                 var Minconsumption = column1;
                 minconsumption = Minconsumption;
             }
-
+            */
 
             var rowCount7 = resultSet7 != null ? resultSet7.GetLength(0) : 0;
             var columnCount7 = header7 != null ? header7.Length : 0;
@@ -243,9 +243,9 @@ public class RuntimeNetLogic1 : BaseNetLogic
             }
 
 
-            float consumptionP = (maxconsumption - minconsumption);
+            //float consumptionP = (maxconsumption - minconsumption);
 
-            consumption = consumptionP;
+            //consumption = consumptionP;
 
 
             maxconsumptionVariable.Value = maxconsumption;

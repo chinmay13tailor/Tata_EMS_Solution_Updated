@@ -68,7 +68,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"33KV SEGR ROOM"}
+          Value: {"LocaleId":"en-US","Text":"33KV"}
       - Name: Pair2
         Type: ValueMapPair
         Children:

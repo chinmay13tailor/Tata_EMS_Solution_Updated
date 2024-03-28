@@ -21,3 +21,14 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "demo_tag"
+- Name: EB_IN1
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "EB_IN1"

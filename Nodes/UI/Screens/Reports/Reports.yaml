@@ -3441,7 +3441,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -3930,7 +3930,7 @@ Children:
                               DataType: LocalizedText
                               ReferenceType: HasParameter
                               ModellingRule: Optional
-                              Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal}"}
+                              Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal}"}
                             - Name: ns=3;Source0
                               Type: BaseDataVariableType
                               DataType: BaseDataType
@@ -3963,7 +3963,7 @@ Children:
                               DataType: LocalizedText
                               ReferenceType: HasParameter
                               ModellingRule: Optional
-                              Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal}"}
+                              Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal}"}
                             - Name: ns=3;Source0
                               Type: BaseDataVariableType
                               DataType: BaseDataType
@@ -4855,7 +4855,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -5325,7 +5325,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -5792,7 +5792,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -6262,7 +6262,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -6732,7 +6732,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -7202,7 +7202,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -7672,7 +7672,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -8142,7 +8142,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumption\" WHERE Date BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT * FROM \"DailyConsumption\" WHERE LocalTimestamp BETWEEN {0:sql_literal} AND {1:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType
@@ -12089,7 +12089,7 @@ Children:
                           DataType: LocalizedText
                           ReferenceType: HasParameter
                           ModellingRule: Optional
-                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"MonthlyConsumptionReport\" WHERE Month = {0:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
+                          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                         - Name: ns=3;Source0
                           Type: BaseDataVariableType
                           DataType: BaseDataType

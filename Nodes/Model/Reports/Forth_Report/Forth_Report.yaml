@@ -5,6 +5,115 @@ Children:
   Name: Jace selection
   Id: g=57306442dcd064165b96977ebf794c80
   Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Jace selection",
+    "DataType": {
+     "IdType": 2,
+     "Id": "57306442dcd064165b96977ebf794c80",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ALL"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ALL"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "33KV"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "33KV"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PUMP ROOM"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PUMP ROOM"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT SHOP"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT SHOP"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY SHOP"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY SHOP"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF STATION"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF STATION"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ADMIN"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ADMIN"
+      }
+     }]
+   }
   Children:
   - Name: ns=0;EnumValues
     Type: BaseDataVariableType
@@ -12,7 +121,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"ALL"},"Description":{"LocaleId":"en-US","Text":"ALL"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"},"Description":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY"},"Description":{"LocaleId":"en-US","Text":"UTILITY"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PUMP ROOM"},"Description":{"LocaleId":"en-US","Text":"PUMP ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"PAINT SHOP"},"Description":{"LocaleId":"en-US","Text":"PAINT SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"BODY SHOP"},"Description":{"LocaleId":"en-US","Text":"BODY SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"TCF STATION"},"Description":{"LocaleId":"en-US","Text":"TCF STATION"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING"},"Description":{"LocaleId":"en-US","Text":"STAMPING"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"ADMIN"},"Description":{"LocaleId":"en-US","Text":"ADMIN"}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"ALL"},"Description":{"LocaleId":"en-US","Text":"ALL"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"33KV"},"Description":{"LocaleId":"en-US","Text":"33KV"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY"},"Description":{"LocaleId":"en-US","Text":"UTILITY"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PUMP ROOM"},"Description":{"LocaleId":"en-US","Text":"PUMP ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"PAINT SHOP"},"Description":{"LocaleId":"en-US","Text":"PAINT SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"BODY SHOP"},"Description":{"LocaleId":"en-US","Text":"BODY SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"TCF STATION"},"Description":{"LocaleId":"en-US","Text":"TCF STATION"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING"},"Description":{"LocaleId":"en-US","Text":"STAMPING"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"ADMIN"},"Description":{"LocaleId":"en-US","Text":"ADMIN"}}}]
 - Name: Selection1
   Type: BaseDataVariableType
   DataType: String
