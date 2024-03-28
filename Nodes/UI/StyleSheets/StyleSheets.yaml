@@ -645,6 +645,11 @@ Children:
         Value: 5.0
     - Name: InputBoxStyle1
       Type: InputBoxStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
@@ -904,6 +909,11 @@ Children:
         Value: "#021844"
     - Name: DataListStyle1
       Type: DataListStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
   - Name: ToolTipStyles
     Type: BaseObjectType
     Children:
@@ -975,7 +985,7 @@ Children:
       - Name: Size
         Type: BaseDataVariableType
         DataType: Size
-        Value: 21.0
+        Value: 25.0
       - Name: HandleRadius
         Type: BaseDataVariableType
         DataType: Size
