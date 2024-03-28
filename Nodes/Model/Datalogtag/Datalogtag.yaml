@@ -9271,7 +9271,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "J1_INCOMER2"
+          Value: "J1_INCOMER1"
       - Name: Pair1
         Type: ValueMapPair
         Children:
