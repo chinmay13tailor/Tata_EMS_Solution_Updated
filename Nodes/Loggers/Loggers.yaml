@@ -609,7 +609,7 @@ Children:
   - Name: SamplingMode
     Type: PropertyType
     DataType: SamplingModeEnum
-    Value: 1
+    Value: 2
   - Name: Store
     Type: NodePointer
     DataType: NodeId
@@ -1484,7 +1484,7 @@ Children:
   - Name: SamplingMode
     Type: PropertyType
     DataType: SamplingModeEnum
-    Value: 1
+    Value: 2
   - Name: Store
     Type: NodePointer
     DataType: NodeId
@@ -2129,7 +2129,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:1.0000000"
+    Value: "0:00:00:6.0000000"
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
@@ -2140,7 +2140,7 @@ Children:
   - Name: SamplingMode
     Type: PropertyType
     DataType: SamplingModeEnum
-    Value: 1
+    Value: 2
   - Name: Store
     Type: NodePointer
     DataType: NodeId
@@ -2687,7 +2687,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/HourlyDataAgg1/ActivePowerTotal"
+        Value: "../../../../Model/DailyDataAggInstance/ActivePowerTotal"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2812,7 +2812,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:1.0000000"
+    Value: "0:00:00:6.0000000"
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration

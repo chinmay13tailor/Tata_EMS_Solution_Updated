@@ -3085,16 +3085,26 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/metercounter"
+      Value: "../../metercounter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Jace1
     Type: BaseDataVariableType
     DataType: String
-    Value: "../Meter"
+    Value: ""
     Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/jacecounter"
+      Value: "../../jacecounter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: MaxActivePower
     Type: BaseDataVariableType
     DataType: Float
@@ -3265,32 +3275,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/metercounter"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        ModellingRule: Optional
-        Value: 2
   - Name: Jace1
     Type: BaseDataVariableType
     DataType: String
-    Value: "../Meter"
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/jacecounter"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        ModellingRule: Optional
-        Value: 2
+    Value: ""
   - Name: MaxActivePower
     Type: BaseDataVariableType
     DataType: Float
@@ -3460,20 +3448,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/metercounter"
   - Name: Jace1
     Type: BaseDataVariableType
     DataType: String
-    Value: "../Meter"
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/jacecounter"
+    Value: ""
   - Name: MaxActivePower
     Type: BaseDataVariableType
     DataType: Float
@@ -8362,7 +8340,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../DailyDataAggInstance/Count@Value"
+        Value: "../../../DailyDataAggInstance/Count"
     - Name: Pairs
       Type: BaseObjectType
       Children:

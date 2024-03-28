@@ -70,7 +70,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
         // minconsumptionVariable = owner.MinconsumptionVariable;
         minconsumptionVariable = owner.MinconsumptionVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
         periodicTask.Start();
     }
 
@@ -223,14 +223,12 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
-        if (button == true)
+        if (button == true && count <= 18)
         {
 
-            if (count <= 18)
-
-            {
+            
                 DateTime currentTime = DateTime.Now;
-                string currentDate = currentTime.ToString("yyyy-MM-dd");
+                string currentDate = currentTime.ToString("yyyy-MMM-dd");
                 int currentHour = currentTime.Hour;
 
                 // Calculate start and end times for the current day
@@ -312,14 +310,14 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
 
 
-                 var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
-                 var columnCount1 = header1 != null ? header1.Length : 0;
-                 if (rowCount1 > 0 && columnCount1 > 0)
-                  {
-                     var column1 = Convert.ToString(resultSet1[0, 0]);
+                var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
+                var columnCount1 = header1 != null ? header1.Length : 0;
+                if (rowCount1 > 0 && columnCount1 > 0)
+                {
+                    var column1 = Convert.ToString(resultSet1[0, 0]);
                     meter = column1;
 
-                  }
+                }
 
 
                 var rowCount2 = resultSet2 != null ? resultSet2.GetLength(0) : 0;
@@ -336,7 +334,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 if (rowCount3 > 0 && columnCount3 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                    consumption = column1;
+                    maxconsumption = column1;
 
                 }
 
@@ -432,7 +430,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
 
                 var rowCount14 = resultSet14 != null ? resultSet14.GetLength(0) : 0;
                 var columnCount14 = header14 != null ? header14.Length : 0;
-                if (rowCount4 > 0 && columnCount14 > 0)
+                if (rowCount14 > 0 && columnCount14 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet14[0, 0]);
                     avgcurrent = column1;
@@ -541,16 +539,16 @@ public class RuntimeNetLogic7 : BaseNetLogic
                 date = date1;
                 count = count + 1;
 
-               
-                
-            }
-            else
-            {
-                count = 0;
-            }
 
 
         }
+       else
+       {
+         count = 0;
+       }
+
+
+        
 
         //date = timeRange;
         dateVariable.Value = date;
