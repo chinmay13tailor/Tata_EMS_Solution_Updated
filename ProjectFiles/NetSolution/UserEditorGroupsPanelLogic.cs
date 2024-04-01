@@ -5,11 +5,9 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
 #endregion
 
 public class UserEditorGroupsPanelLogic : BaseNetLogic
@@ -66,11 +64,16 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
         panel = InformationModel.MakeObject<ColumnLayout>("Container");
         panel.HorizontalAlignment = HorizontalAlignment.Stretch;
 
+        string[] UGroupname = Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupName").Value;
+        int cont = 0;
+
         foreach (var group in groups.Children)
         {
+            UGroupname[cont] = group.BrowseName;
+            cont += 1;
             if (editable.Value)
             {
-                var groupCheckBox = InformationModel.MakeObject<Panel>(group.BrowseName, Tata_EMS_Solution_Updated.ObjectTypes.GroupCheckbox1);
+                var groupCheckBox = InformationModel.MakeObject<Panel>(group.BrowseName, Tata_EMS_Solution_Updated.ObjectTypes.GroupCheckbox);
 
                 groupCheckBox.GetVariable("Group").Value = group.NodeId;
                 groupCheckBox.GetVariable("User").SetDynamicLink(userVariable);
@@ -82,7 +85,7 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
             }
             else if (UserHasGroup(group.NodeId))
             {
-                var groupLabel = InformationModel.MakeObject<Panel>(group.BrowseName, Tata_EMS_Solution_Updated.ObjectTypes.GroupLabel1);
+                var groupLabel = InformationModel.MakeObject<Panel>(group.BrowseName, Tata_EMS_Solution_Updated.ObjectTypes.GroupLabel);
                 groupLabel.GetVariable("Group").Value = group.NodeId;
                 groupLabel.HorizontalAlignment = HorizontalAlignment.Stretch;
 
@@ -91,6 +94,7 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
             }
 
         }
+        Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupName").Value = UGroupname;
 
         var scrollView = Owner.Get("ScrollView");
         if (scrollView != null)

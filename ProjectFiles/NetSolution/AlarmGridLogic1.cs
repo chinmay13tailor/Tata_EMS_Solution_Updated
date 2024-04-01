@@ -2,6 +2,8 @@
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class AlarmGridLogic1 : BaseNetLogic

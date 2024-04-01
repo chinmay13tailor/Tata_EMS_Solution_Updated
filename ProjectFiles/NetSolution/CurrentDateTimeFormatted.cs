@@ -12,6 +12,8 @@ using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class CurrentDateTimeFormatted : BaseNetLogic

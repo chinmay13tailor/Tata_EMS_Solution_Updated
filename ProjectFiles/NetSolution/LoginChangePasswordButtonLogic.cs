@@ -9,11 +9,10 @@ using FTOptix.UI;
 using FTOptix.CoreBase;
 using FTOptix.Core;
 using FTOptix.Retentivity;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
 #endregion
 
 public class LoginChangePasswordButtonLogic : BaseNetLogic
@@ -24,7 +23,18 @@ public class LoginChangePasswordButtonLogic : BaseNetLogic
         var outputMessageLabel = Owner.Owner.GetObject("ChangePasswordFormOutputMessage");
         var outputMessageLogic = outputMessageLabel.GetObject("LoginChangePasswordFormOutputMessageLogic");
 
-        if (newPassword != confirmPassword)
+        //-----------Customized Logic Start-----------------
+		// User Password Strength Check
+		CheckPasswordStrength ChgPassCheck = new CheckPasswordStrength();
+		bool ChgassStrengthCheck = false;
+		ChgassStrengthCheck = ChgPassCheck.CheckPassword(newPassword);
+		//-----------Customized Logic End-------------------
+
+        if (!ChgassStrengthCheck)
+        {
+            outputMessageLogic.ExecuteMethod("SetOutputMessage", new object[] { 20 });
+        }
+        else if (newPassword != confirmPassword)
         {
             outputMessageLogic.ExecuteMethod("SetOutputMessage", new object[] { 7 });
         }
@@ -34,6 +44,7 @@ public class LoginChangePasswordButtonLogic : BaseNetLogic
             try
             {
                 var userWithExpiredPassword = Owner.GetAlias("UserWithExpiredPassword");
+                
                 if (userWithExpiredPassword != null)
                     username = userWithExpiredPassword.BrowseName;
             }
@@ -44,6 +55,19 @@ public class LoginChangePasswordButtonLogic : BaseNetLogic
             var result = Session.ChangePassword(username, newPassword, oldPassword);
             if (result.ResultCode == ChangePasswordResultCode.Success)
             {
+                
+                var UserAlias = LogicObject.GetAlias("Users");
+                var userpasschanged = UserAlias.Get<User_21CFR>(username);
+                userpasschanged.Password_Creation_Date = DateTime.Now;
+                userpasschanged.Invalid_Login_Attempts = 0;
+                userpasschanged.Change_Password_On_Next_Login = false;
+                
+                //-----------Customized Logic Start-----------------
+                // User Password Changed Event Logging into Audit Database
+                AuditTrailLogging UserPassChgDiag = new AuditTrailLogging();
+                UserPassChgDiag.LogIntoAudit("User modified", "'" + username + "'" + " password changed", Session.User.BrowseName, "UserPasswordChangeEvent");
+                //-----------Customized Logic End-------------------
+
                 var parentDialog = Owner.Owner?.Owner?.Owner as Dialog;
                 if (parentDialog != null && result.Success)
                     parentDialog.Close();

@@ -4,3 +4,4 @@ Type: SecurityCategoryFolder
 Children:
 - File: Users/Users.yaml
 - File: Groups/Groups.yaml
+- File: UserType/UserType.yaml

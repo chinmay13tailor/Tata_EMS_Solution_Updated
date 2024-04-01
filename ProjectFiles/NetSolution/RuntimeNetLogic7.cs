@@ -26,6 +26,8 @@ using FTOptix.MicroController;
 using System.Collections.Generic;
 using System.Collections;
 using System.Diagnostics.Metrics;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 public class RuntimeNetLogic7 : BaseNetLogic
 {

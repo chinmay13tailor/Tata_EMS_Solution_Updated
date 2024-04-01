@@ -6,11 +6,10 @@ using UAManagedCore;
 using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
 #endregion
 
 public class CreateUserPanelLogic : BaseNetLogic
@@ -40,7 +39,7 @@ public class CreateUserPanelLogic : BaseNetLogic
 			return NodeId.Empty;
 		}
 
-		foreach (var child in users.Children.OfType<FTOptix.Core.User>())
+		foreach (var child in users.Children.OfType<User_21CFR>())
 		{
 			if (child.BrowseName.Equals(username, StringComparison.OrdinalIgnoreCase))
 			{
@@ -50,7 +49,20 @@ public class CreateUserPanelLogic : BaseNetLogic
 			}
 		}
 
-		var user = InformationModel.MakeObject<FTOptix.Core.User>(username);
+		//-----------Customized Logic Start-----------------
+		// User Password Strength Check
+		CheckPasswordStrength NewUserPassCheck = new CheckPasswordStrength();
+		bool NewPassStrengthCheck = false;
+		NewPassStrengthCheck = NewUserPassCheck.CheckPassword(password);
+		if (!NewPassStrengthCheck)
+		{
+			ShowMessage(20);
+			Log.Error("EditUserDetailPanelLogic", "Entered Password is not Complex");
+			return NodeId.Empty;
+		}
+		//-----------Customized Logic End-------------------
+		
+		var user = InformationModel.MakeObject<User_21CFR>(username);
 		users.Add(user);
 
 		//Apply LocaleId
@@ -59,13 +71,14 @@ public class CreateUserPanelLogic : BaseNetLogic
 
 		//Apply groups
 		ApplyGroups(user);
-
+		
 		//Apply password
 		var result = Session.ChangePassword(username, password, string.Empty);
 
 		switch (result.ResultCode)
 		{
 			case FTOptix.Core.ChangePasswordResultCode.Success:
+				user.Password_Creation_Date = DateTime.Now;
 				break;
 			case FTOptix.Core.ChangePasswordResultCode.WrongOldPassword:
 				//Not applicable
@@ -90,10 +103,33 @@ public class CreateUserPanelLogic : BaseNetLogic
 
 		}
 
+
+
+		//var UserList = LogicObject.Owner.Owner.Owner.Children["UsersList"].Children["UserList"];
+		//var _LogicObject = LogicObject.Owner.Owner.Owner.Children["UsersList"].Children["ChildrenCounter"];
+
+		////Clean files list
+
+
+		//UserList.Children.ToList().ForEach((entry) => entry.Delete());
+
+		//var UserDetails = _LogicObject.GetAlias("Users");
+
+		//foreach (var child in UserDetails.Children.OfType<User_21CFR>())
+		//{
+		//	if (child.BrowseName != "Pima")
+		//	{
+
+		//		var User = InformationModel.MakeObject<User_21CFR>(child.BrowseName);
+		//		UserList.Add(InformationModel.Get<User_21CFR>(child.NodeId));
+		//	}
+		//}
+
+
 		return user.NodeId;
 	}
 
-	private void ApplyGroups(FTOptix.Core.User user)
+	private void ApplyGroups(User_21CFR user)
 	{
 		Panel groupsPanel = Owner.Get<Panel>("HorizontalLayout1/GroupsPanel1");
 		IUAVariable editable = groupsPanel.GetVariable("Editable");
@@ -111,6 +147,7 @@ public class CreateUserPanelLogic : BaseNetLogic
 			return;
 
 		var groupCheckBoxes = panel.Refs.GetObjects(OpcUa.ReferenceTypes.HasOrderedComponent, false);
+		string usergroupname = "";
 
 		foreach (var groupCheckBoxNode in groupCheckBoxes)
 		{
@@ -121,10 +158,43 @@ public class CreateUserPanelLogic : BaseNetLogic
 			bool userHasGroup = UserHasGroup(user, group.NodeId);
 
 			if (groupCheckBoxNode.GetVariable("Checked").Value && !userHasGroup)
+			{
 				userNode.Refs.AddReference(FTOptix.Core.ReferenceTypes.HasGroup, group);
+			}
 			else if (!groupCheckBoxNode.GetVariable("Checked").Value && userHasGroup)
+			{
 				userNode.Refs.RemoveReference(FTOptix.Core.ReferenceTypes.HasGroup, group.NodeId, false);
+			}
+			if (groupCheckBoxNode.GetVariable("Checked").Value)
+			{
+				usergroupname = usergroupname + group.BrowseName + ",";
+			}
 		}
+
+		//-----------Customized Logic Start-----------------
+		int crNoOfGroups = Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupCounts").Value;
+		string[] crUGroupName = Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupName").Value;
+		int cnt2 = crNoOfGroups;
+		while (cnt2 > 0)
+		{
+			if (usergroupname.Contains(crUGroupName[cnt2-1]))
+			{
+				usergroupname = crUGroupName[cnt2-1];
+				break;
+			}
+			else if (cnt2 == 1)
+			{
+				usergroupname = "not assigned";
+				break;
+			}
+			cnt2 -= 1;
+		}
+		
+		// User Group Change Activity Logging into Audit Database
+		AuditTrailLogging UserCreateGroup = new AuditTrailLogging();
+		UserCreateGroup.LogIntoAudit("New user created", "'" + user.BrowseName + "'" + " with '" + usergroupname + "' group", Session.User.BrowseName, "UserCreateEvent");
+
+		//-----------Customized Logic End-------------------
 	}
 
 	private bool UserHasGroup(IUANode user, NodeId groupNodeId)

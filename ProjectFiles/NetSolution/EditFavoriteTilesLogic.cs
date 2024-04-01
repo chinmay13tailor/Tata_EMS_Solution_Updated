@@ -9,6 +9,8 @@ using FTOptix.ODBCStore;
 using FTOptix.OPCUAServer;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.UI;
+using FTOptix.Alarm;
 #endregion
 
 public class EditFavoriteTilesLogic : BaseNetLogic {

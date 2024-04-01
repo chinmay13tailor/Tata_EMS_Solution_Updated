@@ -16,6 +16,8 @@ using FTOptix.Core;
 using FTOptix.ODBCStore;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class GenericTableExporter : BaseNetLogic

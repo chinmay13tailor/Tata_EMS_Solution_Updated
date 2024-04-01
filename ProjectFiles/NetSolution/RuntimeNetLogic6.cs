@@ -24,6 +24,8 @@ using System.Data.SqlClient;
 using System.Reflection.Emit;
 using FTOptix.MicroController;
 using System.Threading;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class RuntimeNetLogic6 : BaseNetLogic
