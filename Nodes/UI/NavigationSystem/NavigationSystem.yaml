@@ -11833,12 +11833,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1310.0
+          Value: 40.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1100.0
+          Value: 910.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -12936,12 +12936,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1310.0
+          Value: 40.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1340.0
+          Value: 1150.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -13272,12 +13272,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1310.0
+          Value: 30.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 870.0
+          Value: 521.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -21191,7 +21191,7 @@ Children:
           - Name: Tile_Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Daily Consumption Report"}
+            Value: {"NamespaceIndex":34,"TextId":"Daily Consumption Report"}
           - Name: Tile_Subtitle
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -21672,7 +21672,7 @@ Children:
           - Name: Tile_Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Monthly Consumption Report"}
+            Value: {"NamespaceIndex":34,"TextId":"Monthly Consumption Report"}
           - Name: Tile_Subtitle
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -22123,7 +22123,7 @@ Children:
           - Name: Tile_Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Consumption Distribution Report"}
+            Value: {"NamespaceIndex":34,"TextId":"Consumption Distribution Report"}
           - Name: Tile_Subtitle
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -22271,22 +22271,22 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 8.0
+            Value: 0.0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 8.0
+            Value: 0.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 8.0
+            Value: 3.0
           - Name: BottomMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 8.0
+            Value: 0.0
         - Name: Alarm Report
           Type: FeatureTileObject
           Children:
@@ -22574,11 +22574,11 @@ Children:
           - Name: Tile_Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Alarm Report"}
+            Value: {"NamespaceIndex":34,"TextId":"Alarm Report"}
           - Name: Tile_Subtitle
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Alarms Report"}
+            Value: {"NamespaceIndex":34,"TextId":"Reports"}
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
@@ -22693,7 +22693,7 @@ Children:
           - Name: Tile_Description
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Alarm Report"}
+            Value: {"LocaleId":"en-US","Text":"The user can get Alarm Report."}
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean

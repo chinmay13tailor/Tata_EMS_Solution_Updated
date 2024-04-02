@@ -18367,7 +18367,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Consumption Distribution Report"}
+          Value: {"NamespaceIndex":34,"TextId":"Consumption Distribution Report"}
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22159,7 +22159,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Alarm Report"}
+          Value: {"NamespaceIndex":34,"TextId":"Alarm Report"}
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22418,7 +22418,7 @@ Children:
   - Name: FeatureName
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Alarm Report"}
+    Value: {"NamespaceIndex":34,"TextId":"Alarm Report"}
 - File: UserEditor/UserEditor.yaml
 - Name: ButtonSelection1
   Id: g=c4f7d4d80d2883ae073fc7eeb69fd6c1

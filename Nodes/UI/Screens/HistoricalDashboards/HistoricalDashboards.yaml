@@ -31953,7 +31953,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"CONSUMPTION DISTRIBUTION PANEL"}
+              Value: {"NamespaceIndex":34,"TextId":"CONSUMPTION DISTRIBUTION PANEL"}
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment

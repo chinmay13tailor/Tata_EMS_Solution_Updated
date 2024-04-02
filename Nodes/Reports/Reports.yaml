@@ -6316,7 +6316,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Consumption Distribution Report"}
+        Value: {"NamespaceIndex":34,"TextId":"Consumption Distribution Report"}
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -18673,7 +18673,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Alarm Report"}
+        Value: {"NamespaceIndex":34,"TextId":"Alarm Report"}
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
