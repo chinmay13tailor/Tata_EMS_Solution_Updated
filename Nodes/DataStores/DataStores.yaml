@@ -467,46 +467,26 @@ Children:
           Type: StoreColumn
           DataType: UtcTime
           Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Date
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Jace
           Type: StoreColumn
           DataType: String
           Value: ""
-        - Name: Meter
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: Target
-          Type: StoreColumn
-          DataType: Float
-          Value: 0.0
-        - Name: Yearlowest
-          Type: StoreColumn
-          DataType: Float
-          Value: 0.0
-        - Name: Monthlowest
-          Type: StoreColumn
-          DataType: Float
-          Value: 0.0
         - Name: Consumption
           Type: StoreColumn
           DataType: Float
           Value: 0.0
-        - Name: Frequency
+        - Name: MonthYear
           Type: StoreColumn
-          DataType: Float
-          Value: 0.0
-        - Name: Pf
+          DataType: String
+          Value: ""
+        - Name: Year
           Type: StoreColumn
-          DataType: Float
-          Value: 0.0
+          DataType: String
+          Value: ""
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
     - Name: DailyConsumptionAgg
       Type: ODBCStoreTable
       Children:
@@ -630,6 +610,14 @@ Children:
           DataType: String
           Value: "Jan 1, 1601, 12:00:00 AM"
         - Name: Month
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: MonthYear
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Year
           Type: StoreColumn
           DataType: String
           Value: ""

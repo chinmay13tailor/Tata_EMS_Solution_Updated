@@ -720,6 +720,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Consumption Report"}
 - Name: Comparision
   Id: g=8d89a5fce1435f2e42dcb0f1e89bcaab
   Supertype: BaseObjectType
@@ -986,6 +990,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Consumption Report"}
 - Name: HistoDashboardInstance
   Type: HistoDashboard
   Children:
@@ -1055,6 +1063,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Histo Dashboard"}
 - Name: HistoDashboard
   Id: g=c92c97590d04d0688370490fb5310e7b
   Supertype: BaseObjectType
@@ -1149,6 +1161,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Histo Dashboard"}
 - Name: _33KVAlarm1
   Type: _33KVAlarm
   Children:
@@ -1405,7 +1421,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: Date
     Type: BaseDataVariableType
     DataType: DateTime
@@ -1824,7 +1840,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: Date
     Type: BaseDataVariableType
     DataType: DateTime
@@ -2248,7 +2264,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: Date
     Type: BaseDataVariableType
     DataType: DateTime
@@ -2517,6 +2533,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
 - Name: ComparisionDashboard
   Id: g=0da78a672ae27b69ae302ef010613bd3
   Supertype: BaseObjectType
@@ -2661,6 +2681,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
 - Name: ComparisionDashboard1
   Type: ComparisionDashboard
   Children:
@@ -2768,6 +2792,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: INFO
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
 - File: Importer/Importer.yaml
 - Name: ButtonGenerator
   Type: BaseDataVariableType
@@ -8328,6 +8356,14 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: metercounter_DailyDataAgg
   Type: BaseDataVariableType
   DataType: String
@@ -13118,6 +13154,14 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: DailyDataAgg1
   Type: DailyDataAgg
   Children:
@@ -13244,6 +13288,14 @@ Children:
     DataType: String
     Value: ""
   - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -13688,3 +13740,256 @@ Children:
               DataType: DynamicLinkMode
               Value: 2
 - File: HistoDashboardResult/HistoDashboardResult.yaml
+- Name: ConsumptionDistributionLoggerInstance
+  Type: ConsumptionDistributionLogger
+  Children:
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Jan 1, 1601, 12:00:00 AM"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: UtilityConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: StampingConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PaintShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PumpRoomConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: BodyShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TCFConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: EngineShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpareConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SPPConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ConsumptionDistributionLogic
+    Type: NetLogic
+  - Name: KVSwitchgearConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/JaceComparision"
+- Name: ConsumptionDistributionLogger
+  Id: g=74376283ed38d2ef12b02286b2e520b8
+  Supertype: BaseObjectType
+  Children:
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Jan 1, 1601, 12:00:00 AM"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: UtilityConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: StampingConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PaintShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PumpRoomConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: BodyShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TCFConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: EngineShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpareConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SPPConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ConsumptionDistributionLogic
+    Type: NetLogic
+  - Name: KVSwitchgearConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/JaceComparision"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: ConsumptionDistributionLogger1
+  Type: ConsumptionDistributionLogger
+  Children:
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Jan 1, 1601, 12:00:00 AM"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: UtilityConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: StampingConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PaintShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PumpRoomConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: BodyShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TCFConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: EngineShopConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpareConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SPPConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ConsumptionDistributionLogic
+    Type: NetLogic
+  - Name: KVSwitchgearConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/JaceComparision"

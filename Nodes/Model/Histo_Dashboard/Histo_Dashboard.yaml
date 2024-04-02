@@ -2066,81 +2066,8 @@ Children:
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_DB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_EDB_01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Class: DataType
   Name: Selection_1_MeterSelection_SPP
-  Id: g=1d3262f13d666e361867798a1c86c12e
+  Id: g=1993c44616cfce39684059cfd67e3db5
   Supertype: Enumeration
-  EnumDefinition: 
-   {
-    "Name": "Selection_1_MeterSelection_SPP",
-    "DataType": {
-     "IdType": 2,
-     "Id": "1d3262f13d666e361867798a1c86c12e",
-     "Namespace": 34
-    },
-    "Fields": [{
-      "Name": "Value0",
-      "Value": 0,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M1"
-      }
-     },{
-      "Name": "Value1",
-      "Value": 1,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M2"
-      }
-     },{
-      "Name": "Value2",
-      "Value": 2,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M3"
-      }
-     },{
-      "Name": "Value3",
-      "Value": 3,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M4"
-      }
-     },{
-      "Name": "Value4",
-      "Value": 4,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M5"
-      }
-     },{
-      "Name": "Value5",
-      "Value": 5,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M6"
-      }
-     },{
-      "Name": "Value6",
-      "Value": 6,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M7"
-      }
-     },{
-      "Name": "Value7",
-      "Value": 7,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M8"
-      }
-     },{
-      "Name": "Value8",
-      "Value": 8,
-      "DisplayName": {
-       "LocaleId": "en-US",
-       "Text": "J9_M9"
-      }
-     }]
-   }
   Children:
   - Name: ns=0;EnumValues
     Type: BaseDataVariableType
@@ -2148,7 +2075,7 @@ Children:
     ModellingRule: None
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J9_M1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J9_M2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"J9_M3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"J9_M4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"J9_M5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"J9_M6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"J9_M7"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"J9_M8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"J9_M9"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_DB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_EDB_01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Name: Selection1_33KV
   Type: BaseDataVariableType
   DataType: Int32
