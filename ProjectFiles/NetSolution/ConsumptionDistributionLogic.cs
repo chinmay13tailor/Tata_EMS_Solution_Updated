@@ -122,9 +122,10 @@ public class ConsumptionDistributionLogic : BaseNetLogic
                 {
 
                     string query1 = $"DELETE FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59' AND Jace = '" + jacee + "'";
-                    string query2 = $" SELECT Jace FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND (Meter = 'J1_INCOMER1' OR Meter = 'J1_INCOMER2')";
-                    string query3 = $" SELECT SUM(Consumption)  FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = 'J1_INCOMER2'";
-
+                    string query2 = $" SELECT Jace FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = 'J1_INCOMER1'";
+                    string query3 = $" SELECT Consumption  FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = 'J1_INCOMER1'";
+                    string query4 = $" SELECT Consumption  FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59'  AND Jace = '" + jacee + "' AND Meter = 'J1_INCOMER1'";
+                   
                     myStore1.Query(query1, out header1, out resultSet1);
                     myStore2.Query(query2, out header2, out resultSet2);
                     myStore3.Query(query3, out header3, out resultSet3);

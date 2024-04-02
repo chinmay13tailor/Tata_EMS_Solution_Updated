@@ -13822,6 +13822,14 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/JaceComparision"
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: ConsumptionDistributionLogger
   Id: g=74376283ed38d2ef12b02286b2e520b8
   Supertype: BaseObjectType
@@ -13911,6 +13919,14 @@ Children:
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: ConsumptionDistributionLogger1
   Type: ConsumptionDistributionLogger
   Children:
@@ -13993,3 +14009,11 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/JaceComparision"
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
