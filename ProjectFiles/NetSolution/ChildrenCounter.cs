@@ -1,21 +1,42 @@
 #region Using directives
 using System;
 using System.Linq;
-using CoreBase = FTOptix.CoreBase;
 using FTOptix.HMIProject;
 using UAManagedCore;
 using FTOptix.NetLogic;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
+using FTOptix.WebUI;
+using FTOptix.Core;
+using FTOptix.UI;
 #endregion
 
 public class ChildrenCounter : BaseNetLogic
 {
     public override void Start()
     {
+
+        var UserList = LogicObject.Owner.GetObject("UserList");
+       // Clean files list
+        UserList.Children.ToList().ForEach((entry) => entry.Delete());
+
+        var UsersDetails = LogicObject.GetAlias("Users");
+
+        foreach (var child in UsersDetails.Children.OfType<User_21CFR>())
+        {
+            if (child.BrowseName != "Omori1")
+            {
+
+                // var User = InformationModel.MakeObject<User_21CFR>(child.BrowseName);
+                UserList.Add(InformationModel.Get<User_21CFR>(child.NodeId));
+            }
+        }
+
+
+
+
+
         var nodePointerVariable = LogicObject.GetVariable("Node");
         if (nodePointerVariable == null)
         {

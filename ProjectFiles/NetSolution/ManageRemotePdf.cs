@@ -9,6 +9,9 @@ using FTOptix.ODBCStore;
 using FTOptix.OPCUAServer;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.UI;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class ManageRemotePdf : BaseNetLogic

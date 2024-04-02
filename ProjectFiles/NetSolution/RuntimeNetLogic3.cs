@@ -23,6 +23,8 @@ using System.Linq;
 using System.Data.SqlClient;
 using System.Reflection.Emit;
 using FTOptix.MicroController;
+using FTOptix.AuditSigning;
+using FTOptix.Alarm;
 #endregion
 
 public class RuntimeNetLogic3 : BaseNetLogic

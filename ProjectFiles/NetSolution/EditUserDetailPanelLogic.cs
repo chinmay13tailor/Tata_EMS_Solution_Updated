@@ -7,11 +7,9 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
 using System.Linq;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic
@@ -28,6 +26,13 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 			return;
 		}
 
+        if (username == "Pima")
+        {
+            //ShowMessage(1);
+            //Log.Error("EditUserDetailPanelLogic", "Cannot create user with empty username");
+            return;
+        }
+
         result = ApplyUser(username, password, locale);
 	}
 
@@ -41,7 +46,7 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 			return NodeId.Empty;
 		}
 
-		var user = users.Get<FTOptix.Core.User>(username);
+		var user = users.Get<User_21CFR>(username);
 		if (user == null)
 		{
 			ShowMessage(3);
@@ -53,8 +58,81 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 		if(!string.IsNullOrEmpty(locale))
 			user.LocaleId = locale;
 
+		//-----------Customized Logic Start-----------------
+		// Block/Unblock User
+		CheckBox BlockedCheckBox = Owner.Get<CheckBox>("HorizontalLayout1/Details/VerticalLayout1/HorizontalLayoutUserBlocked/Blocked/UserStatus");
+		if (user.User_Blocked != BlockedCheckBox.Checked)
+		{
+			if ((user.BrowseName == Session.User.BrowseName) && (BlockedCheckBox.Checked))
+			{
+				ShowMessage(21);
+				Log.Error("EditUserDetailPanelLogic", "LoggedIn user can not be blocked");
+				return NodeId.Empty;
+			} 
+			user.User_Blocked = BlockedCheckBox.Checked;
+			// User Status Change Activity Logging into Audit Database
+			AuditTrailLogging UserStatusChg = new AuditTrailLogging();
+			string userstate = "";
+			if (user.User_Blocked)
+			{
+				userstate = "blocked";
+			}
+			else
+			{
+				userstate = "unblocked";
+			}
+			UserStatusChg.LogIntoAudit("User modified", "'" + username + "'" + " " + userstate, Session.User.BrowseName, "UserStatusChangeEvent");
+		}
+		//-----------Customized Logic End-------------------
+
+		//-----------Customized Logic Start-----------------
+		// User Active/Inactive
+		CheckBox ActiveCheckBox = Owner.Get<CheckBox>("HorizontalLayout1/Details/VerticalLayout1/HorizontalLayoutUserBlocked/Blocked/UserActive");
+		if (user.User_Active != ActiveCheckBox.Checked)
+		{
+			if ((user.BrowseName == Session.User.BrowseName) && (! ActiveCheckBox.Checked))
+			{
+				ShowMessage(22);
+				Log.Error("EditUserDetailPanelLogic", "LoggedIn user can not be set to inactive");
+				return NodeId.Empty;
+			}
+			user.User_Active = ActiveCheckBox.Checked;
+			// User Status Change Activity Logging into Audit Database
+			AuditTrailLogging UserStatusChg2 = new AuditTrailLogging();
+			string userActivestate = "";
+			if (user.User_Active)
+			{
+				userActivestate = "Active";
+			}
+			else
+			{
+				userActivestate = "Inactive";
+			}
+			UserStatusChg2.LogIntoAudit("User modified", "'" + username + "'" + " status changed to " + userActivestate, Session.User.BrowseName, "UserStatusChangeEvent");
+		}
+		//-----------Customized Logic End-------------------
+		
 		//Apply groups
 		ApplyGroups(user);
+
+		
+		//-----------Customized Logic Start-----------------
+		// User Password Strength Check
+		if (!string.IsNullOrEmpty(password))
+		{
+			CheckPasswordStrength UserPassCheck = new CheckPasswordStrength();
+			bool PassStrengthCheck = false;
+			PassStrengthCheck = UserPassCheck.CheckPassword(password);
+			if (!PassStrengthCheck)
+			{
+				ShowMessage(20);
+				Log.Error("EditUserDetailPanelLogic", "Entered Password is not Complex");
+				return NodeId.Empty;
+			}
+		}
+		
+		//-----------Customized Logic End-------------------
+
 
 		//Apply password
 		if (!string.IsNullOrEmpty(password))
@@ -64,6 +142,13 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 			switch (result.ResultCode)
 			{
 				case FTOptix.Core.ChangePasswordResultCode.Success:
+					//-----------Customized Logic Start-----------------
+					// User Password Change Activity Logging into Audit Database
+					user.Password_Creation_Date = DateTime.Now;
+					user.Invalid_Login_Attempts = 0;
+					AuditTrailLogging UserPassChange = new AuditTrailLogging();
+					UserPassChange.LogIntoAudit("User modified", "'" + username + "'" + " password changed", Session.User.BrowseName, "UserPasswordChangeEvent");
+					//-----------Customized Logic End-------------------
 					var editPasswordTextboxPtr = LogicObject.GetVariable("PasswordTextbox");
 					if (editPasswordTextboxPtr == null)
 						Log.Error("EditUserDetailPanelLogic", "PasswordTextbox variable not found");
@@ -105,7 +190,7 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 		return user.NodeId;
 	}
 
-	private void ApplyGroups(FTOptix.Core.User user)
+	private void ApplyGroups(User_21CFR user)
 	{
 		Panel groupsPanel = Owner.Get<Panel>("HorizontalLayout1/GroupsPanel1");
 		IUAVariable editable = groupsPanel.GetVariable("Editable");
@@ -123,6 +208,8 @@ public class EditUserDetailPanelLogic : BaseNetLogic
             return;
 
 		var groupCheckBoxes = panel.Refs.GetObjects(OpcUa.ReferenceTypes.HasOrderedComponent, false);
+		string usergroupsselected = "";
+		bool GroupChangeDetected = false;
 
 		foreach (var groupCheckBoxNode in groupCheckBoxes)
 		{
@@ -133,10 +220,50 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 			bool userHasGroup = UserHasGroup(user, group.NodeId);
 
 			if (groupCheckBoxNode.GetVariable("Checked").Value && !userHasGroup)
+			{
 				userNode.Refs.AddReference(FTOptix.Core.ReferenceTypes.HasGroup, group);
+				GroupChangeDetected = true;
+			}
 			else if (!groupCheckBoxNode.GetVariable("Checked").Value && userHasGroup)
+			{
 				userNode.Refs.RemoveReference(FTOptix.Core.ReferenceTypes.HasGroup, group.NodeId, false);
+				GroupChangeDetected = true;
+			}
+
+			if (groupCheckBoxNode.GetVariable("Checked").Value)
+			{
+				usergroupsselected = usergroupsselected + group.BrowseName + ",";
+			}
 		}
+		
+		//-----------Customized Logic Start-----------------
+		if (GroupChangeDetected)
+		{
+			int NoOfGroups = Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupCounts").Value;
+			string[] UGroupName = Project.Current.GetVariable("UI/UserObjects/UserGroups/UserGroupName").Value;
+			int cnt = NoOfGroups;
+			while (cnt > 0)
+			{
+				if (usergroupsselected.Contains(UGroupName[cnt-1]))
+				{
+					usergroupsselected = UGroupName[cnt-1];
+					break;
+				}
+				else if (cnt == 1)
+				{
+					usergroupsselected = "not assigned";
+					break;
+				}
+				cnt -= 1;
+			}
+			
+			// User Group Change Activity Logging into Audit Database
+			AuditTrailLogging GroupChange = new AuditTrailLogging();
+			GroupChange.LogIntoAudit("User modified", "'" + user.BrowseName + "'" + " group changed to '" + usergroupsselected + "'", Session.User.BrowseName, "UserGroupChangeEvent");
+			
+		}
+		//-----------Customized Logic End-------------------
+		
 	}
 
 	private bool UserHasGroup(IUANode user, NodeId groupNodeId)
@@ -188,6 +315,7 @@ public class EditUserDetailPanelLogic : BaseNetLogic
 		}
 		delayedTask?.Dispose();
 	}
-
+	
 	private DelayedTask delayedTask;
 }
+

@@ -3,11 +3,9 @@ using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
+using FTOptix.Recipe;
 using FTOptix.AuditSigning;
-using FTOptix.ODBCStore;
-using FTOptix.OPCUAServer;
-using FTOptix.MicroController;
-using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
 #endregion
 
 public class UserEditorPanelLoaderLogic : BaseNetLogic
@@ -16,8 +14,8 @@ public class UserEditorPanelLoaderLogic : BaseNetLogic
 	public void GoToUserDetailsPanel(NodeId user)
 	{
 		if (user == null)
-			return;
-
+		return;
+		
 		var userCountVariable = LogicObject.GetVariable("UserCount");
 		if (userCountVariable == null)
 			return;

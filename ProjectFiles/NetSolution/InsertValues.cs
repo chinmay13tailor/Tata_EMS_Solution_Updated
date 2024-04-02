@@ -9,6 +9,8 @@ using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
 using FTOptix.ODBCStore;
 using FTOptix.OPCUAServer;
+using FTOptix.UI;
+using FTOptix.Alarm;
 #endregion
 
 public class InsertValues : BaseNetLogic {

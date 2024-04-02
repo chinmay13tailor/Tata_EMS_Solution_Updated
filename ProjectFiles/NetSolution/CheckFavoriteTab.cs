@@ -9,6 +9,7 @@ using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
 using FTOptix.ODBCStore;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
 #endregion
 
 public class CheckFavoriteTab : BaseNetLogic {

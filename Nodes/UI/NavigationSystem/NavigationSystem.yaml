@@ -10841,6 +10841,1026 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff"
+      - Name: Label11
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_Solution_Updated/CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_1[16]"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -340.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 260.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 35.0
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: TextVerticalAlignment
+          Type: BaseVariableType
+          DataType: TextVerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+      - Name: DataGrid2
+        Type: DataGrid
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Tata_EMS_Solution_Updated/DataStores/ODBCDatabase"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Query
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SELECT * FROM \"DailyConsumption\""
+        - Name: Columns
+          Type: BaseObjectType
+          Children:
+          - Name: Timestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Timestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Timestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Timestamp"
+          - Name: LocalTimestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/LocalTimestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/LocalTimestamp"
+          - Name: Meter
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Meter"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 150.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Meter"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Meter"
+          - Name: Jace
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Jace"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Jace"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Jace"
+          - Name: Consumption
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Consumption"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Consumption"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Consumption"
+          - Name: Active_Power_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Active_Power_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Active_Power_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Active_Power_Total"
+          - Name: Apparent_Power_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Apparent_Power_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Apparent_Power_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Apparent_Power_Total"
+          - Name: Reactive_Power_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Reactive_Power_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Reactive_Power_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Reactive_Power_Total"
+          - Name: Active_Energy_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Active_Energy_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Active_Energy_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Active_Energy_Total"
+          - Name: Apparent_Energy_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Apparent_Energy_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Apparent_Energy_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Apparent_Energy_Total"
+          - Name: Reactive_Energy_Total
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Reactive_Energy_Total"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Reactive_Energy_Total"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Reactive_Energy_Total"
+          - Name: Avg_PF
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Avg_PF"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Avg_PF"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Avg_PF"
+          - Name: Phase_R_Current
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Phase_R_Current"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Phase_R_Current"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Phase_R_Current"
+          - Name: Phase_Y_Current
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Phase_Y_Current"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Phase_Y_Current"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Phase_Y_Current"
+          - Name: Phase_B_Current
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Phase_B_Current"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Phase_B_Current"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Phase_B_Current"
+          - Name: Avg_Current
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Avg_Current"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Avg_Current"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Avg_Current"
+          - Name: Voltage_LL
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_LL"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_LL"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_LL"
+          - Name: Voltage_LN
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_LN"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_LN"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_LN"
+          - Name: Frequency
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Frequency"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Frequency"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Frequency"
+          - Name: Voltage_RY
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_RY"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_RY"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_RY"
+          - Name: Voltage_YB
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_YB"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_YB"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_YB"
+          - Name: Voltage_BR
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_BR"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_BR"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_BR"
+          - Name: Voltage_RN
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_RN"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_RN"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_RN"
+          - Name: Voltage_YN
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_YN"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_YN"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_YN"
+          - Name: Voltage_BN
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Voltage_BN"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Voltage_BN"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Voltage_BN"
+        - Name: SelectedItem
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: UISelectedItem
+          Type: BaseDataVariableType
+          DataType: NodeId
+          AccessLevel: Read
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1220.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 220.0
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1310.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1100.0
+        - Name: AutoRefreshTime
+          Type: BaseDataVariableType
+          DataType: Duration
+          ModellingRule: Optional
+          Value: "0:00:00:2.5000000"
+        - Name: SortColumn
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Columns/Timestamp@NodeId"
+        - Name: SortOrder
+          Type: BaseDataVariableType
+          DataType: SortOrderEnum
+          ModellingRule: Optional
+          Value: 1
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
       - Name: DataGrid3
         Type: DataGrid
         Children:
@@ -11916,12 +12936,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 20.0
+          Value: 1310.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1150.0
+          Value: 1340.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -11944,1026 +12964,6 @@ Children:
           DataType: SortOrderEnum
           ModellingRule: Optional
           Value: 1
-      - Name: DataGrid2
-        Type: DataGrid
-        Children:
-        - Name: Model
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/Tata_EMS_Solution_Updated/DataStores/ODBCDatabase"
-          Children:
-          - Name: ItemKind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: Query
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "SELECT * FROM \"DailyConsumption\""
-        - Name: Columns
-          Type: BaseObjectType
-          Children:
-          - Name: Timestamp
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Timestamp"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Timestamp"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Timestamp"
-          - Name: LocalTimestamp
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/LocalTimestamp"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/LocalTimestamp"
-          - Name: Meter
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Meter"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Meter"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Meter"
-          - Name: Jace
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Jace"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Jace"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Jace"
-          - Name: Consumption
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Consumption"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Consumption"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Consumption"
-          - Name: Active_Power_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Active_Power_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Active_Power_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Active_Power_Total"
-          - Name: Apparent_Power_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Apparent_Power_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Apparent_Power_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Apparent_Power_Total"
-          - Name: Reactive_Power_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Reactive_Power_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Reactive_Power_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Reactive_Power_Total"
-          - Name: Active_Energy_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Active_Energy_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Active_Energy_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Active_Energy_Total"
-          - Name: Apparent_Energy_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Apparent_Energy_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Apparent_Energy_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Apparent_Energy_Total"
-          - Name: Reactive_Energy_Total
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Reactive_Energy_Total"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Reactive_Energy_Total"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Reactive_Energy_Total"
-          - Name: Avg_PF
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Avg_PF"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Avg_PF"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Avg_PF"
-          - Name: Phase_R_Current
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Phase_R_Current"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Phase_R_Current"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Phase_R_Current"
-          - Name: Phase_Y_Current
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Phase_Y_Current"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Phase_Y_Current"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Phase_Y_Current"
-          - Name: Phase_B_Current
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Phase_B_Current"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Phase_B_Current"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Phase_B_Current"
-          - Name: Avg_Current
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Avg_Current"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Avg_Current"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Avg_Current"
-          - Name: Voltage_LL
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_LL"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_LL"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_LL"
-          - Name: Voltage_LN
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_LN"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_LN"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_LN"
-          - Name: Frequency
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Frequency"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Frequency"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Frequency"
-          - Name: Voltage_RY
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_RY"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_RY"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_RY"
-          - Name: Voltage_YB
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_YB"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_YB"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_YB"
-          - Name: Voltage_BR
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_BR"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_BR"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_BR"
-          - Name: Voltage_RN
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_RN"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_RN"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_RN"
-          - Name: Voltage_YN
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_YN"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_YN"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_YN"
-          - Name: Voltage_BN
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Voltage_BN"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Voltage_BN"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Voltage_BN"
-        - Name: SelectedItem
-          Type: NodePointer
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: UISelectedItem
-          Type: BaseDataVariableType
-          DataType: NodeId
-          AccessLevel: Read
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 1220.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 220.0
-        - Name: Item
-          Type: Alias
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 920.0
-        - Name: AutoRefreshTime
-          Type: BaseDataVariableType
-          DataType: Duration
-          ModellingRule: Optional
-          Value: "0:00:00:2.5000000"
-        - Name: SortColumn
-          Type: BaseDataVariableType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../Columns/Timestamp@NodeId"
-        - Name: SortOrder
-          Type: BaseDataVariableType
-          DataType: SortOrderEnum
-          ModellingRule: Optional
-          Value: 1
-        - Class: Reference
-          Target: ns=5;i=504
-          Direction: Forward
-      - Name: Label11
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Tata_EMS_Solution_Updated/CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_1[16]"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 90.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: -340.0
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 260.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 70.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 35.0
-        - Name: TextHorizontalAlignment
-          Type: BaseVariableType
-          DataType: TextHorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextVerticalAlignment
-          Type: BaseVariableType
-          DataType: TextVerticalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#ffffff"
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
       - Name: DataGrid1
         Type: DataGrid
         Children:
@@ -13022,6 +13022,41 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/Timestamp"
+          - Name: Meter
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Meter"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 150.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Meter"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Meter"
           - Name: Jace
             Type: DataGridColumn
             Children:
@@ -13237,12 +13272,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 29.0
+          Value: 1310.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 521.0
+          Value: 870.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -16302,7 +16337,7 @@ Children:
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
-            Value: "/Objects/Tata_EMS_Solution_Updated/UI/Screens/UsersManagement/UsersLogin2"
+            Value: "/Objects/Tata_EMS_Solution_Updated/UI/Screens/UsersManagement/UsersManagement"
           - Name: ButtonInfo
             Type: Button
             Children:
@@ -16844,7 +16879,7 @@ Children:
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
-            Value: true
+            Value: false
           - Name: ComingSoonText
             Type: Label
             Children:
@@ -17275,7 +17310,7 @@ Children:
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
-            Value: true
+            Value: false
           - Name: ComingSoonText
             Type: Label
             Children:

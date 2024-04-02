@@ -5290,7 +5290,7 @@ Children:
                     - Name: Model
                       Type: NodePointer
                       DataType: NodeId
-                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Selection_1_MeterSelection_SPP"
+                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/Selection_1_MeterSelection_SPP"
                       Children:
                       - Name: ItemKind
                         Type: PropertyType
@@ -28477,7 +28477,7 @@ Children:
                     - Name: Model
                       Type: NodePointer
                       DataType: NodeId
-                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Histo Dashboard/Selection_1_MeterSelection_SPP"
+                      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/Selection_1_MeterSelection_SPP"
                       Children:
                       - Name: ItemKind
                         Type: PropertyType
