@@ -13317,6 +13317,11 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: -20.0
 - Name: Real_Time_Panels
   Id: g=5cbec2d0101b7af5910e2cea99566109
   Supertype: BaseMenuTiles
@@ -14962,7 +14967,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/ExpressionEvaluator.svg"
+            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/DataControl.svg"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -15413,7 +15418,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/StringFormatter.svg"
+            Value: "file:///D:/PROJECTS/Tata/Optix Scada/02 April/Tata_EMS_Solution_Updated/ProjectFiles/imgs/icons/Features/XyChart.svg"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -15849,7 +15854,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/KeyValueConverter.svg"
+            Value: "ns=34;%PROJECTDIR%/imgs/consumption logo1.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -15989,27 +15994,27 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -6.0
+            Value: 8.0
           - Name: BottomMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 16.0
+          Value: 10.0
       - Name: Row2
         Type: RowLayout
       - Name: Row3
@@ -16333,7 +16338,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/User.svg"
+            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/UserEditor.svg"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -16522,6 +16527,11 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "../../../Tile_Icon"
+              - Name: FillMode
+                Type: BaseDataVariableType
+                DataType: FillModeEnum
+                ModellingRule: Optional
+                Value: 1
             - Name: 'vlayout-labels'
               Type: ColumnLayout
               Children:
@@ -16792,7 +16802,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/Area.svg"
+            Value: "ns=34;%PROJECTDIR%/imgs/icons/Categories/Alarms.svg"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -17223,7 +17233,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/History.svg"
+            Value: "ns=34;%PROJECTDIR%/alarm history.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -20913,7 +20923,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 38.0
+                Value: 24.0
               - Name: RightMargin
                 Type: BaseVariableType
                 DataType: Size
@@ -21189,7 +21199,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/report_logo.jpg"
+            Value: "ns=34;%PROJECTDIR%/daily report.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -21670,7 +21680,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/Localization.svg"
+            Value: "file:///D:/PROJECTS/Tata/Optix Scada/02 April/Tata_EMS_Solution_Updated/ProjectFiles/daily report.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -22121,7 +22131,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/imgs/icons/Features/Localization.svg"
+            Value: "ns=34;%PROJECTDIR%/cosnumption report.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -22261,22 +22271,22 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 16.0
+            Value: 8.0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -6.0
+            Value: 8.0
           - Name: BottomMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
         - Name: Alarm Report
           Type: FeatureTileObject
           Children:
@@ -22572,7 +22582,7 @@ Children:
           - Name: Tile_Icon
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=34;%PROJECTDIR%/report_logo.jpg"
+            Value: "ns=34;%PROJECTDIR%/alarm report.png"
           - Name: Tile_Open_Panel
             Type: BaseDataVariableType
             DataType: NodeId
@@ -22717,17 +22727,17 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -6.0
+            Value: 8.0
           - Name: BottomMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
+            Value: 8.0
       - Name: Row2
         Type: RowLayout
       - Name: Row3

@@ -31,7 +31,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Users/Anonymous"
+    Value: "/Objects/Tata_EMS_Solution_Updated/Security/Users/Pima"
     Children:
     - Name: Kind
       Type: PropertyType

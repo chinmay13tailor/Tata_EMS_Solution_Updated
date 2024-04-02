@@ -445,7 +445,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 16.0
+          Value: 10.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -498,7 +498,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 16.0
+          Value: 10.0
       - Name: Row3
         Type: RowLayout
         Children:
@@ -526,7 +526,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 16.0
+          Value: 10.0
 - Name: FeatureTileObject
   Id: g=5bb21a44c8b572e6f6de8955b2fca44c
   Supertype: Panel
@@ -638,22 +638,22 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 96.0
+        Value: 180.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 96.0
+        Value: 135.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 3
+        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 3
+        Value: 0
       - Name: FillMode
         Type: BaseDataVariableType
         DataType: FillModeEnum
