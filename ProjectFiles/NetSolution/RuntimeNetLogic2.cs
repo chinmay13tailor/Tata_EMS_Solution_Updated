@@ -34,7 +34,10 @@ public class RuntimeNetLogic2 : BaseNetLogic
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
-        var owner = (Comparision)LogicObject.Owner;
+        var owner = (Comparision)LogicObject.Owner; 
+
+        monthyearVariable = owner.MonthyearVariable;
+        yearVariable = owner.YearVariable;
         //Utility
         jaceVariable = owner.JaceVariable;
         meterVariable = owner.MeterVariable;
@@ -45,6 +48,7 @@ public class RuntimeNetLogic2 : BaseNetLogic
         consumptionVariable = owner.ConsumptionVariable;
         gbuttonVariable = owner.GBUTTONVariable;
         dateVariable = owner.DateVariable;
+        date1Variable = owner.Date1Variable;
         // Stamping
         jacestampingVariable = owner.JaceStampingVariable;
         targetstampingVariable = owner.TargetStampingVariable;
@@ -120,7 +124,7 @@ public class RuntimeNetLogic2 : BaseNetLogic
         spppercentageVariable = owner.SpppercentageVariable;
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 60, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
 
 
@@ -136,6 +140,10 @@ public class RuntimeNetLogic2 : BaseNetLogic
     public void IncrementDecrementTask()
     {
         DateTime date = dateVariable.Value;
+        String date1 = date1Variable.Value;
+        String monthyear = monthyearVariable.Value;
+        String year = yearVariable.Value;
+
         //For Utility
         int jace = jaceVariable.Value;
         int meter = meterVariable.Value;
@@ -143,7 +151,7 @@ public class RuntimeNetLogic2 : BaseNetLogic
         int yearlowest = yearlowestVariable.Value;
         int monthlowest = monthlowestVariable.Value;
         int average = averageVariable.Value;
-        float consumption = consumptionVariable.Value;
+        int consumption = consumptionVariable.Value;
         bool gbutton = gbuttonVariable.Value;
 
         //For Stamping
@@ -403,78 +411,99 @@ public class RuntimeNetLogic2 : BaseNetLogic
         ////////////////////////////////*********************************************///////////////////////////////////////////////////////////////////////////
         if (gbutton == true)
         {
+
+            DateTime currentTime = DateTime.Now;
+            string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+            int currentHour = currentTime.Hour;
+
+            // Calculate start and end times for the current day
+            DateTime startTime = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 8, 0, 0);
+            DateTime endTime = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 7, 59, 59).AddDays(1);
+
+            if (currentHour < 8)
+            {
+                startTime = startTime.AddDays(-1);
+                endTime = endTime.AddDays(-1);
+            }
+
+            string st = startTime.ToString("yyyy-MMM-dd");
+            string et = endTime.ToString("yyyy-MMM-dd");
             string new123 = date.ToString("yyyy-MM-dd");
-            string new456 = date.ToString("yyyy-MM");
-            string new789 = date.ToString("yyyy");
+            monthyear = date.ToString("yyyy-MM");
+            year = date.ToString("yyyy");
+            string date2 = date.ToString("dd-MM-yyyy");
+
 
 
             // For Utility
-            string query1 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp   BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'UTILITY' ";
-            string query2 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'UTILITY' ";
-            string query3 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'UTILITY' ";
-            string query4 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear  = '" + new456 + "' AND Jace = 'UTILITY' ";
-            string query5 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp   BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'UTILITY' ";
+            string query1 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'UTILITY' ";
+            string query2 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'UTILITY' ";
+            
+            string query3 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'UTILITY' ";
+            
+            string query4 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear  = '" + monthyear + "' AND Jace = 'UTILITY' ";
+            string query5 = $"SELECT MAX(Consumption) FROM ConsumptionDistribution WHERE Date = '" + date2 + "'  AND Jace = 'UTILITY' ";
 
 
             // For Stamping
-            string query6 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'STAMPING' ";
-            string query7 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'STAMPING' ";
-            string query8 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'STAMPING' ";
-            string query9 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'STAMPING' ";
-            string query10 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'STAMPING' ";
+            string query6 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'STAMPING' ";
+            string query7 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'STAMPING' ";
+            string query8 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'STAMPING' ";
+            string query9 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'STAMPING' ";
+            string query10 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'STAMPING' ";
 
 
             // For TCF
-            string query11 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'TCF' ";
-            string query12 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'TCF' ";
-            string query13 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'TCF' ";
-            string query14 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'TCF' ";
-            string query15 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'TCf' ";
+            string query11 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'TCF' ";
+            string query12 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'TCF' ";
+            string query13 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'TCF' ";
+            string query14 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'TCF' ";
+            string query15 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'TCf' ";
 
 
             // For Bodyshop
-            string query16 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query17 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query18 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query19 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query20 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query16 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'BODYSHOP' ";
+            string query17 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'BODYSHOP' ";
+            string query18 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'BODYSHOP' ";
+            string query19 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'BODYSHOP' ";
+            string query20 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'BODYSHOP' ";
 
 
             // For Engineshop
-            string query21 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query22 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query23 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query24 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query25 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query21 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'UTILITY' ";
+            string query22 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'Utility' ";
+            string query23 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'Utility' ";
+            string query24 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'Utility' ";
+            string query25 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'Utility' ";
 
 
             // For Paintshop
-            string query26 = $"SELECT Target FROM DailyCo2nsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query27 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query28 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query29 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query30 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query26 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'PAINTSHOP' ";
+            string query27 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'PAINTSHOP' ";
+            string query28 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'PAINTSHOP' ";
+            string query29 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'PAINTSHOP' ";
+            string query30 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp  BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'PAINTSHOP' ";
 
 
             // For Spp
-            string query31 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query32 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query33 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query34 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query35 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query31 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + et + " 07:59:59' AND Jace = 'SPP' ";
+            string query32 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = 'SPP' ";
+            string query33 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'SPP' ";
+            string query34 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" +  monthyear + "' AND Jace = 'SPP' ";
+            string query35 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'SPP' ";
             // For Spare
-            string query36 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query37 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query38 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query39 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query40 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query36 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + st + " 07:59:59' AND Jace = 'Utility' ";
+            string query37 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" +   year + "' AND Jace = 'Utility' ";
+            string query38 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'Utility' ";
+            string query39 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = 'Utility' ";
+            string query40 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = 'Utility' ";
 
             // For 33KV
-            string query41 = $"SELECT Target FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
-            string query42 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE Year = '" + new789 + "' AND Jace = 'Utility' ";
-            string query43 = $"SELECT MIN(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query44 = $"SELECT AVG(Consumption) FROM DailyConsumptionAgg WHERE MonthYear = '" + new456 + "' AND Jace = 'Utility' ";
-            string query45 = $"SELECT Consumption FROM DailyConsumptionAgg WHERE LocalTimestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new123 + " 23:59:59' AND Jace = 'Utility' ";
+            string query41 = $"SELECT Target FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + st + " 08:00:00' AND '" + st + " 07:59:59' AND Jace = '33KV' ";
+            string query42 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE Year = '" + year + "' AND Jace = '33KV' ";
+            string query43 = $"SELECT MIN(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = '33KV' ";
+            string query44 = $"SELECT AVG(Consumption) FROM ConsumptionDistribution WHERE MonthYear = '" + monthyear + "' AND Jace = '33KV' ";
+            string query45 = $"SELECT Consumption FROM ConsumptionDistribution WHERE LocalTimestamp BETWEEN '" + new123 + " 08:00:00' AND '" + new123 + " 07:59:59' AND Jace = '33KV' ";
 
             ////////////////////////////////*********************************************/////////////////////////////////////////////////////////////////////////// 
             // For Utility
@@ -1019,7 +1048,7 @@ public class RuntimeNetLogic2 : BaseNetLogic
             float tcfP = (consumptiontcf * 100) / consumption33kv;
             float engineP = (consumptionengineshop * 100) / consumption33kv;
 
-
+            date1 = date2;
             utilitypercentage = utilityP;
             stampingpercentage = stampingP;
             tcfpercentage = tcfP;
@@ -1032,11 +1061,12 @@ public class RuntimeNetLogic2 : BaseNetLogic
 
 
             /////////////////////////////////////////////////////*********************************************///////////////////////////////////////////////////////////////////////////
-
+            monthyearVariable.Value = monthyear;
+            yearVariable.Value = year;
+            date1Variable.Value = date1;
             // For Utility
             targetVariable.Value = target;
             yearlowestVariable.Value = yearlowest;
-            throw new Exception(yearlowestVariable.Value);
             monthlowestVariable.Value = monthlowest;
             averageVariable.Value = average;
             consumptionVariable.Value = consumption;
@@ -1115,6 +1145,7 @@ public class RuntimeNetLogic2 : BaseNetLogic
     }
     ////////////////////////////////*********************************************///////////////////////////////////////////////////////////////////////////
     private IUAVariable dateVariable;
+    private IUAVariable date1Variable;
     private IUAVariable jacestampingVariable;
     private IUAVariable targetstampingVariable;
     private IUAVariable yearloweststampingVariable;
@@ -1180,4 +1211,6 @@ public class RuntimeNetLogic2 : BaseNetLogic
     private IUAVariable consumptionVariable;
     private IUAVariable gbuttonVariable;
     private PeriodicTask periodicTask;
+    private IUAVariable monthyearVariable;
+    private IUAVariable yearVariable;
 }

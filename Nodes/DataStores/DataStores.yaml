@@ -487,6 +487,14 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+        - Name: Target
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Date
+          Type: StoreColumn
+          DataType: String
+          Value: ""
     - Name: DailyConsumptionAgg
       Type: ODBCStoreTable
       Children:

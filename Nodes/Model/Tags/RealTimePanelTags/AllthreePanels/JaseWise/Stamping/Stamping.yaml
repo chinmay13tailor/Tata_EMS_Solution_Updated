@@ -621,3 +621,7 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../../All Panels/Stamping2/Voltage_BN"
+- Name: TestingHomePageTODConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 980.0

@@ -1041,11 +1041,19 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#3b3b3b"
+        Value: "#ffffff"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
-        Value: 14.0
+        Value: 12.0
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Lucida Fax"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
   - Name: HistogramChartStyles
     Type: BaseObjectType
     Children:

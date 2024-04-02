@@ -1,2 +1,199 @@
 Name: TODEnergyConsumption
+Id: g=1deead6f1a9d975d53240f8ab2a2221a
 Type: FolderType
+Children:
+- Name: UTILITY
+  Id: g=94154eeea72225efa50fd062a4124ead
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/Utility/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"
+- Name: PUMPROOM
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: PAINTSHOP
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/Paintshop/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"
+- Name: BODYSHOP
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/Bodyshop/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"
+- Name: TCF
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/TCF/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"
+- Name: STAMPING
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/Stamping/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"
+- Name: ADMIN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: SPP
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} / {1} ) * 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/SPP/TestingHomePageTODConsumption"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../RealTimePanelTags/AllthreePanels/JaseWise/33kv/TestingHomePageTODConsumption"

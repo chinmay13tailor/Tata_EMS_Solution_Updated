@@ -621,3 +621,7 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../../All Panels/Paintshop2/Voltage_YB"
+- Name: TestingHomePageTODConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2895.0

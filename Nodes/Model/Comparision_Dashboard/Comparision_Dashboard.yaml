@@ -2125,18 +2125,8 @@ Children:
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_DB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_EDB_01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
-- Class: DataType
-  Name: Selection_1_MeterSelection_SPP
-  Id: g=1993c44616cfce39684059cfd67e3db5
-  Supertype: Enumeration
-  Children:
-  - Name: ns=0;EnumValues
-    Type: BaseDataVariableType
-    DataType: EnumValueType
-    ModellingRule: None
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_DB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_EDB_01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: Reference
+  Target: g=1993c44616cfce39684059cfd67e3db5
 - Class: DataType
   Name: Selection_2_MeterSelection_SPP
   Id: g=dfe4caa37e9b998181f46b3b70c6cbc7
@@ -7613,7 +7603,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "J9_M9"
-- Name: JaceComparision
+- Name: JaceConsumption
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
@@ -7676,7 +7666,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "BODYSHOP"
+          Value: "PAINTSHOP"
       - Name: Pair4
         Type: ValueMapPair
         Children:
@@ -7687,7 +7677,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "TCF"
+          Value: "BODYSHOP"
       - Name: Pair5
         Type: ValueMapPair
         Children:
@@ -7698,7 +7688,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "STAMPING"
+          Value: "TCF"
       - Name: Pair6
         Type: ValueMapPair
         Children:
@@ -7709,7 +7699,7 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
-          Value: "ADMIN"
+          Value: "STAMPING"
       - Name: Pair7
         Type: ValueMapPair
         Children:
@@ -7720,9 +7710,19 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: String
+          Value: "ADMIN"
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 8
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
           Value: "SPP"
 - Name: 33consumption1
-  Id: g=51ece22c2ef5a82f805b0d2b298a72c1
   Type: BaseDataVariableType
   DataType: String
   Value: "1"
@@ -7734,3 +7734,111 @@ Children:
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "2024-04-01T05:30:00.0000000"
+- Name: MeterConsumption
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../ConsumptionDistributionLoggerInstance/Count"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J1_INCOMER1"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J1_OG2_IN1_UTILITY"
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J3_WTK-1-PMCC-0-01"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J5_BDY_MVS_01_IN1"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J6_TCF_MVS_01_IN_F1"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J7_STP_MVS_01_IN_F1"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J8_ADM_DB_01_INF1"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
