@@ -59,7 +59,7 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
-- Name: ObjectsDragging1
+- Name: RetentivityStorage1
   Type: RetentivityStorage
   Children:
   - Name: Nodes
@@ -68,29 +68,7 @@ Children:
     - Name: Node1
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/MarginsForRetentivity/Card1LeftMargin"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: NodeClass
-        Type: PropertyType
-        DataType: NodePointerNodeClass
-        Value: 0
-    - Name: Node2
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/MarginsForRetentivity/Card1ToptMargin"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-    - Name: Node3
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Retentivity/ObjectsDragging1/DeltaObserverEnabled"
+      Value: "/Objects/Tata_EMS_Solution_Updated/Model/Retain_Variable"
       Children:
       - Name: Kind
         Type: PropertyType
@@ -106,55 +84,6 @@ Children:
     ReferenceType: HasProperty
     Value: "0:00:00:0.0000000"
   - Name: DeltaObserverEnabled
-    Id: g=ab0c0ea95f4cf8c4a35f288b8e819588
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ReferenceType: HasProperty
-    Value: true
-- Name: ObjectsDragging2
-  Type: RetentivityStorage
-  Children:
-  - Name: Nodes
-    Type: BaseObjectType
-    Children:
-    - Name: Node1
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/MarginsForRetentivity/Card2LeftMargin"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-    - Name: Node2
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Model/MarginsForRetentivity/Card2TopMargin"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-    - Name: Node3
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_Solution_Updated/Retentivity/ObjectsDragging2/DeltaObserverEnabled"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: NodeClass
-        Type: PropertyType
-        DataType: NodePointerNodeClass
-        Value: 2
-  - Name: WriteDelay
-    Type: BaseDataVariableType
-    DataType: Duration
-    ReferenceType: HasProperty
-    Value: "0:00:00:0.0000000"
-  - Name: DeltaObserverEnabled
-    Id: g=275c8266e00761baabef1d4187b7cac9
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty

@@ -2066,7 +2066,7 @@ Children:
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_DB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J8_ADM_EDB_01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Class: DataType
   Name: Selection_1_MeterSelection_SPP
-  Id: g=1993c44616cfce39684059cfd67e3db5
+  Id: g=f898e8c793b72800fd510df34ce16225
   Supertype: Enumeration
   Children:
   - Name: ns=0;EnumValues

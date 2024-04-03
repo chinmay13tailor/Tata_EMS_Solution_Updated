@@ -14075,3 +14075,7 @@ Children:
       DataType: NodePath
       Value: "/Objects/Tata_EMS_Solution_Updated/Model/Comparision_Dashboard/MeterConsumption"
 - File: Retain_Variable/Retain_Variable.yaml
+- Name: AutoLogOutTrigger
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -931,7 +931,7 @@ Children:
             - Name: Text
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":34,"TextId":"Name"}
+              Value: {"LocaleId":"en-US","Text":"Email"}
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment

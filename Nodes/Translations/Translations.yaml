@@ -10,7 +10,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [582,4],
+    "Dimensions": [585,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -593,7 +593,10 @@ Children:
      "Acknowledge All","Acknowledge All","Riconosci tutti","全部确认",
      "Confirm All","Confirm All","Conferma tutti","全部证实",
      "Source Variable","Source","Sorgente","",
-     "Old password","Old password","",""
+     "Old password","Old password","","",
+     "Alarm Report","Alarm Report","Rapporto allarme","报警报告",
+     "Consumption Distribution Report","Consumption Distribution Report","Rapporto sulla distribuzione dei consumi","消费分布报告",
+     "CONSUMPTION DISTRIBUTION PANEL","CONSUMPTION DISTRIBUTION PANEL","QUADRO DISTRIBUZIONE CONSUMI","消费分配面板"
     ]
    }
 - Name: ImportAndExportTranslations
