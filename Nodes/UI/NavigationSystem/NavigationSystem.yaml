@@ -79,7 +79,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 1740.0
+        Value: 1850.0
       - Name: BorderThickness
         Type: BaseDataVariableType
         DataType: Size
@@ -3357,7 +3357,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontWeight
               Type: BaseDataVariableType
               DataType: FontWeightEnum
@@ -10490,7 +10490,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 500.0
+        Value: 560.0
       - Name: Label2
         Type: Label
         Children:
@@ -13930,6 +13930,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: ScrollBarStyle
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "ScrollBarStyle1"
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -17077,6 +17082,34 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "{0} || {1}"
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Session}/Groups/Administrator"
+              - Name: ns=3;Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Session}/Groups/Manager"
           - Name: ComingSoonText
             Type: Label
             Children:

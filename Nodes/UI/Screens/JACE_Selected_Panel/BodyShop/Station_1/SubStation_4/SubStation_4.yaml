@@ -1782,7 +1782,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "NavigationPanelStyle1"
+            Value: "Default"
   - Name: CategoryName
     Type: BaseDataVariableType
     DataType: LocalizedText

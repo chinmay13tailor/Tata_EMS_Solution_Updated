@@ -338,7 +338,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "NavigationPanelStyle1"
+            Value: "Default"
           - Name: TabHeight
             Type: BaseDataVariableType
             DataType: Size
