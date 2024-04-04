@@ -745,7 +745,7 @@ Children:
       - Name: FontFamily
         Type: BaseDataVariableType
         DataType: Font
-        Value: "Lucida Fax"
+        Value: ""
       - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
@@ -981,7 +981,7 @@ Children:
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#010320"
+        Value: "#00000000"
       - Name: Size
         Type: BaseDataVariableType
         DataType: Size
@@ -1002,6 +1002,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: false
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
   - Name: AccordionStyles
     Type: BaseObjectType
     Children:

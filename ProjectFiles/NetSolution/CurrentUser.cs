@@ -19,8 +19,7 @@ using FTOptix.Retentivity;
 using FTOptix.AuditSigning;
 using FTOptix.CommunicationDriver;
 using FTOptix.Core;
-using FTOptix.UI;
-using FTOptix.Alarm;
+
 #endregion
 
 public class CurrentUser : BaseNetLogic
@@ -29,7 +28,7 @@ public class CurrentUser : BaseNetLogic
     {
         
       var currentUser = Project.Current.GetVariable("Model/Retain_Variable/CurrentUser");
-        TextBox _CurrentUser= (TextBox)LogicObject.Owner.Get("TopBar_1/TextBox3");
+        TextBox _CurrentUser= (TextBox)LogicObject.Owner.Get("Header/TextBox3");
         currentUser.Value = _CurrentUser.Text;
         // Insert code to be executed when the user-defined logic is started
     }
@@ -44,7 +43,7 @@ public class CurrentUser : BaseNetLogic
     {
 
         var currentUser = Project.Current.GetVariable("Model/Retain_Variable/CurrentUser");
-        TextBox _CurrentUser= (TextBox)LogicObject.Owner.Get("TopBar_1/TextBox3");
+        TextBox _CurrentUser= (TextBox)LogicObject.Owner.Get("Header/TextBox3");
         currentUser.Value = _CurrentUser.Text;
 
         // Insert code to be executed by the method

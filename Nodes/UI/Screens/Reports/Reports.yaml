@@ -140,7 +140,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
-      Value: "#010320"
+      Value: "#015c8e"
   - Name: WorkspaceArea
     Type: Rectangle
     Children:
@@ -8835,7 +8835,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     ModellingRule: Optional
-    Value: "#010320"
+    Value: "#2d4263"
 - Name: Monthly_Report
   Id: g=8a4a4d286ed2bf30e62e0e91a7c62725
   Supertype: BaseScreen

@@ -4384,7 +4384,7 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
-        - Name: Style
+        - Name: ns=5;Style
           Type: BaseDataVariableType
           DataType: String
           ModellingRule: Optional
