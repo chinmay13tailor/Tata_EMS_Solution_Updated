@@ -2889,7 +2889,7 @@ Children:
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:0.2000000"
+    Value: "0:00:00:0.3000000"
   - Name: TableName
     Type: PropertyType
     DataType: String

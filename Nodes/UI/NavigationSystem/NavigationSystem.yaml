@@ -208,7 +208,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 10.0
+              Value: 9.0
             - Name: RightMargin
               Type: BaseVariableType
               DataType: Size
@@ -11866,12 +11866,15 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 760.0
+          Value: 750.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
           ModellingRule: Optional
           Value: "0:00:00:2.5000000"
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
         - Name: SortColumn
           Type: BaseDataVariableType
           DataType: NodeId
@@ -11886,9 +11889,6 @@ Children:
           DataType: SortOrderEnum
           ModellingRule: Optional
           Value: 1
-        - Class: Reference
-          Target: ns=5;i=504
-          Direction: Forward
       - Name: DataGrid3
         Type: DataGrid
         Children:
@@ -12727,7 +12727,7 @@ Children:
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
-              Value: 100.0
+              Value: -1.0
             - Name: HeaderAlignment
               Type: BaseDataVariableType
               DataType: TextHorizontalAlignment
@@ -12832,7 +12832,7 @@ Children:
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
-              Value: 150.0
+              Value: -1.0
             - Name: HeaderAlignment
               Type: BaseDataVariableType
               DataType: TextHorizontalAlignment
@@ -12867,7 +12867,7 @@ Children:
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
-              Value: 150.0
+              Value: -1.0
             - Name: HeaderAlignment
               Type: BaseDataVariableType
               DataType: TextHorizontalAlignment
@@ -12902,7 +12902,7 @@ Children:
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
-              Value: 150.0
+              Value: -1.0
             - Name: HeaderAlignment
               Type: BaseDataVariableType
               DataType: TextHorizontalAlignment
@@ -12974,7 +12974,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Duration
           ModellingRule: Optional
-          Value: "0:00:00:2.0000000"
+          Value: "0:00:00:3.2000000"
         - Class: Reference
           Target: ns=5;i=504
           Direction: Forward
@@ -13095,7 +13095,7 @@ Children:
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 100.0
             - Name: HeaderAlignment
               Type: BaseDataVariableType
               DataType: TextHorizontalAlignment

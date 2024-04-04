@@ -76,7 +76,7 @@ public class RuntimeNetLogic7 : BaseNetLogic
          yearVariable = owner.YearVariable;
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 3000, LogicObject);
         periodicTask.Start();
     }
 
