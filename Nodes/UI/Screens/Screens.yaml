@@ -197,7 +197,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/Tata_EMS_Solution_Updated/UI/NavigationSystem/Home_Page@NodeId"
+        Value: "{Session}/LastTabIndex"
         Children:
         - Name: Mode
           Type: BaseVariableType

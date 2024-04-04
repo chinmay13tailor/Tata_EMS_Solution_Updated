@@ -21,6 +21,17 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "demo_tag"
+- Name: DG_IN2
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DG_IN2"
 - Name: EB_IN1
   Type: MicroControllerTag
   DataType: Float
@@ -54,3 +65,179 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "INCOMER_2"
+- Name: OG10_IN2_BODY_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG10_IN2_BODY_SHOP"
+- Name: OG11_IN2_TCF
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG11_IN2_TCF"
+- Name: OG12_IN2_STAMPING
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG12_IN2_STAMPING"
+- Name: OG13_IN2_UTILITY
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG13_IN2_UTILITY"
+- Name: OG14_IN2_SPARE
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG14_IN2_SPARE"
+- Name: OG15_IN2_SPP_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG15_IN2_SPP_SHOP"
+- Name: OG16_IN1_SPP_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG16_IN1_SPP_SHOP"
+- Name: OG1_IN1_SPARE
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG1_IN1_SPARE"
+- Name: OG2_IN1_UTILITY
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG2_IN1_UTILITY"
+- Name: OG3_IN1_STAMPING
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG3_IN1_STAMPING"
+- Name: OG4_IN1_TCF
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG4_IN1_TCF"
+- Name: OG5_IN1_BODY_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG5_IN1_BODY_SHOP"
+- Name: OG6_IN1_ENGINE_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG6_IN1_ENGINE_SHOP"
+- Name: OG7_IN1_PAINT_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG7_IN1_PAINT_SHOP"
+- Name: OG8_IN2_PAINT_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG8_IN2_PAINT_SHOP"
+- Name: OG9_IN2_ENGINE_SHOP
+  Type: MicroControllerTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OG9_IN2_ENGINE_SHOP"

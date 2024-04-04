@@ -51,7 +51,7 @@ public class ConsumptionDistributionLogic : BaseNetLogic
 
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 5000, LogicObject);
         periodicTask.Start();
 
     }

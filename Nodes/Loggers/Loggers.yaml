@@ -1565,7 +1565,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/HourlyDataAggInstance/Consumption"
+        Value: "../../../../Model/HourlyDataAggInstance/ActivePowerTotal"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -2121,7 +2121,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:6.0000000"
+    Value: "0:00:00:2.0000000"
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
@@ -2889,7 +2889,7 @@ Children:
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:0.1000000"
+    Value: "0:00:00:0.2000000"
   - Name: TableName
     Type: PropertyType
     DataType: String

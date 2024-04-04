@@ -3041,26 +3041,158 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActivePower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActivePower"
   - Name: ApparentPowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentPower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentPower"
   - Name: ReactivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactivePower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactivePower"
   - Name: ActiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActiveEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActiveEnergy"
   - Name: ApparentEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentEnergy"
   - Name: ReactiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactiveEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactiveEnergy"
   - Name: AvgPF
     Type: BaseDataVariableType
     DataType: Float
@@ -3235,26 +3367,194 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActivePower"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActivePower"
   - Name: ApparentPowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentPower"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentPower"
   - Name: ReactivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactivePower"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactivePower"
   - Name: ActiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActiveEnergy"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActiveEnergy"
   - Name: ApparentEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentEnergy"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentEnergy"
   - Name: ReactiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0} + {1}"
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactiveEnergy"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactiveEnergy"
   - Name: AvgPF
     Type: BaseDataVariableType
     DataType: Float
@@ -3408,26 +3708,158 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActivePower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActivePower"
   - Name: ApparentPowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentPower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentPower"
   - Name: ReactivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactivePower"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactivePower"
   - Name: ActiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxActiveEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinActiveEnergy"
   - Name: ApparentEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxApparentEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinApparentEnergy"
   - Name: ReactiveEnergyTotal
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MaxReactiveEnergy"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../MinReactiveEnergy"
   - Name: AvgPF
     Type: BaseDataVariableType
     DataType: Float
@@ -8231,163 +8663,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 250
-- Name: DailyDataAggInstance
-  Type: DailyDataAgg
-  Children:
-  - Name: Meter
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Jace
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Consumption
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Button
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
-  - Name: ActivePowerTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ApparentPowerTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ReactivePowerTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ActiveEnergyTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ApparentEnergyTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ReactiveEnergyTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: AvgPF
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: PhaseRCurrent
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: PhaseYCurrent
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: PhaseBCurrent
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: AvgCurrent
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: AvgVoltageLL
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: AvgVoltageLN
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Frequency
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageRY
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageYB
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageBR
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageRN
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageYN
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: VoltageBN
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Maxconsumption
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Minconsumption
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Count
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Meter1
-    Type: BaseDataVariableType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../metercounter_DailyDataAgg"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-  - Name: Jace1
-    Type: BaseDataVariableType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../jacecounter_DailyDataAgg"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-  - Name: RuntimeNetLogic7
-    Type: NetLogic
-  - Name: Date
-    Type: BaseDataVariableType
-    DataType: String
-    Value: ""
-  - Name: Month
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: MonthYear
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Year
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
 - Name: metercounter_DailyDataAgg
   Type: BaseDataVariableType
   DataType: String
@@ -13048,6 +13323,163 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "BODYSHOP"
+- Name: DailyDataAggInstance
+  Type: DailyDataAgg
+  Children:
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ActivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentPowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ActiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPF
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseRCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseYCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseBCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLL
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRY
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYB
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBR
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../metercounter_DailyDataAgg"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../jacecounter_DailyDataAgg"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: RuntimeNetLogic7
+    Type: NetLogic
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MonthYear
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: DailyDataAgg
   Id: g=e079843c694c3f60f6f7e9db08a4aa1f
   Supertype: BaseObjectType
