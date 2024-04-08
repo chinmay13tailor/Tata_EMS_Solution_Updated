@@ -505,13 +505,13 @@ Children:
           Value: ""
         - Name: Month
           Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
+          DataType: DateString
+          Value: "Jan 1, 1601, 12:00:00 AM"
         - Name: MonthYear
           Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Date
+          DataType: DateString
+          Value: "Jan 1, 1601, 12:00:00 AM"
+        - Name: LocalDate
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
@@ -659,7 +659,7 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
-        - Name: Date
+        - Name: LocalDate
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"

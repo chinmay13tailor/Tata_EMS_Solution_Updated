@@ -1931,7 +1931,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Date
+    - Name: LocalDate
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -2452,7 +2452,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Date
+    - Name: LocalDate
       Type: VariableToLog
       DataType: BaseDataType
       Children:
