@@ -503,22 +503,18 @@ Children:
           Type: StoreColumn
           DataType: String
           Value: ""
-        - Name: Date
-          Type: StoreColumn
-          DataType: String
-          Value: "Jan 1, 1601, 12:00:00 AM"
         - Name: Month
           Type: StoreColumn
-          DataType: String
-          Value: ""
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
         - Name: MonthYear
           Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: Year
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Date
           Type: StoreColumn
-          DataType: String
-          Value: ""
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
     - Name: HistoDashboard
       Type: ODBCStoreTable
       Children:
@@ -664,6 +660,10 @@ Children:
           DataType: Float
           Value: 0.0
         - Name: Date
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: DateHour
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
