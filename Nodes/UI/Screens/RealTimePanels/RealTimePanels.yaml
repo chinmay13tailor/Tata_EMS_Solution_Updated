@@ -252,6 +252,38 @@ Children:
               - Name: Rectangle1
                 Type: Rectangle
                 Children:
+                - Name: Image1
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Screenshot (117).png"
+                  - Name: Width
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 279.0
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 40.0
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 10.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 10.0
+                  - Name: FillMode
+                    Type: BaseDataVariableType
+                    DataType: FillModeEnum
+                    ModellingRule: Optional
+                    Value: 1
                 - Name: Label1
                   Type: Label
                   Children:
@@ -260,6 +292,21 @@ Children:
                     DataType: Color
                     ModellingRule: Optional
                     Value: "#000000"
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 3.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 21.0
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"en-US","Text":"AMF DG Panel"}
                 - Name: Label2
                   Type: Label
                   Children:
@@ -456,11 +503,26 @@ Children:
                     DataType: Color
                     ModellingRule: Optional
                     Value: "#d0bfff"
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 180.0
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 160.0
                 - Name: CornerRadius
                   Type: BaseDataVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 10.0
+                - Name: FillColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#dfccfb"
               - Name: Button2
                 Type: Button
                 Children:
@@ -1694,6 +1756,16 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   Value: 70.0
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#00000000"
+                - Name: ColorizationMode
+                  Type: BaseDataVariableType
+                  DataType: ColorizationModeEnum
+                  ModellingRule: Optional
+                  Value: 0
               - Name: PolyLine1
                 Type: PolyLine
               - Name: Transformer1
@@ -5349,6 +5421,11 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 0.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 425.0
             - Name: StationWise Details
               Type: Rectangle
               Children:
@@ -14052,6 +14129,11 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 15.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 440.0
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color

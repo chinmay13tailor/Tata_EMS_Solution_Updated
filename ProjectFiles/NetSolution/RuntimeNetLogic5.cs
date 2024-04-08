@@ -89,7 +89,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         maxreactiveenergyVariable = owner.MaxReactiveEnergyVariable;
         minreactiveenergyVariable = owner.MinReactiveEnergyVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
     }
 

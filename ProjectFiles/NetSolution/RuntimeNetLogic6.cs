@@ -32,17 +32,19 @@ public class RuntimeNetLogic6 : BaseNetLogic
 {
    // private IUAVariable nameVariable;
     private IUAVariable counterVariable;
-  //  private IUAVariable valueVariable;
-  //  private IUAVariable incomer1nameVariable;
-   // private IUAVariable incomer2nameVariable;
-   // private IUAVariable incomer3nameVariable;
-  //  private IUAVariable incomer4nameVariable;
-  //  private IUAVariable incomer5nameVariable;
- //   private IUAVariable incomer1valueVariable;
-  //  private IUAVariable incomer2valueVariable;
-  //  private IUAVariable incomer3valueVariable;
-  //  private IUAVariable incomer4valueVariable;
-  //  private IUAVariable incomer5valueVariable;
+    private IUAVariable dateVariable;
+
+    //  private IUAVariable valueVariable;
+    //  private IUAVariable incomer1nameVariable;
+    // private IUAVariable incomer2nameVariable;
+    // private IUAVariable incomer3nameVariable;
+    //  private IUAVariable incomer4nameVariable;
+    //  private IUAVariable incomer5nameVariable;
+    //   private IUAVariable incomer1valueVariable;
+    //  private IUAVariable incomer2valueVariable;
+    //  private IUAVariable incomer3valueVariable;
+    //  private IUAVariable incomer4valueVariable;
+    //  private IUAVariable incomer5valueVariable;
     private IUAVariable buttonVariable;
   //  private IUAVariable gbuttonVariable;
     private PeriodicTask periodicTask;
@@ -56,6 +58,7 @@ public class RuntimeNetLogic6 : BaseNetLogic
         var owner = (Object)LogicObject.Owner;
        // nameVariable = owner.NameVariable;
         counterVariable = owner.CounterVariable;
+        dateVariable = owner.DateVariable;
        // valueVariable = owner.ValueVariable;
        // incomer1nameVariable = owner.Incomer1NameVariable;
        // incomer2nameVariable = owner.Incomer2NameVariable;
@@ -91,6 +94,7 @@ public class RuntimeNetLogic6 : BaseNetLogic
     public void IncrementDecrementTask()
     {
         int counter = counterVariable.Value;
+        string date = dateVariable.Value;
        // int value = valueVariable.Value;
       //  int incomer1value = incomer1valueVariable.Value;
       //  int incomer2value = incomer2valueVariable.Value;
@@ -110,13 +114,26 @@ public class RuntimeNetLogic6 : BaseNetLogic
 
         var project = FTOptix.HMIProject.Project.Current;
 
-     
+
 
         if (button == true)
         {
+
             if (counter <= 18)
-                            {
-                
+
+            {
+                DateTime currentTime = DateTime.Now;
+                string currentDate = currentTime.ToString("yyyy-MM-dd");
+                int currentHour = currentTime.Hour;
+
+                // Calculate start and end times for the current day
+                DateTime startTime = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 8, 0, 0);
+               // DateTime endTime = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 7, 59, 59).AddDays(1);
+                var date1 = startTime.ToString("dd-MM-yyyy");
+                // Adjust the start time if the current hour is before 8 AM
+              
+
+                date = date1;
                 counter = counter + 1;
             }
 
@@ -127,13 +144,14 @@ public class RuntimeNetLogic6 : BaseNetLogic
 
             }
 
-            
+           
+
 
 
 
         }
-
-              counterVariable.Value = counter;
+        dateVariable.Value = date;
+        counterVariable.Value = counter;
 
 
     }

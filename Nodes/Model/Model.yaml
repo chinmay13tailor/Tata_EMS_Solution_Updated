@@ -2888,6 +2888,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 50
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: Object
   Id: g=990df0512f7fb04cb24d5c7c25834b9d
   Supertype: BaseObjectType
@@ -2950,6 +2954,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 50
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: Object1
   Type: Object
   Children:
@@ -3011,6 +3019,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 50
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - File: Datalogtag/Datalogtag.yaml
 - Name: HourlyDataAggInstance
   Type: HourlyDataAgg
@@ -3036,7 +3048,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true
+    Value: false
   - Name: ActivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
@@ -3362,7 +3374,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true
+    Value: false
   - Name: ActivePowerTotal
     Type: BaseDataVariableType
     DataType: Float
@@ -3703,7 +3715,7 @@ Children:
   - Name: Button
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true
+    Value: false
   - Name: ActivePowerTotal
     Type: BaseDataVariableType
     DataType: Float

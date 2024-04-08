@@ -312,7 +312,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 50.0
+                Value: -11.0
               - Name: BorderThickness
                 Type: BaseDataVariableType
                 DataType: Size
@@ -30918,7 +30918,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Histo  Dashboards"}
+                  Value: {"LocaleId":"en-US","Text":"Histo  Dashboard"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -30928,7 +30928,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 30.0
+                  Value: 35.0
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -30958,7 +30958,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Font
                   ModellingRule: Optional
-                  Value: "Lucida Fax"
+                  Value: ""
                 - Name: FontWeight
                   Type: BaseDataVariableType
                   DataType: FontWeightEnum
@@ -30968,7 +30968,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 13.0
+                  Value: 16.0
               - Name: Total Consumption
                 Type: Label
                 Children:
