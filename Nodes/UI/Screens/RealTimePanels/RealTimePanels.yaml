@@ -5776,6 +5776,26 @@ Children:
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                   - Name: PolyLine1
                     Type: PolyLine
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
+                - Name: Tile_Icon
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Variable1
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PARAMETER"
+                - Name: Variable2
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STATION"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -5803,22 +5823,6 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable2"
-                - Name: Tile_Icon
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: Enabled
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                - Name: Variable1
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "PARAMETER"
-                - Name: Variable2
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "STATION"
               - Name: Title_DataShow_Box2
                 Type: Title_DataShow_Box
                 Children:
@@ -5829,21 +5833,10 @@ Children:
                     Type: BaseDataVariableType
                     DataType: ResourceUri
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: VLayoutContent
-                  Type: ColumnLayout
-                  Children:
-                  - Name: Label1
-                    Type: Label
-                    Children:
-                    - Name: Text
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../Variable1"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -5856,16 +5849,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (R-Y PHASE)"
-              - Name: Title_DataShow_Box3
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -5881,6 +5864,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box3
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -5893,16 +5890,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (Y-B PHASE)"
-              - Name: Title_DataShow_Box4
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -5918,6 +5905,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box4
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -5930,16 +5931,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                       (B-R PHASE)"
-              - Name: Title_DataShow_Box5
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -5955,6 +5946,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box5
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -5967,16 +5972,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL       AVERAGE"
-              - Name: Title_DataShow_Box6
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -5992,6 +5987,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box6
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6004,16 +6013,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                    (Y PHASE)"
-              - Name: Title_DataShow_Box7
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6029,6 +6028,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box7
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6041,16 +6054,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                     (R PHASE)"
-              - Name: Title_DataShow_Box8
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6066,6 +6069,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box8
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6078,16 +6095,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                   (B PHASE)"
-              - Name: Title_DataShow_Box9
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6103,6 +6110,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box9
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6115,16 +6136,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN       (AVERAGE)"
-              - Name: Title_DataShow_Box10
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6140,6 +6151,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box10
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6152,16 +6177,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT        (R PHASE)"
-              - Name: Title_DataShow_Box11
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6177,6 +6192,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box11
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6189,16 +6218,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (B PHASE)"
-              - Name: Title_DataShow_Box12
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6214,6 +6233,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box12
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6226,16 +6259,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (Y PHASE)"
-              - Name: Title_DataShow_Box13
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6251,6 +6274,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box13
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6263,16 +6300,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (AVERAGE)"
-              - Name: Title_DataShow_Box14
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6288,6 +6315,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box14
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6300,16 +6341,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "POWER       FACTOR"
-              - Name: Title_DataShow_Box15
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -6325,6 +6356,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box15
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -6337,6 +6382,21 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "FREQUENCY"
+                - Name: VLayoutContent
+                  Type: ColumnLayout
+                  Children:
+                  - Name: Label1
+                    Type: Label
+                    Children:
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../Variable1"
               - Name: DataShow_ResultBox1
                 Type: DataShow_ResultBox
                 Children:
@@ -14215,6 +14275,11 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
       - Name: TextSeparator
         Type: Label
       - Name: FeatureTitle
@@ -15720,12 +15785,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 30.0
+                  Value: 68.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label4
                 Type: Label
                 Children:
@@ -15763,12 +15828,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 164.0
+                  Value: 208.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label5
                 Type: Label
                 Children:
@@ -15776,12 +15841,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 313.0
+                  Value: 341.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label6
                 Type: Label
                 Children:
@@ -15789,12 +15854,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 420.0
+                  Value: 459.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label7
                 Type: Label
                 Children:
@@ -15802,14 +15867,25 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 587.0
+                  Value: 604.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 259.0
+                  Value: 355.0
               - Name: Label8
                 Type: Label
+                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 727.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 356.0
               - Name: Label9
                 Type: Label
                 Children:
@@ -15847,14 +15923,25 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 807.0
+                  Value: 876.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label10
                 Type: Label
+                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1008.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 356.0
               - Name: StripedRightArrow1
                 Type: ScaleLayout
                 WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -16768,6 +16855,11 @@ Children:
                   DataType: Color
                   ModellingRule: Optional
                   Value: "#ffffff"
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: StationWise Details
               Type: Rectangle
               Children:
@@ -17190,6 +17282,26 @@ Children:
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                   - Name: PolyLine1
                     Type: PolyLine
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
+                - Name: Tile_Icon
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Variable1
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PARAMETER"
+                - Name: Variable2
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STATION"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17217,22 +17329,6 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable2"
-                - Name: Tile_Icon
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: Enabled
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                - Name: Variable1
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "PARAMETER"
-                - Name: Variable2
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "STATION"
               - Name: Title_DataShow_Box2
                 Type: Title_DataShow_Box
                 Children:
@@ -17243,21 +17339,10 @@ Children:
                     Type: BaseDataVariableType
                     DataType: ResourceUri
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: VLayoutContent
-                  Type: ColumnLayout
-                  Children:
-                  - Name: Label1
-                    Type: Label
-                    Children:
-                    - Name: Text
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../Variable1"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17270,16 +17355,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (R-Y PHASE)"
-              - Name: Title_DataShow_Box3
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17295,6 +17370,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box3
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17307,16 +17396,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (Y-B PHASE)"
-              - Name: Title_DataShow_Box4
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17332,6 +17411,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box4
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17344,16 +17437,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                       (B-R PHASE)"
-              - Name: Title_DataShow_Box5
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17369,6 +17452,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box5
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17381,16 +17478,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL       AVERAGE"
-              - Name: Title_DataShow_Box6
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17406,6 +17493,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box6
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17418,16 +17519,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                    (Y PHASE)"
-              - Name: Title_DataShow_Box7
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17443,6 +17534,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box7
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17455,16 +17560,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                     (R PHASE)"
-              - Name: Title_DataShow_Box8
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17480,6 +17575,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box8
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17492,16 +17601,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                   (B PHASE)"
-              - Name: Title_DataShow_Box9
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17517,6 +17616,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box9
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17529,16 +17642,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN       (AVERAGE)"
-              - Name: Title_DataShow_Box10
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17554,6 +17657,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box10
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17566,16 +17683,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT        (R PHASE)"
-              - Name: Title_DataShow_Box11
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17591,6 +17698,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box11
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17603,16 +17724,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (B PHASE)"
-              - Name: Title_DataShow_Box12
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17628,6 +17739,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box12
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17640,16 +17765,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (Y PHASE)"
-              - Name: Title_DataShow_Box13
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17665,6 +17780,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box13
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17677,16 +17806,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (AVERAGE)"
-              - Name: Title_DataShow_Box14
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17702,6 +17821,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box14
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17714,16 +17847,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "POWER       FACTOR"
-              - Name: Title_DataShow_Box15
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -17739,6 +17862,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box15
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -17751,6 +17888,21 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "FREQUENCY"
+                - Name: VLayoutContent
+                  Type: ColumnLayout
+                  Children:
+                  - Name: Label1
+                    Type: Label
+                    Children:
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../Variable1"
               - Name: DataShow_ResultBox1
                 Type: DataShow_ResultBox
                 Children:
@@ -27087,12 +27239,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 30.0
+                  Value: 68.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label4
                 Type: Label
                 Children:
@@ -27130,12 +27282,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 164.0
+                  Value: 202.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label5
                 Type: Label
                 Children:
@@ -27143,12 +27295,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 313.0
+                  Value: 343.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label6
                 Type: Label
                 Children:
@@ -27156,12 +27308,12 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 420.0
+                  Value: 457.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label7
                 Type: Label
                 Children:
@@ -27169,14 +27321,25 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 587.0
+                  Value: 608.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 259.0
+                  Value: 356.0
               - Name: Label8
                 Type: Label
+                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 725.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 356.0
               - Name: Label9
                 Type: Label
                 Children:
@@ -27214,14 +27377,25 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 807.0
+                  Value: 875.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 260.0
+                  Value: 356.0
               - Name: Label10
                 Type: Label
+                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1015.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 356.0
               - Name: StripedRightArrow1
                 Type: ScaleLayout
                 WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -28799,6 +28973,26 @@ Children:
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                   - Name: PolyLine1
                     Type: PolyLine
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
+                - Name: Tile_Icon
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Variable1
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PARAMETER"
+                - Name: Variable2
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STATION"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -28826,22 +29020,6 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable2"
-                - Name: Tile_Icon
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: Enabled
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                - Name: Variable1
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "PARAMETER"
-                - Name: Variable2
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "STATION"
               - Name: Title_DataShow_Box2
                 Type: Title_DataShow_Box
                 Children:
@@ -28852,21 +29030,10 @@ Children:
                     Type: BaseDataVariableType
                     DataType: ResourceUri
                     Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-                - Name: VLayoutContent
-                  Type: ColumnLayout
-                  Children:
-                  - Name: Label1
-                    Type: Label
-                    Children:
-                    - Name: Text
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../Variable1"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -28879,16 +29046,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (R-Y PHASE)"
-              - Name: Title_DataShow_Box3
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -28904,6 +29061,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box3
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -28916,16 +29087,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                    (Y-B PHASE)"
-              - Name: Title_DataShow_Box4
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -28941,6 +29102,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box4
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -28953,16 +29128,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL                       (B-R PHASE)"
-              - Name: Title_DataShow_Box5
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -28978,6 +29143,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box5
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -28990,16 +29169,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLL       AVERAGE"
-              - Name: Title_DataShow_Box6
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29015,6 +29184,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box6
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29027,16 +29210,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                    (Y PHASE)"
-              - Name: Title_DataShow_Box7
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29052,6 +29225,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box7
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29064,16 +29251,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                     (R PHASE)"
-              - Name: Title_DataShow_Box8
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29089,6 +29266,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box8
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29101,16 +29292,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN                   (B PHASE)"
-              - Name: Title_DataShow_Box9
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29126,6 +29307,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box9
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29138,16 +29333,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "VLN       (AVERAGE)"
-              - Name: Title_DataShow_Box10
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29163,6 +29348,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box10
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29175,16 +29374,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT        (R PHASE)"
-              - Name: Title_DataShow_Box11
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29200,6 +29389,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box11
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29212,16 +29415,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (B PHASE)"
-              - Name: Title_DataShow_Box12
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29237,6 +29430,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box12
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29249,16 +29456,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (Y PHASE)"
-              - Name: Title_DataShow_Box13
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29274,6 +29471,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box13
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29286,16 +29497,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "CURRENT       (AVERAGE)"
-              - Name: Title_DataShow_Box14
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29311,6 +29512,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box14
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29323,16 +29538,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "POWER       FACTOR"
-              - Name: Title_DataShow_Box15
-                Type: Title_DataShow_Box
-                Children:
-                - Name: SVGTileBackground
-                  Type: Image
-                  Children:
-                  - Name: Path
-                    Type: BaseDataVariableType
-                    DataType: ResourceUri
-                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
                 - Name: VLayoutContent
                   Type: ColumnLayout
                   Children:
@@ -29348,6 +29553,20 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../Variable1"
+              - Name: Title_DataShow_Box15
+                Type: Title_DataShow_Box
+                Children:
+                - Name: SVGTileBackground
+                  Type: Image
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+                  - Name: PointedProperty
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Background"
                 - Name: Tile_Icon
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -29360,6 +29579,21 @@ Children:
                   Type: BaseDataVariableType
                   DataType: String
                   Value: "FREQUENCY"
+                - Name: VLayoutContent
+                  Type: ColumnLayout
+                  Children:
+                  - Name: Label1
+                    Type: Label
+                    Children:
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../Variable1"
               - Name: DataShow_ResultBox1
                 Type: DataShow_ResultBox
                 Children:
