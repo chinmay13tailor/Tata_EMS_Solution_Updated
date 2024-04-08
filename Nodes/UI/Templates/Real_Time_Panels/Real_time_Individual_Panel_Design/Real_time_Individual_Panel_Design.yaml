@@ -331,7 +331,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -422,7 +422,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -513,7 +513,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -637,7 +637,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -834,7 +834,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -1011,7 +1011,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -1895,7 +1895,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -3997,7 +3997,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Lucida Fax"
+          Value: ""
         - Name: FontWeight
           Type: BaseDataVariableType
           DataType: FontWeightEnum
@@ -4817,7 +4817,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5055,7 +5055,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5217,7 +5217,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5379,7 +5379,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5526,7 +5526,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5688,7 +5688,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -5850,7 +5850,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -6012,7 +6012,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: TextColor
             Type: BaseDataVariableType
             DataType: Color
@@ -6067,7 +6067,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -6147,7 +6147,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -6464,7 +6464,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Lucida Fax"
+          Value: ""
         - Name: FontWeight
           Type: BaseDataVariableType
           DataType: FontWeightEnum
@@ -6534,7 +6534,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -6961,7 +6961,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontSize
               Type: BaseDataVariableType
               DataType: Size
@@ -7138,7 +7138,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontSize
               Type: BaseDataVariableType
               DataType: Size
@@ -7315,7 +7315,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontSize
               Type: BaseDataVariableType
               DataType: Size
@@ -7620,7 +7620,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size

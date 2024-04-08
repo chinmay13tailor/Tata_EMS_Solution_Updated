@@ -2913,6 +2913,11 @@ Children:
               DataType: FontWeightEnum
               ModellingRule: Optional
               Value: 700
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: ""
           - Name: Label3
             Type: Label
             Children:
@@ -2956,6 +2961,11 @@ Children:
               DataType: FontWeightEnum
               ModellingRule: Optional
               Value: 700
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: ""
           - Name: FillColor
             Type: BaseDataVariableType
             DataType: Color
@@ -3009,6 +3019,11 @@ Children:
               DataType: FontWeightEnum
               ModellingRule: Optional
               Value: 700
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: ""
           - Name: Label4
             Type: Label
             Children:
@@ -3213,6 +3228,11 @@ Children:
                       DataType: Boolean
                       ModellingRule: None
                       Value: true
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: ""
           - Name: Blink
             Type: BaseDataVariableType
             DataType: Boolean
@@ -8705,7 +8725,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Tw Cen MT Condensed Extra Bold"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -11677,7 +11697,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontSize
               Type: BaseDataVariableType
               DataType: Size
@@ -11865,7 +11885,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
           - Name: Blink
             Type: BaseDataVariableType
             DataType: Boolean
@@ -17389,7 +17409,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Font
               ModellingRule: Optional
-              Value: "Lucida Fax"
+              Value: ""
             - Name: FontWeight
               Type: BaseDataVariableType
               DataType: FontWeightEnum
@@ -17437,7 +17457,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Tw Cen MT Condensed Extra Bold"
+            Value: ""
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -17860,7 +17880,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
         - Name: Blink
           Type: BaseDataVariableType
           DataType: Boolean
@@ -18524,7 +18544,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Tw Cen MT Condensed Extra Bold"
+          Value: ""
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -18937,7 +18957,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
         - Name: Blink
           Type: BaseDataVariableType
           DataType: Boolean
@@ -22245,7 +22265,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Font
             ModellingRule: Optional
-            Value: "Lucida Fax"
+            Value: ""
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -22316,7 +22336,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Tw Cen MT Condensed Extra Bold"
+          Value: ""
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -22448,7 +22468,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Lucida Fax"
+          Value: ""
       - Name: Parameter
         Type: Label
         Children:
@@ -22465,7 +22485,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 97.0
+          Value: 98.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22490,7 +22510,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Lucida Fax"
+          Value: ""
       - Name: Meter1
         Type: Label
         Children:
@@ -22507,7 +22527,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 97.0
+          Value: 98.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -22532,7 +22552,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: "Lucida Fax"
+          Value: ""
   - Name: CategoryName
     Type: BaseDataVariableType
     DataType: LocalizedText
