@@ -122,7 +122,7 @@ Children:
           Type: BaseVariableType
           DataType: String
           ModellingRule: Optional
-          Value: "transparent"
+          Value: "borderedrectangular"
         - Name: MouseClickEventHandler1
           Type: EventHandler
           Children:
@@ -3263,6 +3263,42 @@ Children:
       DataType: FillModeEnum
       ModellingRule: Optional
       Value: 1
+    - Name: PointedProperty
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Background"
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 8.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 8.0
+  - Name: RightMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 8.0
+  - Name: BottomMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 8.0
+  - Name: Tile_Icon
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
   - Name: VLayoutContent
     Type: ColumnLayout
     Children:
@@ -3368,38 +3404,6 @@ Children:
         DataType: TextVerticalAlignment
         ModellingRule: Optional
         Value: 0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 8.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 8.0
-  - Name: RightMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 8.0
-  - Name: BottomMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 8.0
-  - Name: Tile_Icon
-    Type: BaseDataVariableType
-    DataType: ResourceUri
-    Value: "ns=34;%PROJECTDIR%/Untitled11.jpg"
-  - Name: Enabled
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
-  - Name: Variable1
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
 - Name: DataShow_ResultBox
   Id: g=b151e94f1e07a80d2160416ef00c781b
   Supertype: Panel
