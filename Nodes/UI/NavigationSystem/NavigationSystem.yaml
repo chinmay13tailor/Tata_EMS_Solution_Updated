@@ -3746,8 +3746,26 @@ Children:
             - Name: Text
               Type: BaseDataVariableType
               DataType: LocalizedText
-              ModellingRule: Optional
               Value: {"LocaleId":"en-US","Text":"250000"}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"","Text":"{0:n2}"}
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/Tata_EMS_Solution_Updated/Model/HomePageTagsInstance/MonthConsumption"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -3867,8 +3885,26 @@ Children:
             - Name: Text
               Type: BaseDataVariableType
               DataType: LocalizedText
-              ModellingRule: Optional
               Value: {"LocaleId":"en-US","Text":"28954789"}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"","Text":"{0:n1}"}
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/Tata_EMS_Solution_Updated/Model/HomePageTagsInstance/MonthConsumptionCost"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -3973,7 +4009,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Tata_EMS_Solution_Updated/Model/Demo/Variable1"
+                Value: "/Objects/Tata_EMS_Solution_Updated/Model/HomePageTagsInstance/MonthConsumption"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -3988,33 +4024,38 @@ Children:
               Type: BaseDataVariableType
               DataType: Float
               Value: 3000.0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Tata_EMS_Solution_Updated/Model/HomePageTagsInstance/GuageMax"
             - Name: WarningZones
               Type: BaseObjectType
             - Name: Width
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 169.0
+              Value: 100.0
             - Name: Height
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 130.0
+              Value: 100.0
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 260.0
+              Value: 281.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 187.0
+              Value: 195.0
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
               ModellingRule: Optional
-              Value: 3
+              Value: 0
             - Name: RightMargin
               Type: BaseVariableType
               DataType: Size
@@ -4025,6 +4066,16 @@ Children:
               DataType: Boolean
               ModellingRule: Optional
               Value: false
+            - Name: MajorTickCount
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: GaugeStyle
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "GaugeStyle1"
           - Name: Label7
             Type: Label
             Children:
@@ -4939,6 +4990,70 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "/Objects/Tata_EMS_Solution_Updated/Model/Tags/RealTimePanelTags/33KVMeters/Incomer2/Frequency"
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"{0:n1} %"}
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Expression
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: "( {2} / {1} ) * 100"
+                    - Name: ns=3;Source1
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../CircularGauge1/MaxValue"
+                    - Name: ns=3;Source2
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../CircularGauge1/Value"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 308.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 290.0
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
         - Name: Rectangle1
           Type: Rectangle
           Children:

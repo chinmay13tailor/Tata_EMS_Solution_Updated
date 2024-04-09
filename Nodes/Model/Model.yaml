@@ -14560,6 +14560,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: GuageMax
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: HomePageTags
   Id: g=e9e4bb9c05b7e7a614a4edcecbbfe98b
   Supertype: BaseObjectType
@@ -14598,6 +14602,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: GuageMax
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: HomePageTags1
   Type: HomePageTags
   Children:
@@ -14635,3 +14643,57 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: GuageMax
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MonthConsumptionINT
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: StringFormatter1
+    Type: StringFormatter
+    Children:
+    - Name: Format
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ReferenceType: HasParameter
+      Value: {"LocaleId":"en-US","Text":"{0}"}
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:f1}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../HomePageTagsInstance/MonthConsumption"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          Value: 2
+    - Name: Mode
+      Type: PropertyType
+      DataType: DynamicLinkMode
+      ReferenceType: HasComponent
+      Value: 2

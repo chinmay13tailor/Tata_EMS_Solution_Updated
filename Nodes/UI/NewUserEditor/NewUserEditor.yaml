@@ -2965,7 +2965,7 @@ Children:
             - Name: Text
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":34,"TextId":"Name"}
+              Value: {"LocaleId":"en-US","Text":"Email:"}
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -3123,7 +3123,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"NamespaceIndex":34,"TextId":"Password"}
+              Value: {"LocaleId":"en-US","Text":"Password:"}
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
