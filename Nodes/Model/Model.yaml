@@ -14523,3 +14523,115 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
+- Name: HomePageTagsInstance
+  Type: HomePageTags
+  Children:
+  - Name: TodayConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TodayConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AverageFrequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPowerFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxDemand
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: HomePageTagsLogic
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: HomePageTags
+  Id: g=e9e4bb9c05b7e7a614a4edcecbbfe98b
+  Supertype: BaseObjectType
+  Children:
+  - Name: TodayConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TodayConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AverageFrequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPowerFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxDemand
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: HomePageTagsLogic
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: HomePageTags1
+  Type: HomePageTags
+  Children:
+  - Name: TodayConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TodayConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AverageFrequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPowerFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MaxDemand
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthConsumptionCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: HomePageTagsLogic
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
