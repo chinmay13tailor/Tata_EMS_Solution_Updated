@@ -102,6 +102,18 @@ Children:
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
+  - Name: TodayStartTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TodayEndTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TodayDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
 - Name: GenericTableExporter
   Id: g=7214f90f34ac7e34bd79f054605f925d
   Type: NetLogic
