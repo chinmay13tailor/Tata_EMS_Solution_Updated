@@ -9,7 +9,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[20]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[0]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -23,7 +23,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[21]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[1]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -37,7 +37,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[22]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[2]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -51,7 +51,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[23]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[3]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -65,7 +65,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[24]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[4]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -79,7 +79,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[25]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[5]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -90,15 +90,36 @@ Children:
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[26]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 1000"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[6]"
 - Name: Phase_R_Current
   Type: BaseDataVariableType
   DataType: Float
@@ -107,7 +128,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[27]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[7]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -121,7 +142,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[28]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[8]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -135,7 +156,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[29]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[9]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -149,7 +170,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[30]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[10]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -160,127 +181,316 @@ Children:
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[31]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[11]"
 - Name: Avg_Voltage_LN
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[32]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[12]"
 - Name: Frequency
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[33]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[13]"
 - Name: Voltage_RY
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[34]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[14]"
 - Name: Voltage_YB
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[35]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[15]"
 - Name: Voltage_BR
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[36]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[16]"
 - Name: Voltage_RN
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[37]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[17]"
 - Name: Voltage_YN
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[38]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[18]"
 - Name: Voltage_BN
   Type: BaseDataVariableType
   DataType: Float
   Value: 0.0
   Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[39]@Value"
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0} / 100"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[19]"
 - Name: Consumption
   Type: BaseDataVariableType
   DataType: Float
@@ -289,7 +499,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[23]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/INCOMER_2[3]"
     Children:
     - Name: Mode
       Type: BaseVariableType

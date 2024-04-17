@@ -789,6 +789,64 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
+    - Name: DailyJaceDataLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalDate
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Day
+          Type: StoreColumn
+          DataType: DateString
+          Value: ""
+        - Name: Month
+          Type: StoreColumn
+          DataType: DateString
+          Value: ""
+        - Name: MonthYear
+          Type: StoreColumn
+          DataType: DateString
+          Value: ""
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

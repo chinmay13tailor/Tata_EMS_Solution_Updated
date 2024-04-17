@@ -146,15 +146,15 @@ Project:
    Module: FTOptix.AuditSigning.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 300995
-  Objects: 83657
+  TotalNodeCount: 302236
+  Objects: 84043
   ObjectTypes: 1231
-  Variables: 216022
+  Variables: 216877
   VariableTypes: 0
   DataTypes: 48
   Methods: 37
-  References: 5706
+  References: 5714
   ReferenceTypes: 0
-  Files: 679
+  Files: 680
  Nodes:
  - File: Nodes/Tata_EMS_Solution_Updated.yaml

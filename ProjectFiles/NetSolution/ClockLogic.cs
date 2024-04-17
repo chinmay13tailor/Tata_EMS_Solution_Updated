@@ -26,6 +26,7 @@ public class ClockLogic : BaseNetLogic {
         LogicObject.GetVariable("Time").Value = DateTime.Now;
         LogicObject.GetVariable("UTCTime").Value = DateTime.UtcNow;
 
+
         DateTime currentTime = DateTime.Now;
         string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
         int currentHour = currentTime.Hour;
@@ -35,6 +36,7 @@ public class ClockLogic : BaseNetLogic {
         DateTime endTime = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 7, 59, 59).AddDays(1);
         DateTime todaydate = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 0, 0, 0);
         var date1 = startTime.ToString("dd-MM-yyyy");
+        
         // Adjust the start time if the current hour is before 8 AM
         if (currentHour < 8)
         {
@@ -44,6 +46,8 @@ public class ClockLogic : BaseNetLogic {
         LogicObject.GetVariable("TodayStartTime").Value = startTime;
         LogicObject.GetVariable("TodayEndTime").Value = endTime;
         LogicObject.GetVariable("TodayDate").Value = todaydate;
+        LogicObject.GetVariable("Day").Value = currentTime.Day.ToString();
+        LogicObject.GetVariable("MonthYear").Value = currentTime.ToString("MM-yyyy");
     }
 
     private PeriodicTask periodicTask;

@@ -14564,6 +14564,130 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
+  - Name: Day1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day10
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day11
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day12
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day13
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day14
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day15
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day16
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day17
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day18
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day19
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day20
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day21
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day22
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day23
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day24
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day25
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day26
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day27
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day28
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day29
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day30
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day31
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: HomePageTags
   Id: g=e9e4bb9c05b7e7a614a4edcecbbfe98b
   Supertype: BaseObjectType
@@ -14606,6 +14730,130 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
+  - Name: Day1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day10
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day11
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day12
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day13
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day14
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day15
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day16
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day17
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day18
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day19
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day20
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day21
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day22
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day23
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day24
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day25
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day26
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day27
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day28
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day29
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day30
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day31
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
 - Name: HomePageTags1
   Type: HomePageTags
   Children:
@@ -14644,6 +14892,130 @@ Children:
     DataType: Boolean
     Value: true
   - Name: GuageMax
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day8
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day10
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day11
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day12
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day13
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day14
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day15
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day16
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day17
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day18
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day19
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day20
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day21
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day22
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day23
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day24
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day25
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day26
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day27
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day28
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day29
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day30
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day31
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
@@ -14697,3 +15069,4 @@ Children:
       DataType: DynamicLinkMode
       ReferenceType: HasComponent
       Value: 2
+- File: HomePageHistogram/HomePageHistogram.yaml
